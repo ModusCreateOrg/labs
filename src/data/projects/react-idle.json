@@ -1,0 +1,10 @@
+{
+  "name": "React Idle",
+  "repo": "https://github.com/moduscreateorg/react-idle",
+  "headline": "Render React Components When the Browser is Idle",
+  "description":
+    "Boost performance of busy React applications by improving above the fold component rendering priority. React-idle decreases work on the execution thread by postponing component rendering until the browser is idle. ",
+  "stack": ["react", "react-native"],
+  "tags": ["Front end performance", "SSR"],
+  "team": [{ "name": "Grgur Grisogono", "twitter": "ggrgur" }]
+}
