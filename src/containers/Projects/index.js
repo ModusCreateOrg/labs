@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import Project from '../../components/Project'
 
 const Projects = ({ data }) => (
   <StaticQuery
@@ -27,12 +28,8 @@ const Projects = ({ data }) => (
     render={data => (
       <>
         <div>Projects</div>
-        {data.allProjectsJson.edges.map(({ node: project }) => (
-          <article key={project.name}>
-            <h2>{project.name}</h2>
-            <h3>{project.headline}</h3>
-            <p>{project.description}</p>
-          </article>
+        {data.allProjectsJson.edges.map(({ node }) => (
+          <Project key={node.name} project={node} />
         ))}
       </>
     )}
