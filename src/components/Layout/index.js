@@ -4,7 +4,10 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from '../Header'
-import './styles.css'
+import Footer from '../Footer'
+
+import './normalize.scss'
+import s from './styles.module.scss'
 
 const Layout = ({ children, data }) => (
   <StaticQuery
@@ -22,21 +25,17 @@ const Layout = ({ children, data }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Modus Create Labs' },
+            {
+              name: 'keywords',
+              content:
+                'Modus Create Labs, React, React Native, Vue, Angular, AWS, Devops',
+            },
           ]}
         />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
+        <main className={s.main}>{children}</main>
+        <Footer />
       </>
     )}
   />

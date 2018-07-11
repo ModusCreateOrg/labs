@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import logo from '../../images/logo/SVG/Modus-Labs-Logo-Long-White.svg'
 
 const Header = ({ siteTitle }) => (
   <div
@@ -8,6 +9,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: '1.45rem',
     }}
   >
+    <img src={logo} alt="Modus Labs" />
     <div
       style={{
         margin: '0 auto',
