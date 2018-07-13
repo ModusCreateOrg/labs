@@ -1,0 +1,41 @@
+.animatedWords {
+  display: inline-block;
+  height: inherit;
+  font-size: inherit;
+  transform: translateZ(0);
+  white-space: nowrap;
+
+  :global(span) {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes animateWord {
+  0% {
+    opacity: 0;
+  }
+  1.2% {
+    opacity: 0;
+    -webkit-transform: translateY(-2rem);
+  }
+  3% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  11% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  13.5% {
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

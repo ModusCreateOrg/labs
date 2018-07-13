@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import CloudinaryImage from '../CloudinaryImage';
+import AnimatedWords from '../AnimatedWords';
 import s from './styles.module.scss';
+
+const WORDS = ['Line of Code', 'Problem', 'Persona', 'Sketch', 'Pixel', 'Test', 'Deployment', 'Release', 'Integration'];
 
 const Header = ({ siteTitle }) => (
   <header className={s.hero}>
@@ -11,7 +14,9 @@ const Header = ({ siteTitle }) => (
       </div>
       <h3 className={s.introHeader}>Changing the world</h3>
       <h1>One</h1>
-      <h1 className={s.punchLine}>Line Of Code</h1>
+      <h1 className={s.animatedWords}>
+        <AnimatedWords words={WORDS} />
+      </h1>
       <h1>At A Time</h1>
       <h3 className={s.outroHeader}>Open source community driven experiments</h3>
 
