@@ -18,6 +18,7 @@
     "url": "https://github.com/moduscreateorg/labs"
   },
   "dependencies": {
+    "cloudinary-react": "1.0.6",
     "gatsby": "next",
     "gatsby-plugin-react-helmet": "next",
     "react": "^16.4.1",
