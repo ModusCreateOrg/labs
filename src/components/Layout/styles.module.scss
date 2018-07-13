@@ -1,21 +1,6 @@
-html {
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-html,
-body {
-  font-size: 16px;
-}
+@import '../../theme/globals.scss';
 
 .main {
   margin: 0 auto;
-  max-width: 60rem;
   padding: 0 1.0875rem 1.45rem;
-}
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
 }

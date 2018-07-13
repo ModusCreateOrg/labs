@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class HTML extends React.Component {
   render() {
@@ -8,10 +8,7 @@ export default class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           {this.props.headComponents}
           <script
             dangerouslySetInnerHTML={{
@@ -19,7 +16,7 @@ export default class HTML extends React.Component {
                 // load fonts
                 WebFontConfig = {
                   google: {
-                    families: ['Montserrat:300,400,600', 'Roboto', 'Roboto+Condensed']
+                    families: ['Khula:300,800', 'Lato']
                   },
                 };
                 (function(d) {
@@ -34,15 +31,11 @@ export default class HTML extends React.Component {
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
-          <div
-            key={`body`}
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
-          />
+          <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
         </body>
       </html>
-    )
+    );
   }
 }
 
@@ -53,4 +46,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};

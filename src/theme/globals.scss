@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+html,
+body {
+  font-family: $fontRegular;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 30rem) {
+  html {
+    font-size: 60%;
+  }
+}
+
+h1 {
+  font-family: $fontAlt;
+  font-size: 4.25rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: $fontAlt;
+  font-size: 3.325rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: $fontAlt;
+  font-size: 2.725rem;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.25em;
+}
+
+p {
+  line-height: 1.25em;
+}
+
+a {
+  text-decoration: none;
+}

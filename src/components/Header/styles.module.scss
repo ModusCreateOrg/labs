@@ -1,0 +1,99 @@
+.logoContainer {
+  text-align: center;
+  @media only screen and (min-width: 64rem) {
+    text-align: left;
+  }
+}
+
+.logo {
+  width: (250rem/8);
+  margin-bottom: 6rem;
+
+  @media only screen and (min-width: 64rem) {
+    width: (250rem/16);
+    margin-bottom: 8rem;
+  }
+}
+
+.hero {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  background-image: url('http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30/v1531492504/labs/hero-bg.jpg');
+  background-size: cover;
+  background-position: top center;
+  color: #fff;
+  overflow: hidden;
+
+  a {
+    color: inherit;
+  }
+}
+
+.innerContainer {
+  padding: 2rem 2rem 12rem 2rem;
+  @media only screen and (min-width: 64rem) {
+    padding: 4rem 12rem 12rem 5rem;
+  }
+}
+
+.cutout {
+  position: absolute;
+  bottom: -0.1rem;
+  left: 0;
+  width: 100%;
+
+  &.md,
+  &.lg {
+    display: none;
+  }
+
+  @media only screen and (min-width: 80rem) {
+    &.md {
+      display: block;
+    }
+    &.sm,
+    &.lg {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 120rem) {
+    &.lg {
+      display: block;
+    }
+    &.sm,
+    &.md {
+      display: none;
+    }
+  }
+}
+
+.artifactsDesktop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+
+  @media only screen and (min-width: 64rem) {
+    display: block;
+  }
+}
+
+.artifactsMobile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  @media only screen and (min-width: 64rem) {
+    display: none;
+  }
+}
+
+.introHeader {
+  margin-bottom: 1.25rem;
+}
+
+.outroHeader {
+  margin-top: 1.25rem;
+}
