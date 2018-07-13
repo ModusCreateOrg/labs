@@ -25,7 +25,11 @@ const Projects = ({ data }) => (
         }
       }
     `}
-    render={data => <>{data.allProjectsJson.edges.map(({ node }) => <Project key={node.name} project={node} />)}</>}
+    render={data => (
+      <>
+        {data.allProjectsJson.edges.map(({ node }) => <Project key={node.name} project={node} />)}
+      </>
+    )}
   />
 );
 
