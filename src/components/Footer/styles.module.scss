@@ -1,11 +1,12 @@
+@import '../../theme/variables.scss';
 .footer {
   display: flex;
   flex-flow: row;
   align-items: stretch;
   justify-content: stretch;
 
-  background-color: #1b1b1b;
-  color: #fff;
+  background-color: $black;
+  color: $white;
 }
 
 .col {
@@ -13,6 +14,6 @@
 }
 
 .link {
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
 }

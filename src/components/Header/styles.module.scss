@@ -1,6 +1,8 @@
+@import '../../theme/variables.scss';
+
 .logoContainer {
   text-align: center;
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: $desktop) {
     text-align: left;
   }
 }
@@ -9,7 +11,7 @@
   width: (250rem/8);
   margin-bottom: 6rem;
 
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: $desktop) {
     width: (250rem/16);
     margin-bottom: 8rem;
   }
@@ -31,7 +33,7 @@
 
 .innerContainer {
   padding: 2rem 2rem 12rem 2rem;
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: $desktop) {
     padding: 4rem 12rem 12rem 5rem;
   }
 }
@@ -47,7 +49,7 @@
     display: none;
   }
 
-  @media only screen and (min-width: 80rem) {
+  @media only screen and (min-width: $wide) {
     &.md {
       display: block;
     }
@@ -56,7 +58,7 @@
       display: none;
     }
   }
-  @media only screen and (min-width: 120rem) {
+  @media only screen and (min-width: $ultrawide) {
     &.lg {
       display: block;
     }
@@ -73,7 +75,7 @@
   right: 0;
   display: none;
 
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: $desktop) {
     display: block;
   }
 }
@@ -85,7 +87,7 @@
   right: 0;
   margin: auto;
 
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: $desktop) {
     display: none;
   }
 }

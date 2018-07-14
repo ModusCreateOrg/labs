@@ -1,14 +1,15 @@
+@import '../../theme/variables.scss';
 .title {
   text-transform: uppercase;
 }
 
 .highlight {
-  color: red;
+  color: $red;
 }
 
 .cta {
-  background-color: red;
-  color: white;
+  background-color: $red;
+  color: $white;
   text-transform: uppercase;
   padding: 1rem 2rem;
   margin-right: 1rem;

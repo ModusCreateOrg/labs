@@ -20,11 +20,7 @@ const Header = ({ siteTitle }) => (
   <header className={s.hero}>
     <div className={s.innerContainer}>
       <div className={s.logoContainer}>
-        <CloudinaryImage
-          id="labs/Modus-Labs-Logo-Long-White.svg"
-          className={s.logo}
-          alt="Modus Labs"
-        />
+        <CloudinaryImage id="Modus-Labs-Logo-Long-White.svg" className={s.logo} alt="Modus Labs" />
       </div>
       <h3 className={s.introHeader}>Changing the world</h3>
       <h1>One</h1>
@@ -34,8 +30,8 @@ const Header = ({ siteTitle }) => (
       <h1>At A Time</h1>
       <h3 className={s.outroHeader}>Open source community driven experiments</h3>
 
-      <CloudinaryImage id="labs/desktop-side-artifacts.png" className={s.artifactsDesktop} />
-      <CloudinaryImage id="labs/mobile-side-artifacts.png" className={s.artifactsMobile} />
+      <CloudinaryImage id="desktop-side-artifacts.png" className={s.artifactsDesktop} />
+      <CloudinaryImage id="mobile-side-artifacts.png" className={s.artifactsMobile} />
     </div>
     <svg
       viewBox="0 0 1440 171"
