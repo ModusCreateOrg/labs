@@ -1,4 +1,32 @@
 @import '../../theme/variables.scss';
+
+.container {
+  position: relative;
+  padding: 5rem 5rem 6rem;
+  overflow: hidden;
+  background-image: url('http://res.cloudinary.com/modus-labs/image/upload/b_rgb:1b1b1b,o_20,e_blur:300/v1531492504/labs/contact-graphic.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -8rem;
+  background-size: cover;
+
+  @media only screen and (min-width: $desktop) {
+    background-image: url('http://res.cloudinary.com/modus-labs/image/upload/v1531492504/labs/contact-graphic.png');
+    background-position-x: right;
+    background-position-y: -5rem;
+    background-size: contain;
+    padding: 5rem;
+  }
+}
+
+.contentContainer {
+  width: 100%;
+
+  @media only screen and (min-width: $desktop) {
+    width: 58vw;
+  }
+}
+
 .title {
   text-transform: uppercase;
 }
@@ -7,10 +35,33 @@
   color: $red;
 }
 
+.content {
+  padding: 2rem 0;
+
+  @media only screen and (min-width: $desktop) {
+    padding: 1rem 0;
+  }
+}
+
 .cta {
-  background-color: $red;
-  color: $white;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0;
+
+  @media only screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+}
+
+.imageContainer {
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+
+  @media only screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }

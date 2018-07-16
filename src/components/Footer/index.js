@@ -7,7 +7,7 @@ import s from './styles.module.scss';
 const YEAR = new Date().getFullYear();
 
 const Footer = () => (
-  <footer>
+  <footer className={s.container}>
     <ContactHero />
     <section className={s.footer}>
       <div className={s.col}>

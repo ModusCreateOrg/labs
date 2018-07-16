@@ -1,0 +1,14 @@
+@import '../../theme/variables.scss';
+
+.cta {
+  background-color: $red;
+  color: $white;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  text-align: center;
+
+  @media only screen and (min-width: $desktop) {
+    padding: 1rem 2rem;
+    text-align: left;
+  }
+}

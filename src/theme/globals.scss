@@ -7,6 +7,12 @@ body {
   color: $black;
 }
 
+@media only screen and (max-width: $desktop) {
+  html {
+    font-size: 80%;
+  }
+}
+
 @media only screen and (max-width: $tablet) {
   html {
     font-size: 60%;

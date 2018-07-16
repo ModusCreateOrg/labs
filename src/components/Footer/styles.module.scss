@@ -1,12 +1,16 @@
 @import '../../theme/variables.scss';
+
+.container {
+  background-color: $black;
+  color: $white;
+}
+
 .footer {
   display: flex;
   flex-flow: row;
   align-items: stretch;
   justify-content: stretch;
-
-  background-color: $black;
-  color: $white;
+  padding: 2rem 4rem;
 }
 
 .col {
