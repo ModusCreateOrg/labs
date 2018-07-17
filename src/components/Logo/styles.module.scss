@@ -1,0 +1,18 @@
+@import '../../theme/variables.scss';
+
+.logoContainer {
+  text-align: center;
+  @media only screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.logo {
+  width: (250rem/8);
+  margin-bottom: 6rem;
+
+  @media only screen and (min-width: $desktop) {
+    width: (250rem/16);
+    margin-bottom: 8rem;
+  }
+}

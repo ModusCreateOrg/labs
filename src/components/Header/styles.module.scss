@@ -7,16 +7,6 @@
   }
 }
 
-.logo {
-  width: (250rem/8);
-  margin-bottom: 6rem;
-
-  @media only screen and (min-width: $desktop) {
-    width: (250rem/16);
-    margin-bottom: 8rem;
-  }
-}
-
 .hero {
   position: relative;
   background: rgba(0, 0, 0, 0.8);

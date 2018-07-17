@@ -7,17 +7,42 @@
 
 .footer {
   display: flex;
-  flex-flow: row;
-  align-items: stretch;
+  flex-flow: column;
+  align-items: center;
   justify-content: stretch;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
+  margin: 0 4rem;
+  font-size: 0.825em;
+  border-top: 1px solid lighten($black, 13%);
+
+  @media only screen and (min-width: $desktop) {
+    flex-flow: row;
+  }
 }
 
 .col {
   flex: 1;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @media only screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .link {
   color: $white;
   text-decoration: none;
+}
+
+.logo {
+  img {
+    width: (250rem/12);
+    margin-bottom: 3rem;
+
+    @media only screen and (min-width: $desktop) {
+      width: (250rem/16);
+      margin-bottom: 0;
+    }
+  }
 }

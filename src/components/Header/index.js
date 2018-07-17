@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import CloudinaryImage from '../CloudinaryImage';
 import AnimatedWords from '../AnimatedWords';
+import Logo from '../Logo';
 import s from './styles.module.scss';
 
 const WORDS = [
@@ -19,9 +20,7 @@ const WORDS = [
 const Header = ({ siteTitle }) => (
   <header className={s.hero}>
     <div className={s.innerContainer}>
-      <div className={s.logoContainer}>
-        <CloudinaryImage id="Modus-Labs-Logo-Long-White.svg" className={s.logo} alt="Modus Labs" />
-      </div>
+      <Logo />
       <h3 className={s.introHeader}>Changing the world</h3>
       <h1>One</h1>
       <h1 className={s.animatedWords}>
