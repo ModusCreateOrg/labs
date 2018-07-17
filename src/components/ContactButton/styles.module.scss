@@ -1,6 +1,7 @@
 @import '../../theme/variables.scss';
 
 .cta {
+  display: inline-block;
   background-color: $red;
   color: $white;
   text-transform: uppercase;

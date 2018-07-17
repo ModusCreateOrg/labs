@@ -1,0 +1,23 @@
+@import '../../theme/variables.scss';
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border: 1px solid $black;
+  padding: 0.825rem 2.825rem 0.825rem 0.825rem;
+  color: $black;
+  &:hover,
+  &:visited {
+    color: inherit;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.625rem;
+  margin: auto;
+  width: 1.75rem;
+  height: 0.75rem;
+}
