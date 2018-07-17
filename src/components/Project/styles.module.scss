@@ -1,0 +1,57 @@
+@import '../../theme/variables.scss';
+
+.project {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 5rem 1rem;
+
+  @media only screen and (min-width: $tablet) {
+    flex-direction: row;
+    &:nth-child(even) {
+      .image {
+        order: 2;
+        margin-left: 4rem;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 22rem;
+  margin-bottom: 2rem;
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    margin: auto;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    position: relative;
+    width: 30rem;
+    height: auto;
+    margin-right: 4rem;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 16rem;
+  }
+}
+
+.content {
+  order: 1;
+}
