@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import Project from '../../components/Project';
+import ProjectFeatured from '../../components/project/Featured';
+import ProjectListing from '../../components/project/Listing';
+import s from './styles.module.scss';
 
 const Projects = ({ data }) => (
   <StaticQuery
@@ -27,7 +29,17 @@ const Projects = ({ data }) => (
     `}
     render={data => (
       <>
-        {data.allProjectsJson.edges.map(({ node }) => <Project key={node.name} project={node} />)}
+        <section className={s.featured}>
+          {data.allProjectsJson.edges.map(({ node }) => (
+            <ProjectFeatured key={node.name} project={node} />
+          ))}
+        </section>
+        <h1>More Labs</h1>
+        <section className={s.list}>
+          {data.allProjectsJson.edges.map(({ node }) => (
+            <ProjectListing key={node.name} project={node} />
+          ))}
+        </section>
       </>
     )}
   />

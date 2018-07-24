@@ -1,0 +1,13 @@
+@import '../../../theme/variables.scss';
+
+.project {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 5rem 1rem;
+}
+
+.content {
+  order: 1;
+}
