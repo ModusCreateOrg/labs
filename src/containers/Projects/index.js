@@ -8,20 +8,24 @@ import s from './styles.module.scss';
 const Projects = ({ data }) => (
   <StaticQuery
     query={graphql`
-      query ProjectListQuery {
-        allProjectsJson {
+      query ProjectListingQuery {
+        featured: allProjectsJson(
+          sort: { fields: [weight], order: DESC }
+          filter: { featured: { eq: true } }
+        ) {
           edges {
             node {
-              name
-              description
-              headline
-              stack
-              tags
-              repo
-              team {
-                name
-                twitter
-              }
+              ...ProjectFields
+            }
+          }
+        }
+        listing: allProjectsJson(
+          sort: { fields: [weight], order: DESC }
+          filter: { featured: { ne: true } }
+        ) {
+          edges {
+            node {
+              ...ProjectFields
             }
           }
         }
@@ -30,15 +34,14 @@ const Projects = ({ data }) => (
     render={data => (
       <>
         <section className={s.featured}>
-          {data.allProjectsJson.edges.map(({ node }) => (
+          {data.featured.edges.map(({ node }) => (
             <ProjectFeatured key={node.name} project={node} />
           ))}
         </section>
         <h1>More Labs</h1>
         <section className={s.list}>
-          {data.allProjectsJson.edges.map(({ node }) => (
-            <ProjectListing key={node.name} project={node} />
-          ))}
+          {data.listing &&
+            data.listing.edges.map(({ node }) => <ProjectListing key={node.name} project={node} />)}
         </section>
       </>
     )}

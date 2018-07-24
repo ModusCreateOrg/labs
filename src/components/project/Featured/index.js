@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DetailsBtn from '../DetailButton';
-import image from '../../../images/evade-graphic.png';
+import CloudinaryImage from '../../CloudinaryImage';
 import s from './styles.module.scss';
 
 const ProjectFeatured = ({ project }) => (
   <article className={s.project}>
     <aside className={s.image}>
-      <img src={image} />
+      {project.image ? <CloudinaryImage id={project.image} alt={project.name} /> : null}
     </aside>
     <div className={s.content}>
       <h2>{project.name}</h2>
