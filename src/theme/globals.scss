@@ -7,6 +7,10 @@ body {
   color: $black;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @media only screen and (max-width: $desktop) {
   html {
     font-size: 80%;

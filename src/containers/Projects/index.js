@@ -41,7 +41,9 @@ const Projects = ({ data }) => (
         <h1>More Labs</h1>
         <section className={s.list}>
           {data.listing &&
-            data.listing.edges.map(({ node }) => <ProjectListing key={node.name} project={node} />)}
+            data.listing.edges.map(({ node }) => (
+              <ProjectListing key={node.name} project={node} className={s.listItem} />
+            ))}
         </section>
       </>
     )}

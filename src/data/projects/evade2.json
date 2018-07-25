@@ -1,0 +1,27 @@
+{
+  "name": "Evade 2",
+  "featured": false,
+  "weight": 10,
+  "repo": "https://github.com/moduscreateorg/capsule",
+  "headline":
+    "Artificial intelligence, vector graphics, music and a “2.5D” engine — all in 32k of FLASH memory. ",
+  "description":
+    "We built a custom Arduboy game to include all the best features of modern day first person shooters. With no fancy front-end frameworks and just an 8-bit processor, we went back to basics.",
+  "image": "evade-graphic.png",
+  "stack": ["arduboy", "c++", "Node JS", "ATMLib2"],
+  "tags": ["embedded"],
+  "team": [
+    {
+      "name": "Jay Garcia",
+      "twitter": "modusjesus"
+    },
+    {
+      "name": "Michael Tintuic",
+      "twitter": "ggrgur"
+    },
+    {
+      "name": "Mike Schwartz",
+      "twitter": "ggrgur"
+    }
+  ]
+}

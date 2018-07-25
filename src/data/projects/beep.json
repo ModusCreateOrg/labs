@@ -1,0 +1,19 @@
+{
+  "name": "Beep",
+  "featured": false,
+  "weight": 10,
+  "repo": "https://github.com/moduscreateorg/beep",
+  "headline": "Safeguard Your Online Accounts",
+  "description":
+    "Protect your online identity by making sure your accounts and passwords are secure. Built on Vue.JS and Ionic Framework, Beep runs a security check in just one minute and keeps your passwords safe with an obfuscated hashing algorithm.",
+  "image": "evade-graphic.png",
+  "stack": ["ionic", "vue"],
+  "tags": ["Front End", "Reference app"],
+  "team": [
+    { "name": "Michael Tintuic", "twitter": "ggrgur" },
+    { "name": "Dmytro Kovalenko", "twitter": "ggrgur" },
+    { "name": "Drew Griffith", "twitter": "ggrgur" },
+    { "name": "Kunal Eapen", "twitter": "ggrgur" },
+    { "name": "JD Jones", "twitter": "ggrgur" }
+  ]
+}

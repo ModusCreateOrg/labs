@@ -5,4 +5,24 @@
 
 .list {
   display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.listItem {
+  flex: 1 1 auto;
+  @media only screen and (min-width: $desktop) {
+    flex: 0 0 44%;
+    &:nth-child(even) {
+      margin-top: 10rem;
+    }
+  }
+
+  @media only screen and (min-width: $wide) {
+    flex: 0 0 47%;
+    &:nth-child(even) {
+      margin-top: 10rem;
+    }
+  }
 }
