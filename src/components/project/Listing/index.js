@@ -10,7 +10,7 @@ const ProjectListing = ({ project, className }) => (
     <h2>{project.name}</h2>
     <h3>{project.headline}</h3>
     <p>{project.description}</p>
-    <DetailsBtn text="View on GitHub" />
+    <DetailsBtn text="View on" />
   </article>
 );
 

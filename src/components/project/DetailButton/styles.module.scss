@@ -2,10 +2,12 @@
 
 .btn {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   border: 1px solid $black;
   padding: 0.825rem 2.825rem 0.825rem 0.825rem;
   color: $black;
+  align-self: flex-start;
+
   &:hover,
   &:visited {
     color: inherit;
@@ -20,4 +22,10 @@
   margin: auto;
   width: 1.75rem;
   height: 0.75rem;
+}
+
+.github {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 0.6em;
 }

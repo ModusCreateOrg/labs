@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
+import CloudinaryImage from '../../CloudinaryImage';
 import arrow from '../../../images/arrow.svg';
 
 import s from './styles.module.scss';
@@ -9,7 +10,8 @@ import s from './styles.module.scss';
 const ProjectDetailButton = ({ text, className, href, ...rest }) => (
   <Link className={classnames(s.btn, className)} href={href} {...rest}>
     {text}
-    <img src={arrow} className={s.arrow} alt={text} />
+    <CloudinaryImage id="github" className={s.github} alt="GitHub" />
+    <CloudinaryImage id="arrow" className={s.arrow} alt={text} />
   </Link>
 );
 
