@@ -5,7 +5,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-no-sourcemaps',
-    'gatsby-plugin-sitemap',
     'gatsby-transformer-json',
     'gatsby-plugin-sass',
     {
