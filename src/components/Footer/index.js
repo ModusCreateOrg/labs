@@ -12,7 +12,12 @@ const Footer = () => (
       <div className={s.col}>
         <Logo className={s.logo} />
       </div>
-      <div className={s.col}>&copy;{` ${YEAR} Modus Create. All rights reserved.`}</div>
+      <div className={s.col}>
+        &copy;{` ${YEAR} `}
+        <a className={s.link} href="https://moduscreate.com">
+          Modus Create
+        </a>. All rights reserved.
+      </div>
       <div className={s.col}>
         <a className={s.link} href="tel:1-855-663-8727">
           1-855-663-8727

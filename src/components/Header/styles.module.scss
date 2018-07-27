@@ -10,7 +10,6 @@
 .hero {
   position: relative;
   background: rgba(0, 0, 0, 0.8);
-  background-image: url('http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30/v1531492504/labs/hero-bg.jpg');
   background-size: cover;
   background-position: top center;
   color: #fff;
@@ -18,6 +17,66 @@
 
   a {
     color: inherit;
+  }
+}
+
+:global(.webp) {
+  .hero {
+    background-image: url('http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_480/v1531492504/labs/hero-bg.webp');
+    background-image: -webkit-image-set(
+      'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_480/v1531492504/labs/hero-bg.webp'
+        1x,
+      'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_960/v1531492504/labs/hero-bg.webp'
+        2x,
+      'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1024/v1531492504/labs/hero-bg.webp'
+        3x
+    );
+    background-image: image-set(
+      'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_480/v1531492504/labs/hero-bg.webp'
+        1x,
+      'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_960/v1531492504/labs/hero-bg.webp'
+        2x,
+      'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1024/v1531492504/labs/hero-bg.webp'
+        3x
+    );
+
+    @media only screen and (min-width: $tablet) {
+      background-image: url('http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1024/v1531492504/labs/hero-bg.webp');
+      background-image: -webkit-image-set(
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1024/v1531492504/labs/hero-bg.webp'
+          1x,
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30/v1531492504/labs/hero-bg.webp'
+          2x
+      );
+      background-image: image-set(
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1024/v1531492504/labs/hero-bg.webp'
+          1x,
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30/v1531492504/labs/hero-bg.webp'
+          2x
+      );
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background-image: url('http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1440/v1531492504/labs/hero-bg.webp');
+      background-image: -webkit-image-set(
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1440/v1531492504/labs/hero-bg.webp'
+          1x,
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30/v1531492504/labs/hero-bg.webp'
+          2x
+      );
+      background-image: image-set(
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30,w_1440/v1531492504/labs/hero-bg.webp'
+          1x,
+        'http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30/v1531492504/labs/hero-bg.webp'
+          2x
+      );
+    }
+  }
+}
+
+:global(.nowebp) {
+  .hero {
+    background-image: url('http://res.cloudinary.com/modus-labs/image/upload/b_black,o_30/v1531492504/labs/hero-bg.jpg');
   }
 }
 
