@@ -28,8 +28,16 @@ const Header = ({ siteTitle }) => (
       <h1>At A Time</h1>
       <h3 className={s.outroHeader}>Open source community driven experiments</h3>
 
-      <CloudinaryImage id="desktop-side-artifacts.png" className={s.artifactsDesktop} />
-      <CloudinaryImage id="mobile-side-artifacts.png" className={s.artifactsMobile} />
+      <CloudinaryImage
+        id="desktop-side-artifacts.png"
+        className={s.artifactsDesktop}
+        alt="Modus Labs"
+      />
+      <CloudinaryImage
+        id="mobile-side-artifacts.png"
+        className={s.artifactsMobile}
+        alt="Modus Labs"
+      />
     </div>
     <svg
       viewBox="0 0 1440 171"
