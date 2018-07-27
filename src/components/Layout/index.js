@@ -12,10 +12,10 @@ import './normalize.scss';
 import s from './styles.module.scss';
 
 function canUseWebP() {
-  var elem = document.createElement('canvas');
+  const elem = document.createElement('canvas');
 
   if (!!(elem.getContext && elem.getContext('2d'))) {
-    return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+    return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
   } else {
     return false;
   }
@@ -35,7 +35,7 @@ export default class Layout extends React.Component {
   }
 
   render() {
-    const { children, data } = this.props;
+    const { children } = this.props;
     const { webpSupported } = this.state;
     return (
       <StaticQuery

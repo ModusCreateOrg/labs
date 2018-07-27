@@ -25,10 +25,14 @@
     "gatsby-plugin-react-helmet": "3.0.0-beta.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-lazyload": "2.3.0"
   },
   "devDependencies": {
+    "gatsby-plugin-no-sourcemaps": "1.0.5",
+    "gatsby-plugin-offline": "1.0.18",
     "gatsby-plugin-sass": "2.0.0-beta.6",
+    "gatsby-plugin-sitemap": "1.2.25",
     "gatsby-source-filesystem": "2.0.1-beta.9",
     "gatsby-transformer-json": "2.1.1-beta.3",
     "node-sass": "4.9.2",

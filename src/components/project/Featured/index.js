@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import LazyLoad from 'react-lazyload';
 import DetailsBtn from '../DetailButton';
 import { cloudinaryUrlPrefix } from '../../CloudinaryImage';
 import s from './styles.module.scss';
@@ -10,32 +11,45 @@ const Image = ({ filename, ...rest }) => {
   const webpFilename = toWebp(filename);
 
   return (
-    <picture>
-      <source
-        media="(min-width: 64rem)"
-        srcSet={`${cloudinaryUrlPrefix}/q_70,w_180/labs/${webpFilename} 180w,
+    <LazyLoad
+      height={200}
+      offset={100}
+      placeholder={
+        <img
+          height={200}
+          src={`${cloudinaryUrlPrefix}/q_30,w_10/labs/${webpFilename}`}
+          alt="Modus Labs"
+          {...rest}
+        />
+      }
+    >
+      <picture>
+        <source
+          media="(min-width: 64rem)"
+          srcSet={`${cloudinaryUrlPrefix}/q_70,w_180/labs/${webpFilename} 180w,
             ${cloudinaryUrlPrefix}/q_70,w_360/labs/${webpFilename} 2x`}
-        sizes="200px"
-        type="image/webp"
-      />
+          sizes="200px"
+          type="image/webp"
+        />
 
-      <source
-        media="(min-width: 64rem)"
-        srcSet={`${cloudinaryUrlPrefix}/q_70,w_180/labs/${filename} 180w,
+        <source
+          media="(min-width: 64rem)"
+          srcSet={`${cloudinaryUrlPrefix}/q_70,w_180/labs/${filename} 180w,
             ${cloudinaryUrlPrefix}/q_70,w_360/labs/${filename} 2x`}
-        sizes="200px"
-        type="image/png"
-      />
+          sizes="200px"
+          type="image/png"
+        />
 
-      <img
-        srcSet={`${cloudinaryUrlPrefix}/f_auto,q_70,w_200/labs/${filename} 200w,
+        <img
+          srcSet={`${cloudinaryUrlPrefix}/f_auto,q_70,w_200/labs/${filename} 200w,
             ${cloudinaryUrlPrefix}/f_auto,q_70,w_400/labs/${filename} 2x`}
-        src={`${cloudinaryUrlPrefix}/f_auto,q_70,w_200/labs/${filename}`}
-        sizes="200px"
-        alt="Modus Labs"
-        {...rest}
-      />
-    </picture>
+          src={`${cloudinaryUrlPrefix}/f_auto,q_70,w_200/labs/${filename}`}
+          sizes="200px"
+          alt="Modus Labs"
+          {...rest}
+        />
+      </picture>
+    </LazyLoad>
   );
 };
 
