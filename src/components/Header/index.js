@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import CloudinaryImage from '../CloudinaryImage';
 import AnimatedWords from '../AnimatedWords';
 import Logo from '../Logo';

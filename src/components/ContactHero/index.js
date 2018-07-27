@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import CloudinaryImage from '../CloudinaryImage';
 import ContactButton from '../ContactButton';
 
 import s from './styles.module.scss';

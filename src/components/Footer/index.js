@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import ContactHero from '../ContactHero';
 import Logo from '../Logo';
 import s from './styles.module.scss';

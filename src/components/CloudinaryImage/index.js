@@ -6,3 +6,5 @@ const CloudinaryImage = ({ id, ...rest }) => (
 );
 
 export default CloudinaryImage;
+
+export const cloudinaryUrlPrefix = 'https://res.cloudinary.com/modus-labs/image/upload/';
