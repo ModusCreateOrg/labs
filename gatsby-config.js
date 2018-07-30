@@ -7,6 +7,7 @@ module.exports = {
     'gatsby-plugin-no-sourcemaps',
     'gatsby-transformer-json',
     'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
