@@ -1,14 +1,14 @@
 /*.{js,jpg,png,ico,gif,css,woff,woff2}
-	Cache-Control = public, max-age=31536000
+	Cache-Control: public, max-age=31536000
 
 /sw.js
-	Cache-Control = public, max-age=60, max-revalidate
+	Cache-Control: public, max-age=60, max-revalidate
   
-/*.html
+/*
 	X-XSS-Protection: 1; mode=block
 	X-Content-Type-Options: nosniff
 	X-Frame-Options: deny
 	Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
 	Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
 	Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none'; style-src 'self'; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'self' fonts.googleapis.com; connect-src 'none'
-	
+	upgrade-insecure-requests: 1
