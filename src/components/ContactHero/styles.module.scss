@@ -11,9 +11,13 @@
 
   @media only screen and (min-width: $desktop) {
     background-position-x: right;
-    background-position-y: -5rem;
+    background-position-y: -1rem;
     background-size: contain;
     padding: 5rem;
+  }
+
+  @media only screen and (min-width: $max-body-width) {
+    padding: 5rem 0;
   }
 }
 
@@ -41,7 +45,15 @@
   width: 100%;
 
   @media only screen and (min-width: $desktop) {
-    width: 58vw;
+    width: 58%;
+  }
+
+  @media only screen and (min-width: $wide) {
+    width: 75%;
+  }
+
+  @media only screen and (min-width: $ultrawide) {
+    width: 80%;
   }
 }
 

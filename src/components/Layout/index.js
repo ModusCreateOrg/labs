@@ -66,7 +66,9 @@ export default class Layout extends React.Component {
               ]}
             />
             <Header siteTitle={data.site.siteMetadata.title} />
-            <main className={s.main}>{children}</main>
+            <main className={s.main}>
+              <div className={s.innerContent}>{children}</div>
+            </main>
             <OnIdle syncUpdate>
               <Footer />
             </OnIdle>

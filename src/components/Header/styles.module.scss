@@ -9,6 +9,9 @@
 
 .hero {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.8);
   background-size: cover;
   background-position: top center;
@@ -129,9 +132,16 @@
 }
 
 .innerContainer {
+  max-width: 90rem;
   padding: 2rem 2rem 12rem 2rem;
+  width: 100%;
+
   @media only screen and (min-width: $desktop) {
     padding: 4rem 12rem 12rem 5rem;
+  }
+  @media only screen and (min-width: $max-body-width) {
+    width: $max-body-width;
+    padding-left: 0;
   }
 }
 

@@ -1,8 +1,19 @@
 @import '../../theme/variables.scss';
 
 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: $black;
   color: $white;
+}
+
+.innerContainer {
+  max-width: 90rem;
+
+  @media only screen and (min-width: $max-body-width) {
+    width: $max-body-width;
+  }
 }
 
 .footer {
@@ -18,6 +29,10 @@
   @media only screen and (min-width: $desktop) {
     flex-flow: row;
   }
+
+  @media only screen and (min-width: $max-body-width) {
+    margin: 0;
+  }
 }
 
 .col {
@@ -27,6 +42,14 @@
 
   @media only screen and (min-width: $desktop) {
     margin-bottom: 0;
+
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+    }
   }
 }
 
