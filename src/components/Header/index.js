@@ -41,15 +41,23 @@ const Header = ({ siteTitle }) => (
     </div>
     <svg
       viewBox="0 0 1440 171"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://www.w3.org/2000/svg"
       className={`${s.cutout} ${s.sm}`}
     >
       <path d="M1440 166v5H0V.5L720 166 1440 .5V166z" fill="#FFF" fillRule="evenodd" />
     </svg>
-    <svg viewBox="0 0 1440 82" xmlns="http://www.w3.org/2000/svg" className={`${s.cutout} ${s.md}`}>
+    <svg
+      viewBox="0 0 1440 82"
+      xmlns="https://www.w3.org/2000/svg"
+      className={`${s.cutout} ${s.md}`}
+    >
       <path d="M1440 79.11v2.39H0V0l720 79.11L1440 0v79.11z" fill="#FFF" fillRule="evenodd" />
     </svg>
-    <svg viewBox="0 0 1440 45" xmlns="http://www.w3.org/2000/svg" className={`${s.cutout} ${s.lg}`}>
+    <svg
+      viewBox="0 0 1440 45"
+      xmlns="https://www.w3.org/2000/svg"
+      className={`${s.cutout} ${s.lg}`}
+    >
       <path d="M1440 43.195V44.5H0V0l720 43.195L1440 0v43.195z" fill="#FFF" fillRule="evenodd" />
     </svg>
   </header>
