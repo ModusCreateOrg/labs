@@ -11,22 +11,18 @@ body {
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: $desktop) {
-  html {
-    font-size: 80%;
-  }
-}
-
-@media only screen and (max-width: $tablet) {
-  html {
-    font-size: 60%;
-  }
-}
-
 h1 {
   font-family: $fontAlt;
   font-size: 4.25rem;
   font-weight: 800;
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 3.25rem;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 3rem;
+  }
 }
 
 h2 {
