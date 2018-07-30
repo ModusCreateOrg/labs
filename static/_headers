@@ -10,5 +10,5 @@
 	X-Frame-Options: deny
 	Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
 	Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
-	Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none'; style-src 'self'; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'self' fonts.googleapis.com; connect-src 'none'
+	Content-Security-Policy: default-src 'self'; img-src 'self' res.cloudinary.com; font-src fonts.googleapis.com
 	upgrade-insecure-requests: 1
