@@ -19,10 +19,10 @@ module.exports = {
       options: {
         name: 'Modus Create Labs',
         short_name: 'Modus Labs',
-        start_url: '/',
+        start_url: '/?utm_source=pwa',
         background_color: '#1B1B1B',
         theme_color: '#DF6F68',
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/modus-black.png',
       },
     },
