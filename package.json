@@ -29,6 +29,7 @@
     "react-lazyload": "2.3.0"
   },
   "devDependencies": {
+    "gatsby-plugin-manifest": "2.0.2-beta.3",
     "gatsby-plugin-no-sourcemaps": "2.0.0-beta.2",
     "gatsby-plugin-offline": "2.0.0-beta.5",
     "gatsby-plugin-sass": "2.0.0-beta.6",
