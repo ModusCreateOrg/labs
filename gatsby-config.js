@@ -26,5 +26,26 @@ module.exports = {
         icon: 'src/images/modus-black.png',
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          '/*': [
+            `X-XSS-Protection: 1; mode=block`,
+            `X-Content-Type-Options: nosniff`,
+            `X-Frame-Options: deny`,
+            `Strict-Transport-Security: max-age=31536000; includeSubdomains; preload`,
+            `Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin`,
+            `Content-Security-Policy: default-src 'self'; script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: res.cloudinary.com; font-src fonts.gstatic.com; connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com; upgrade-insecure-requests`,
+          ],
+          '/sw.js': ['Cache-Control: public, max-age=60, max-revalidate'],
+        },
+        allPageHeaders: [],
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+        generateMatchPathRewrites: true,
+      },
+    },
   ],
 };
