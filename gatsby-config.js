@@ -38,7 +38,7 @@ module.exports = {
             `Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin`,
             `Content-Security-Policy: default-src 'self'; script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: res.cloudinary.com; font-src fonts.gstatic.com; connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com; upgrade-insecure-requests`,
           ],
-          '/sw.js': ['Cache-Control: public, max-age=60, max-revalidate'],
+          '/sw.js': ['Cache-Control: public, max-age=3600, must-revalidate'],
         },
         allPageHeaders: [],
         mergeSecurityHeaders: true,
