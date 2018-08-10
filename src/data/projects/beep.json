@@ -10,10 +10,8 @@
   "stack": ["ionic", "vue"],
   "tags": ["Front End", "Reference app"],
   "team": [
-    { "name": "Michael Tintuic", "twitter": "ggrgur" },
-    { "name": "Dmytro Kovalenko", "twitter": "ggrgur" },
-    { "name": "Drew Griffith", "twitter": "ggrgur" },
-    { "name": "Kunal Eapen", "twitter": "ggrgur" },
-    { "name": "JD Jones", "twitter": "ggrgur" }
+    { "name": "Michael Tintuic", "twitter": "michaeltintiuc" },
+    { "name": "Dmytro Kovalenko", "twitter": "tasteofdalife" },
+    { "name": "Drew Griffith", "twitter": "ggrgur" }
   ]
 }

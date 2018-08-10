@@ -10,13 +10,13 @@
   "stack": ["aws", "s3", "cloudfront", "cloudformation", "route 53", "cloudwatch"],
   "tags": ["Devops", "AWS", "CLI", "CDN"],
   "team": [
-    { "name": "Andy Dennis", "twitter": "ggrgur" },
-    { "name": "Victor Facundo", "twitter": "ggrgur" },
-    { "name": "Lucas Still", "twitter": "ggrgur" },
-    { "name": "Sergio Bruder", "twitter": "ggrgur" },
-    { "name": "Mike Schwartz", "twitter": "ggrgur" },
-    { "name": "Drew Falkman", "twitter": "ggrgur" },
-    { "name": "Mike LaFortune", "twitter": "ggrgur" },
+    { "name": "Andy Dennis", "twitter": "" },
+    { "name": "Victor Facundo", "twitter": "" },
+    { "name": "Lucas Still", "twitter": "" },
+    { "name": "Sergio Bruder", "twitter": "" },
+    { "name": "Mike Schwartz", "twitter": "ModusSchwartz" },
+    { "name": "Drew Falkman", "twitter": "" },
+    { "name": "Mike LaFortune", "twitter": "" },
     { "name": "Grgur Grisogono", "twitter": "ggrgur" }
   ]
 }
