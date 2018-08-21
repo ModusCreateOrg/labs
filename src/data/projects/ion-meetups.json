@@ -10,10 +10,10 @@
   "stack": ["ionic"],
   "tags": ["Ionic 3", "Ionic 4"],
   "team": [
-    { "name": "Ahsan Ayaz", "twitter": "" },
-    { "name": "Akash Agrawal", "twitter": "" },
-    { "name": "Drew Griffith", "twitter": "" },
-    { "name": "Kunal Eapen", "twitter": "" },
-    { "name": "JD Jones", "twitter": "" }
+    { "name": "Ahsan Ayaz", "twitter": "ahsan_ayz" },
+    { "name": "Akash Agrawal", "twitter": "akshagrwl " },
+    { "name": "Drew Griffith", "twitter": "drewmodus" },
+    { "name": "Kunal Eapen", "twitter": "keapthepen" },
+    { "name": "JD Jones", "twitter": "jaymes_jones" }
   ]
 }
