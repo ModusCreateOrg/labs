@@ -1,6 +1,7 @@
-# Modus Labs Website
-
 [![Modus Labs](https://res.cloudinary.com/modus-labs/image/upload/v1531492623/labs/logo-black.svg)](https://labsmoduscreate.com)
+
+# Modus Labs Website
+[https://labs.moduscreate.com](https://labs.moduscreate.com)
 
 ## List of Projects
 Take a look at current [Modus Labs projects](https://github.com/ModusCreateOrg/labs/tree/master/src/data/projects) in JSON format.
