@@ -1,6 +1,6 @@
 {
   "name": "React Idle",
-  "featured": true,
+  "featured": false,
   "weight": 10,
   "repo": "https://github.com/moduscreateorg/react-idle",
   "headline": "Render React Components When the Browser is Idle",

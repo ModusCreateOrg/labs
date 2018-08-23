@@ -6,7 +6,7 @@
   "headline": "Ionic bindings for Vue applications",
   "description":
     "Use the beautiful Ionic UI library with Vue applications. This adapter bridges Ionic internals to Vue and Vue Router, allowing seamless integration of the two frameworks.",
-  "image": "beep-graphic.png",
+  "image": "logo-ionic-vue.svg",
   "stack": ["ionic", "vue"],
   "tags": ["Front End", "UI"],
   "team": [{ "name": "Michael Tintuic", "twitter": "michaeltintiuc" }]
