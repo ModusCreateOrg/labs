@@ -1,0 +1,16 @@
+{
+  "name": "Lambda Redirector",
+  "featured": false,
+  "weight": 10,
+  "repo": "https://github.com/moduscreateorg/lambda-redirector",
+  "headline": "Redirect an entire website using AWS Lambda",
+  "description":
+    "Redirect an entire website using AWS Lambda and API Gateway, packaged with CloudFormation and deployed with Serverless Application Model (SAM)",
+  "image": "",
+  "stack": ["aws"],
+  "tags": ["AWS", "Lambda"],
+  "team": [
+    { "name": "Housni Yakoob", "twitter": "housni" },
+    { "name": "Richard Bullington-McGuire", "twitter": "obscurerichard" }
+  ]
+}
