@@ -59,13 +59,16 @@ export default class Layout extends React.Component {
               <title>Modus Labs by Modus Create</title>
               <meta
                 property="description"
-                content="Modus Create Labs. Code examples that make world's most exciting applications. Developed by Modus Create's certified industry experts. React, Vue, Ionic, Angular, NodeJS, Amazon Web Services, AWS, Cloudformation, Terraform, Serverless, Lambda, Mobile native, iOS, Android"
+                content="Modus Create Labs. Code examples that make world's most exciting applications. Developed by Modus Create's certified industry experts."
               />
-              <meta property="keywords" content="Modus Labs by Modus Create" />
+              <meta
+                property="keywords"
+                content="React, Vue, Ionic, Angular, NodeJS, Amazon Web Services, AWS, Cloudformation, Terraform, Serverless, Lambda, Mobile native, iOS, Android"
+              />
               <meta property="og:title" content="Modus Labs by Modus Create" />
               <meta
                 property="og:description"
-                content="Offering tour packages for individuals or groups."
+                content="Libraries, reference apps, and learning materials that showcase how world's most exciting, mission-critical web projects are made."
               />
               <meta
                 property="og:image"
