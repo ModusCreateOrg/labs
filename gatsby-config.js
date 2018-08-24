@@ -39,7 +39,7 @@ module.exports = {
             [
               `Content-Security-Policy:`,
               `default-src 'self';`,
-              `script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com www.googletagmanager.com consent.cookiebot.com www.google-analytics.com; `,
+              `script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com www.googletagmanager.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com;`,
               `style-src 'self' 'unsafe-inline' fonts.googleapis.com;`,
               `img-src 'self' data: res.cloudinary.com www.google-analytics.com;`,
               `font-src fonts.gstatic.com;`,
