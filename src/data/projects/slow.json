@@ -1,0 +1,16 @@
+{
+  "name": "Slow",
+  "featured": false,
+  "weight": 10,
+  "repo": "https://github.com/ModusCreateOrg/slow",
+  "headline": "Slow down Linux network interfaces to to simulate slower network connections",
+  "description":
+    "This bash script offers quick shortcuts to simulate slower network connections. It is useful when you need to simulate a wireless network on a Linux network server, especially when you are using a virtual machine guest on your local machine or in the cloud.",
+  "image": "",
+  "stack": ["linux", "bash"],
+  "tags": ["devops", "linux"],
+  "team": [
+    { "name": "Richard Bullington-McGuire", "twitter": "obscurerichard" },
+    { "name": "Mike Schwartz", "twitter": "modusschwartz" }
+  ]
+}
