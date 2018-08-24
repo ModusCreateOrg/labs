@@ -36,16 +36,18 @@ module.exports = {
             `X-Frame-Options: deny`,
             `Strict-Transport-Security: max-age=31536000; includeSubdomains; preload`,
             `Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin`,
-            `Content-Security-Policy: 
-              default-src 'self';
-              script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com www.googletagmanager.com consent.cookiebot.com www.google-analytics.com;
-              style-src 'self' 'unsafe-inline' fonts.googleapis.com;
-              img-src 'self' data: res.cloudinary.com www.google-analytics.com;
-              font-src fonts.gstatic.com;
-              connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com;
-              upgrade-insecure-requests`,
+            [
+              `Content-Security-Policy:`,
+              `default-src 'self';`,
+              `script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com www.googletagmanager.com consent.cookiebot.com www.google-analytics.com; `,
+              `style-src 'self' 'unsafe-inline' fonts.googleapis.com;`,
+              `img-src 'self' data: res.cloudinary.com www.google-analytics.com;`,
+              `font-src fonts.gstatic.com;`,
+              `connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com;`,
+              `upgrade-insecure-requests`,
+            ].join(' '),
           ],
-          '/sw.js': ['Cache-Control: public, max-age=3600, must-revalidate'],
+          '/sw.js': ['Cache-Control: public, max-age=360, must-revalidate'],
         },
         allPageHeaders: [],
         mergeSecurityHeaders: true,
