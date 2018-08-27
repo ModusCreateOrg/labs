@@ -11,6 +11,7 @@
 .innerContent {
   max-width: 90rem;
   margin-bottom: 3rem;
+  width: 100%;
 
   @media only screen and (min-width: $max-body-width) {
     width: $max-body-width;
