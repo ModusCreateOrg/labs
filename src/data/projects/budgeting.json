@@ -1,7 +1,7 @@
 {
   "name": "Budgeting",
   "featured": false,
-  "weight": 10,
+  "weight": 20,
   "repo": "https://github.com/moduscreateorg/budgeting",
   "headline": "Production-ready React reference app",
   "description":

@@ -1,7 +1,7 @@
 {
   "name": "Capsule",
   "featured": true,
-  "weight": 100,
+  "weight": 10,
   "repo": "https://github.com/moduscreateorg/capsule",
   "headline": "Automated CLI for Static web application hosting on AWS",
   "description":
