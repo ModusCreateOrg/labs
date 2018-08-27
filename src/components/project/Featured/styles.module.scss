@@ -5,9 +5,10 @@
   justify-content: stretch;
   align-items: stretch;
   flex-direction: column;
-  margin: 5rem 1rem;
+  margin: 0 1rem 5rem 1rem;
 
   @media only screen and (min-width: $tablet) {
+    margin: 5rem 1rem;
     flex-direction: row;
     &:nth-child(even) {
       .image {
