@@ -1,29 +1,96 @@
 [![Modus Labs](https://res.cloudinary.com/modus-labs/image/upload/v1531492623/labs/logo-black.svg)](https://labsmoduscreate.com)
 
 # Modus Labs Website
+
 [https://labs.moduscreate.com](https://labs.moduscreate.com)
 
+[![powered_by Modus_Create](https://img.shields.io/badge/powered_by-Modus_Create-blue.svg)](https://moduscreate.com)
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ModusCreateOrg/react-idle/blob/master/LICENSE)
+
+- [Developing](#developing)
+  - [Server-side rendering](#ssr)
+  - [Setup](#setup)
+  - [Code organization](#code-organization)
+  - [Styling](#styling)
+- [Add a new project](#add-a-new-project)
+  - [Project config properties](#properties)
+- [License](#license)
+
+## Developing
+
+[Gatsby](https://www.gatsbyjs.org/) is a React-based static web generator. React code is pre-built and served as static HTML. All resources such as images, CSS, and JS are pre-built, too. Users will receive rendered HTML and Javascript. Once Javascript is bootstraped, the page will silently re-render and enable active content.
+
+#### SSR
+
+React developers should understand the traits of Server Side Rendering when developing this web site.
+
+- Do not rely on browser-specific globals such as `window` or `document`. They may not exist in node environment.
+- `componentDidMount` does not fire during SSR. There's no mounting at that stage
+- Use [React Helmet](https://github.com/nfl/react-helmet) to work with tags that go in `<head>`
+- Use [React Idle](https://github.com/ModusCreateOrg/react-idle/) to omit parts of the web site that doesn't need to be rendered on the server. You will want to avoid the parts that do not contribute to [Above the Fold](https://en.wikipedia.org/wiki/Above_the_fold) or [Critical Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) content.
+
+#### Setup
+
+This site can be built on any system that supports **Node v6.9+**.
+
+```sh
+git clone git@github.com:ModusCreateOrg/labs.git
+cd labs
+npm install
+```
+
+##### Dev server
+
+```sh
+npm run develop
+```
+
+##### Build static web for production
+
+```sh
+npm run build
+```
+
+#### Code organization
+
+| File/Folder                          | Description                                                                                                      |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| [components](./src/components)       | Data-agnostic atomic components                                                                                  |
+| [containers](./src/containers)       | Reusable combinations of components built using a specific layout that represents a meaningful portion of a view |
+| [data/projects](./src/data/projects) | JSON-formatted representation of projects. See [the docs](#properties).                                          |
+| [pages](./src/pages)                 | Pages or routes for this web site                                                                                |
+| [theme](./src/theme)                 | Sass globals and variables                                                                                       |
+| [html.js](./src/html.js)             | HTML template formatted for Server Side Rendering                                                                |
+
+#### Styling
+
+We use Sass for styling. All variables are in the [theme](./src/theme) folder
+
 ## List of Projects
+
 Take a look at current [Modus Labs projects](https://github.com/ModusCreateOrg/labs/tree/master/src/data/projects) in JSON format.
 
 ### Add a new project
-* Copy one of the project JSON files and change properties
-* New JSON file will automatically generate a project on the web site
-* Changes will automatically apply on each merge
+
+- Copy one of the project JSON files and change properties
+- New JSON file will automatically generate a project on the web site
+- Changes will automatically apply on each merge
 
 ### Properties
-| Property name | Description |
-| -- | -- |
-| `name` | Project name |
-| `featured` | Set to `true` to appear at the top of the page. Keep max 4 featured projects |
-| `weight` | The higher the number, the closer to the top the project will show. This is useful to sort projects |
-| `repo` | Repository URL (https) |
-| `headline` | Short pitch, < 250 characters |
-| `description` | Meaningful description. < 600 characters. Use all the right keywords |
-| `image` | File name stored in Cloudinary. Responsive images will be generated automatically |
-| `stack` | Array of technologies used. Use `react`, `react-native`, `vue`, `ionic`, `angular`, or `aws`. The list may get bigger, but we need to prepare a logo for each. |
-| `tags` | Keywords |
-| `team` | Array of objects with `name` and `twitter` properties for the team who contributed to this project |
+
+| Property name | Description                                                                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`        | Project name                                                                                                                                                   |
+| `featured`    | Set to `true` to appear at the top of the page. Keep max 4 featured projects                                                                                   |
+| `weight`      | The higher the number, the closer to the top the project will show. This is useful to sort projects                                                            |
+| `repo`        | Repository URL (https)                                                                                                                                         |
+| `headline`    | Short pitch, < 250 characters                                                                                                                                  |
+| `description` | Meaningful description. < 600 characters. Use all the right keywords                                                                                           |
+| `image`       | File name stored in Cloudinary. Responsive images will be generated automatically                                                                              |
+| `stack`       | Array of technologies used. Use `react`, `react-native`, `vue`, `ionic`, `angular`, or `aws`. The list may get bigger, but we need to prepare a logo for each. |
+| `tags`        | Keywords                                                                                                                                                       |
+| `team`        | Array of objects with `name` and `twitter` properties for the team who contributed to this project                                                             |
 
 # License
+
 MIT
