@@ -43,7 +43,7 @@ module.exports = {
               `style-src 'self' 'unsafe-inline' fonts.googleapis.com;`,
               `img-src 'self' data: res.cloudinary.com www.google-analytics.com;`,
               `font-src fonts.gstatic.com;`,
-              `connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com;`,
+              `connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com www.googletagmanager.com;`,
               `upgrade-insecure-requests`,
             ].join(' '),
           ],
