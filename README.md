@@ -17,6 +17,7 @@
   - [Styling](#styling)
 - [Add a new project](#add-a-new-project)
   - [Project config properties](#properties)
+- [Deployment pipeline](#deployment-pipeline)
 - [License](#license)
 
 # Developing
