@@ -18,6 +18,7 @@
 - [Add a new project](#add-a-new-project)
   - [Project config properties](#properties)
 - [Deployment pipeline](#deployment-pipeline)
+- [Modus Create](#modus-create)
 - [License](#license)
 
 # Developing
@@ -107,6 +108,12 @@ Here's how it works:
 2.  Netlify will try to build a deploy preview from the PR branch
 3.  If build is successful, the pull request checks section will go green. You can access the generated Deploy Preview build by clicking on **Details** next to _deploy/netlify — Deploy preview ready!_. Deploy preview build are not crawlable by robots, but are open to anyone with the link.
 4.  Once the Pull Request is merged, Netlify will rebuild the `master` branch and deploy a new version of the web site
+
+# Modus Create
+
+[Modus Create](https://moduscreate.com) is a digital product consultancy. We use a distributed team of the best talent in the world to offer a full suite of digital product design-build services; ranging from consumer facing apps, to digital migration, to agile development training, and business transformation.
+
+[![Modus Create](https://res.cloudinary.com/modus-labs/image/upload/h_80/v1533109874/modus/logo-long-black.png)](https://moduscreate.com)
 
 # License
 
