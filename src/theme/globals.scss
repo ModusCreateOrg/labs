@@ -4,6 +4,10 @@ html,
 body {
   font-family: $fontRegular;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.016em;
+  line-height: 20px;
+  text-rendering: optimizeLegibility;
   color: $black;
   overflow-x: hidden;
 }
