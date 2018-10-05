@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import classnames from 'classnames';
+import slug from 'slug';
 import DetailsBtn from '../DetailButton';
 import s from './styles.module.scss';
 
 const ProjectListing = ({ project, className }) => (
   <article className={classnames(s.project, className)}>
-    <h2>{project.name}</h2>
+    <h2>
+      <Link to={`/details/${slug(project.name).toLowerCase()}`}>{project.name}</Link>
+    </h2>
     <h3>{project.headline}</h3>
     <p>{project.description}</p>
     <div className={s.tags}>

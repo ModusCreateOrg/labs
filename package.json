@@ -10,6 +10,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "debug": "node --inspect-brk --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +25,9 @@
     "react": "16.4.2",
     "react-dom": "16.4.2",
     "react-helmet": "^5.2.0",
-    "react-lazyload": "2.3.0"
+    "react-lazyload": "2.3.0",
+    "slash": "2.0.0",
+    "slug": "0.9.1"
   },
   "devDependencies": {
     "gatsby-plugin-google-analytics": "2.0.0-rc.0",
