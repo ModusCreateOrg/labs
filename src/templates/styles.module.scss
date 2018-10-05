@@ -1,0 +1,97 @@
+
+@import '../theme/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0 1rem 5rem 1rem;
+  border-bottom: 2px #DADADA solid;
+  height: 25rem; 
+  @media only screen and (min-width: $tablet) {
+    margin: 5rem 1rem;
+    flex-direction: row;
+    &:nth-child(even) {
+      .image {
+        order: 1;
+        margin-left: 4rem;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 42rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 6rem;
+  order: 1;
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    margin: auto;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    position: relative;
+    width: 30rem;
+    height: auto;
+    margin-right: 4rem;
+    margin-bottom: 0;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 16rem;
+  }
+}
+
+.content {
+  order: 1;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  border: 1px solid $black;
+  padding: 1rem 2.925rem 1rem 1rem;
+  color: $black;
+  align-self: flex-start;
+  font-size: 24px;
+  margin-top: 20px;
+
+  &:hover,
+  &:visited {
+    color: inherit;
+  } 
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.725rem;
+  margin: auto;
+  width: 1.75rem;
+  height: 0.75rem;
+}
+
+.github {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: -0.3rem 0.6em;
+}
