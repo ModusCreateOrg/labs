@@ -1,0 +1,12 @@
+.img {
+  display: block;
+
+  &:global(.lazyload) {
+    filter: blur(5px);
+    transition: filter 400ms;
+  }
+
+  &:global(.lazyloaded) {
+    filter: blur(0);
+  }
+}

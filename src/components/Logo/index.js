@@ -6,7 +6,7 @@ import s from './styles.module.scss';
 
 const Logo = ({ className }) => (
   <div className={classnames(s.logoContainer, className)}>
-    <CloudinaryImage id="Modus-Labs-Logo-Long-White.svg" className={s.logo} alt="Modus Labs" />
+    <CloudinaryImage filename="Modus-Labs-Logo-Long-White.svg" className={s.logo} alt="Modus Labs" />
   </div>
 );
 

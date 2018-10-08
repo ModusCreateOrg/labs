@@ -8,8 +8,8 @@ import s from './styles.module.scss';
 const ProjectDetailButton = ({ text, className, href, ...rest }) => (
   <a className={classnames(s.btn, className)} href={href} {...rest}>
     {text}
-    <CloudinaryImage id="github" className={s.github} alt="GitHub" />
-    <CloudinaryImage id="arrow" className={s.arrow} alt={text} />
+    <CloudinaryImage filename="github.svg" filters={[]} className={s.github} alt="GitHub" />
+    <CloudinaryImage filename="arrow.svg" filters={[]} className={s.arrow} alt={text} />
   </a>
 );
 
