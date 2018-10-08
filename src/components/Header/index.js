@@ -1,5 +1,5 @@
 import React from 'react';
-import CloudinaryImage from '../CloudinaryImage';
+import CloudinaryImage from '../LazyImage';
 import AnimatedWords from '../AnimatedWords';
 import Logo from '../Logo';
 import s from './styles.module.scss';
@@ -29,12 +29,12 @@ const Header = ({ siteTitle }) => (
       <h3 className={s.outroHeader}>Open source community driven experiments</h3>
 
       <CloudinaryImage
-        id="desktop-side-artifacts.png"
+        filename="desktop-side-artifacts.png"
         className={s.artifactsDesktop}
         alt="Modus Labs"
       />
       <CloudinaryImage
-        id="mobile-side-artifacts.png"
+        filename="mobile-side-artifacts.png"
         className={s.artifactsMobile}
         alt="Modus Labs"
       />
