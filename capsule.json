@@ -1,0 +1,12 @@
+{
+  "ProjectName": "modus-labs",
+  "Domain": "modus.app",
+  "SubDomain": "labs",
+  "ci": {
+    "RepositoryURL": "https://github.com/ModusCreateOrg/labs",
+    "WebsiteCode": "/Users/grgur/Projects/Modus/labs",
+    "InstallCommands": "npm i",
+    "BuildCommands": "npm run build",
+    "PostBuildCommands": ""
+  }
+}
