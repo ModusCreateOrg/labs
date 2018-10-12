@@ -109,6 +109,8 @@ Here's how it works:
 3.  If build is successful, the pull request checks section will go green. You can access the generated Deploy Preview build by clicking on **Details** next to _deploy/netlify — Deploy preview ready!_. Deploy preview build are not crawlable by robots, but are open to anyone with the link.
 4.  Once the Pull Request is merged, Netlify will rebuild the `master` branch and deploy a new version of the web site
 
+Powered by [Capsule](https://github.com/ModusCreateOrg/capsule).
+
 # Modus Create
 
 [Modus Create](https://moduscreate.com) is a digital product consultancy. We use a distributed team of the best talent in the world to offer a full suite of digital product design-build services; ranging from consumer facing apps, to digital migration, to agile development training, and business transformation.
