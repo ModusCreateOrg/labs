@@ -4,7 +4,7 @@
   "SubDomain": "labs",
   "ci": {
     "RepositoryURL": "https://github.com/ModusCreateOrg/labs",
-    "WebsiteCode": "/Users/grgur/Projects/Modus/labs",
+    "WebsiteCode": "./public",
     "InstallCommands": "npm i",
     "BuildCommands": "npm run build",
     "PostBuildCommands": ""
