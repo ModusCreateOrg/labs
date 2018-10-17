@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Layout from '../components/Layout';
-import Image from '../components/Image';
+import Image from '../components/LazyImage'
 import CloudinaryImage from '../components/CloudinaryImage';
 import s from './styles.module.scss';
+
 
 const GithubButton = ({ text, className, href, ...rest }) => (
   <a className={classnames(s.btn, className)} href={href} {...rest}>
     {text}
-    <CloudinaryImage id="github" className={s.github} alt="GitHub" />
-    <CloudinaryImage id="arrow" className={s.arrow} alt={text} />
+    <CloudinaryImage id="github" filename="github.svg" filters={[]} className={s.github} alt="GitHub" />
+    <CloudinaryImage id="arrow"  filename="arrow.svg" filters={[]}  className={s.arrow} alt={text} />
   </a>
 );
 
@@ -29,14 +30,14 @@ const DetailsPage = ({ pageContext: { project } }) => {
           </aside>
         </article>
 
-        <article className={s.overview}>
-          <div className={s.overview_content}>
-            <h1>Project Overview</h1>
-            <div>{project.description}</div>
+        <article className={s.overview} className={s.content_container}>
+          <div classNames={s.overview_content} className={s.main}>
+            <h3 className={s.content_titles}>Project Overview</h3>
+            <div className={s.project_description}>{project.description}</div>
           </div>
-          <div className={s.data}>
+          <div className={s.data} className={s.side}>
             <div className={s.stack}>
-              <h2>Technology</h2>
+              <h3 className={s.content_titles}>Technology</h3>
               <ul>
                 {project.stack.map(s => (
                   <li>{s}</li>

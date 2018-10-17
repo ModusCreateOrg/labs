@@ -95,3 +95,56 @@
   height: 2.2rem;
   margin: -0.3rem 0.6em;
 }
+
+*{
+  box-sizing: border-box;
+}
+/**
+ * Project details content titles bold/width
+ */
+.content_titles {
+  font-weight:600;
+}
+
+/**
+ * Project description content font size and line height
+ */
+.project_description{
+  line-height: 3rem;
+  font-size: 1.5em;
+}
+
+/**
+ * container to contain both sections of project description, project description and tech/tags
+ */
+.content_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.1rem;
+}
+
+/**
+ * Creating two unequal columns that sits next to each other 
+ */
+
+ /* Main column */
+.main {
+  flex: 70%;
+  padding: 5px;
+}
+
+/* Side column */
+.side {
+  flex: 30%;
+  padding: 5px;
+}
+
+/**
+ * Responsive layout - when the screen is less than 700px wide, make the two columns 
+ * stack on top of each other instead of next to each other 
+ */
+@media screen and (max-width: 700px) {
+  .content_container {   
+      flex-direction: column;
+  }
+}
