@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import LazyLoad from 'react-lazyload';
+import slug from 'slug';
+import { Link } from 'gatsby';
 import DetailsBtn from '../DetailButton';
 import Image from '../../LazyImage';
 import s from './styles.module.scss';
@@ -10,7 +13,9 @@ const ProjectFeatured = ({ project }) => (
       {project.image ? <Image filename={project.image} alt={project.name} /> : null}
     </aside>
     <div className={s.content}>
-      <h2>{project.name}</h2>
+      <h2>
+        <Link to={`/details/${slug(project.name).toLowerCase()}`}>{project.name}</Link>
+      </h2>
       <h3>{project.headline}</h3>
       <p>{project.description}</p>
       <DetailsBtn text="View on" href={project.repo} />
