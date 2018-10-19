@@ -102,15 +102,25 @@
 /**
  * Project details content titles bold/width
  */
-.content_titles {
-  font-weight:600;
+.title_props {
+  font-weight:$title-weight;
+  margin-bottom: 1rem;
+}
+
+/**
+ * Project details content sub titles font size
+ */
+.sub_title{
+  font-weight:$title-weight;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 
 /**
  * Project description content font size and line height
  */
 .project_description{
-  line-height: 3rem;
+  line-height: 2.5rem;
   font-size: 1.5em;
 }
 
@@ -124,13 +134,14 @@
 }
 
 /**
- * Creating two unequal columns that sits next to each other 
+ * Creating two unequal columns that sits next to each other, project overview and (tags, technology) 
  */
 
  /* Main column */
 .main {
-  flex: 70%;
+  flex: 55%;
   padding: 5px;
+  margin-right:15%;
 }
 
 /* Side column */
@@ -148,3 +159,34 @@
       flex-direction: column;
   }
 }
+
+.technology_content {
+  font-size: 1.6rem;
+  color: $red;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.tags_section {
+  margin-top: 2rem;
+}
+
+.tags_parent {
+  display: inline-block;
+  margin:.3rem;
+}
+
+.tags_child {
+  flex: 0 0 auto;
+  height: 2.3em;
+  border-radius: 1000px;
+  background-color: $red;
+  min-width: 5rem;
+  padding: .7rem;
+  color: $white;
+  font-size: 1.2rem;
+  font-weight:700;
+  text-align:center;
+}
+
+

@@ -11,7 +11,7 @@ const GithubButton = ({ text, className, href, ...rest }) => (
   <a className={classnames(s.btn, className)} href={href} {...rest}>
     {text}
     <CloudinaryImage id="github" filename="github.svg" filters={[]} className={s.github} alt="GitHub" />
-    <CloudinaryImage id="arrow"  filename="arrow.svg" filters={[]}  className={s.arrow} alt={text} />
+    <CloudinaryImage id="arrow" filename="arrow.svg" filters={[]} className={s.arrow} alt={text} />
   </a>
 );
 
@@ -31,26 +31,27 @@ const DetailsPage = ({ pageContext: { project } }) => {
         </article>
 
         <article className={s.overview} className={s.content_container}>
-          <div classNames={s.overview_content} className={s.main}>
-            <h3 className={s.content_titles}>Project Overview</h3>
+          <div className={s.overview_content} className={s.main}>
+            <h3 className={s.title_props}>Project Overview</h3>
             <div className={s.project_description}>{project.description}</div>
           </div>
           <div className={s.data} className={s.side}>
             <div className={s.stack}>
-              <h3 className={s.content_titles}>Technology</h3>
-              <ul>
-                {project.stack.map(s => (
-                  <li>{s}</li>
-                ))}
-              </ul>
+              <h2 className={s.sub_title}>Technology</h2>
+              {project.stack.map((stacks, index) => {
+                return <span key={`teck_stacks_${index}`} className={s.technology_content}> {(index ? ', ' : '') + stacks} </span>
+              })
+            }
             </div>
-            <div className={s.tags}>
-              <h2>Tags</h2>
-              <ul>
-                {project.tags.map(t => (
-                  <li>{t}</li>
-                ))}
-              </ul>
+            <div className={s.tags_section}>
+              <h2 className={s.sub_title}>Tags</h2>
+              {project.tags.map(tag => (
+                <div className={s.tags_parent}>
+                  <div className={s.tags_child}>
+                    {tag}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </article>
