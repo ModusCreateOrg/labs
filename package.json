@@ -21,12 +21,11 @@
   "dependencies": {
     "@modus/react-idle": "1.0.1",
     "classnames": "2.2.6",
-    "gatsby": "2.0.19",
+    "gatsby": "2.0.29",
     "lazysizes": "4.1.4",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
     "react-helmet": "^5.2.0",
-    "react-lazyload": "2.3.0",
     "slash": "2.0.0",
     "slug": "0.9.1"
   },
