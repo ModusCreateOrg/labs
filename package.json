@@ -32,15 +32,15 @@
   "devDependencies": {
     "gatsby-plugin-google-analytics": "2.0.6",
     "gatsby-plugin-google-tagmanager": "2.0.5",
-    "gatsby-plugin-manifest": "2.0.4",
-    "gatsby-plugin-netlify": "2.0.1",
-    "gatsby-plugin-no-sourcemaps": "2.0.0",
-    "gatsby-plugin-offline": "2.0.5",
+    "gatsby-plugin-manifest": "2.0.5",
+    "gatsby-plugin-netlify": "2.0.2",
+    "gatsby-plugin-no-sourcemaps": "2.0.1",
+    "gatsby-plugin-offline": "2.0.8",
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-sass": "2.0.1",
-    "gatsby-source-filesystem": "2.0.2",
+    "gatsby-source-filesystem": "2.0.5",
     "gatsby-transformer-json": "2.1.4",
-    "node-sass": "4.9.3",
+    "node-sass": "4.9.4",
     "prettier": "1.14.3"
   }
 }
