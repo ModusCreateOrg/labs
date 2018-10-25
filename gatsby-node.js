@@ -30,6 +30,10 @@ exports.createPages = ({ graphql, actions }) => {
                   name
                   twitter
                 }
+                title
+                screenshots {
+                  screen
+                }
               }
             }
           }

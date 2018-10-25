@@ -95,6 +95,8 @@ Take a look at current [Modus Labs projects](https://github.com/ModusCreateOrg/l
 | `stack`       | Array of technologies used. Use `react`, `react-native`, `vue`, `ionic`, `angular`, or `aws`. The list may get bigger, but we need to prepare a logo for each. |
 | `tags`        | Keywords                                                                                                                                                       |
 | `team`        | Array of objects with `name` and `twitter` properties for the team who contributed to this project                                                             |
+| `title`       | Short pitch < 50 characters                                                                                                                                    |
+| `screenShots` | Array of objects with `screen` to explain the working app flow                                                                                                 |
 
 # Deployment pipeline
 

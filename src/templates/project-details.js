@@ -16,9 +16,7 @@ const GithubButton = ({ text, className, href, ...rest }) => (
 );
 
 const TwitterButton = ({ text, className, href, ...rest }) => (
-  <a href={href} {...rest}>
     <CloudinaryImage id="twitter" filename="twitter.svg" filters={[]} className={s.twitter_icon} alt="twitter" />
-  </a>
 );
 
 
@@ -60,13 +58,24 @@ const DetailsPage = ({ pageContext: { project } }) => {
             </div>
           </div>
         </article>
+
+        <article className={s.other_content_container}>
+          <h2 className={classnames(s.team_heading)}>{project.title}</h2>
+          <div className={classnames(s.screenshotsContainer)}>
+            { project.screenshots ? project.screenshots.map((shot) => {
+              return <div className={classnames(s.screenshots)}><img src={shot.screen} className={classnames(s.screenshotImage)} alt="MC" /></div> 
+            }
+            ): null}
+          </div>
+        </article>
+
         <article className={s.other_content_container}>
           <h2 className={classnames(s.team_heading)}>Team</h2>
           <div className={classnames(s.team)}>
             {project.team.map((t, index) => {
               return (
                 <div className={classnames(s.member)} key={`member_name${index}`}>
-                  <img className={s.team_avatar} src={`https://avatars.io/twitter/` + t.twitter} />
+                  <img className={s.team_avatar} src={`https://avatars.io/twitter/` + t.twitter} alt="MC" />
                   <div className={s.member_details}>
                     <span className={classnames(s.title_props, s.member_name)}>{t.name}</span>
                     <br /><a href={`https://twitter.com/` + t.twitter}>
