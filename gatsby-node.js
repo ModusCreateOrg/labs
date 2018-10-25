@@ -46,7 +46,6 @@ exports.createPages = ({ graphql, actions }) => {
         // Create pages for each project detail
         const projectDetailsTemplate = path.resolve(`src/templates/project-details.js`);
         result.data.allProjectsJson.edges.forEach(({ node }) => {
-          console.log({ ...node });
           createPage({
             path: `/details/${slug(node.name).toLowerCase()}`,
             component: slash(projectDetailsTemplate),
