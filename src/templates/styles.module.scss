@@ -134,6 +134,14 @@
 }
 
 /**
+ * container to contain both sections of project description, project description and tech/tags
+ */
+ .other_content_container {
+  margin: 1.1rem;
+}
+
+
+/**
  * Creating two unequal columns that sits next to each other, project overview and (tags, technology) 
  */
 
@@ -158,6 +166,9 @@
   .content_container {   
       flex-direction: column;
   }
+  .sub_title {
+    margin-top: 2rem;
+  }
 }
 
 .technology_content {
@@ -165,6 +176,7 @@
   color: $red;
   text-transform: capitalize;
   font-weight: 600;
+  line-height:2rem;
 }
 
 .tags_section {
@@ -189,4 +201,55 @@
   text-align:center;
 }
 
+/**
+ * team styling
+ */
 
+ .team_heading {
+   margin-top: 5rem;
+   display: block;
+ }
+
+ .team{
+   display:flex;
+   flex-wrap: wrap;
+   flex:60%;
+  }
+  .member {
+    flex: 0 0 auto;
+    min-width: 13rem;
+    margin: 3px;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .member_name {
+    line-height: 3rem;
+  }
+
+  .twitter_button {
+    border: 2px inset $black;
+    padding: .4rem;
+  }
+
+  .twitter_icon {
+    margin-bottom: -.2rem;
+    width:1rem;
+  }
+
+  .team_avatar{
+      width: 4rem;
+      height: 4rem;
+      margin: 1em auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-border-radius: 99rem;
+      -moz-border-radius: 99rem;
+      border-radius: 99rem;
+    }  
+
+  .member_details{
+    float: right;
+    margin-left: 1rem;
+  }
