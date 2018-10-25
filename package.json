@@ -21,27 +21,26 @@
   "dependencies": {
     "@modus/react-idle": "1.0.1",
     "classnames": "2.2.6",
-    "gatsby": "2.0.19",
+    "gatsby": "2.0.29",
     "lazysizes": "4.1.4",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
     "react-helmet": "^5.2.0",
-    "react-lazyload": "2.3.0",
     "slash": "2.0.0",
     "slug": "0.9.1"
   },
   "devDependencies": {
     "gatsby-plugin-google-analytics": "2.0.6",
     "gatsby-plugin-google-tagmanager": "2.0.5",
-    "gatsby-plugin-manifest": "2.0.4",
-    "gatsby-plugin-netlify": "2.0.1",
-    "gatsby-plugin-no-sourcemaps": "2.0.0",
-    "gatsby-plugin-offline": "2.0.5",
+    "gatsby-plugin-manifest": "2.0.5",
+    "gatsby-plugin-netlify": "2.0.2",
+    "gatsby-plugin-no-sourcemaps": "2.0.1",
+    "gatsby-plugin-offline": "2.0.8",
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-sass": "2.0.1",
-    "gatsby-source-filesystem": "2.0.2",
+    "gatsby-source-filesystem": "2.0.5",
     "gatsby-transformer-json": "2.1.4",
-    "node-sass": "4.9.3",
+    "node-sass": "4.9.4",
     "prettier": "1.14.3"
   }
 }
