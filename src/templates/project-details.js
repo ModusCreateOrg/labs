@@ -3,22 +3,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Layout from '../components/Layout';
 import Image from '../components/LazyImage'
-import CloudinaryImage from '../components/CloudinaryImage';
+import ProjectDetailButtonChild from '../components/project/DetailButtonChild';
+import TwitterButton from '../components/project/TwitterButton';
 import s from './styles.module.scss';
-
-
-const GithubButton = ({ text, className, href, ...rest }) => (
-  <a className={classnames(s.btn, className)} href={href} {...rest}>
-    {text}
-    <CloudinaryImage id="github" filename="github.svg" filters={[]} className={s.github} alt="GitHub" />
-    <CloudinaryImage id="arrow" filename="arrow.svg" filters={[]} className={s.arrow} alt={text} />
-  </a>
-);
-
-const TwitterButton = ({ text, className, href, ...rest }) => (
-    <CloudinaryImage id="twitter" filename="twitter.svg" filters={[]} className={s.twitter_icon} alt="twitter" />
-);
-
 
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
@@ -28,39 +15,39 @@ const DetailsPage = ({ pageContext: { project } }) => {
           <div className={s.content}>
             <h1>{project.name}</h1>
             <h3>{project.headline}</h3>
-            <GithubButton text="View on" href={project.repo} />
+            <ProjectDetailButtonChild text="View on" href={project.repo}/>
           </div>
           <aside className={s.image}>
             {project.image ? <Image filename={project.image} alt={project.name} /> : null}
           </aside>
         </article>
 
-        <article className={classnames(s.overview, s.content_container)}>
+        <article className={classnames(s.overview, s.contentContainer)}>
           <div className={classnames(s.overview_content, s.main)}>
-            <h3 className={s.title_props}>Project Overview</h3>
-            <div className={s.project_description}>{project.description}</div>
+            <h3 className={s.titleProps}>Project Overview</h3>
+            <div className={s.projectDescription}>{project.description}</div>
           </div>
           <div className={classnames(s.data, s.side)}>
             <div className={s.stack}>
-              <h2 className={s.sub_title}>Technology</h2>
+              <h2 className={s.subTitle}>Technology</h2>
               {project.stack.map((stacks, index) => {
-                return <span key={`teck_stacks_${index}`} className={s.technology_content}> {(index ? ', ' : '') + stacks} </span>
+                return <span key={`teck_stacks_${index}`} className={s.technologyContent}> {(index ? ', ' : '') + stacks} </span>
               })
               }
             </div>
-            <div className={s.tags_section}>
-              <h2 className={s.sub_title}>Tags</h2>
+            <div className={s.tagsSection}>
+              <h2 className={s.subTitle}>Tags</h2>
               {project.tags.map((tag, index) => (
-                <div className={s.tags_parent} key={`tag_index${index}`}>
-                  <div className={s.tags_child}>{tag}</div>
+                <div className={s.tagsParent} key={`tag_index${index}`}>
+                  <div className={s.tagsChild}>{tag}</div>
                 </div>
               ))}
             </div>
           </div>
         </article>
 
-        <article className={s.other_content_container}>
-          <h2 className={classnames(s.team_heading)}>{project.title}</h2>
+        <article className={s.otherContentContainer}>
+          <h3 className={classnames(s.titleProps, s.teamHeading)}>{project.title}</h3>
           <div className={classnames(s.screenshotsContainer)}>
             { project.screenshots ? project.screenshots.map((shot) => {
               return <div className={classnames(s.screenshots)}><img src={shot.screen} className={classnames(s.screenshotImage)} alt="MC" /></div> 
@@ -69,18 +56,17 @@ const DetailsPage = ({ pageContext: { project } }) => {
           </div>
         </article>
 
-        <article className={s.other_content_container}>
-          <h2 className={classnames(s.team_heading)}>Team</h2>
+        <article className={s.otherContentContainer}>
+          <h3 className={classnames(s.titleProps, s.teamHeading)}>Team</h3>
           <div className={classnames(s.team)}>
             {project.team.map((t, index) => {
               return (
-                <div className={classnames(s.member)} key={`member_name${index}`}>
-                  <img className={s.team_avatar} src={`https://avatars.io/twitter/` + t.twitter} alt="MC" />
-                  <div className={s.member_details}>
-                    <span className={classnames(s.title_props, s.member_name)}>{t.name}</span>
+                <div className={classnames(s.member)} key={`memberName${index}`}>
+                  <img className={s.teamAvatar} src={`https://avatars.io/twitter/` + t.twitter} alt="MC" />
+                  <div className={s.memberDetails}>
+                    <span className={classnames(s.titleProps, s.memberName)}>{t.name}</span>
                     <br /><a href={`https://twitter.com/` + t.twitter}>
-                      <span className={classnames(s.twitter_button)}>
-                        {/* @{t.twitter} <img src={require('../images/twitter-temp.png')} alt="t" className={s.twitter_icon} /> */}
+                      <span className={classnames(s.twitterButton)}>
                         @{t.twitter}      <TwitterButton text={t.twitter} />
                       </span>
                     </a>

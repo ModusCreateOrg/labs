@@ -64,45 +64,13 @@
   order: 1;
 }
 
-.btn {
-  position: relative;
-  display: inline-flex;
-  border: 1px solid $black;
-  padding: 1rem 2.925rem 1rem 1rem;
-  color: $black;
-  align-self: flex-start;
-  font-size: 24px;
-  margin-top: 20px;
-
-  &:hover,
-  &:visited {
-    color: inherit;
-  } 
-}
-
-.arrow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0.725rem;
-  margin: auto;
-  width: 1.75rem;
-  height: 0.75rem;
-}
-
-.github {
-  width: 2.2rem;
-  height: 2.2rem;
-  margin: -0.3rem 0.6em;
-}
-
 *{
   box-sizing: border-box;
 }
 /**
  * Project details content titles bold/width
  */
-.title_props {
+.titleProps {
   font-weight:$title-weight;
   margin-bottom: 1rem;
 }
@@ -110,7 +78,7 @@
 /**
  * Project details content sub titles font size
  */
-.sub_title{
+.subTitle{
   font-weight:$title-weight;
   margin-bottom: 1rem;
   font-size: 1.4rem;
@@ -119,7 +87,7 @@
 /**
  * Project description content font size and line height
  */
-.project_description{
+.projectDescription{
   line-height: 2.5rem;
   font-size: 1.5em;
 }
@@ -127,7 +95,7 @@
 /**
  * container to contain both sections of project description, project description and tech/tags
  */
-.content_container {
+.contentContainer {
   display: flex;
   flex-wrap: wrap;
   margin: 1.1rem;
@@ -136,7 +104,7 @@
 /**
  * container to contain both sections of project description, project description and tech/tags
  */
- .other_content_container {
+ .otherContentContainer {
   margin: 1.1rem;
 }
 
@@ -171,7 +139,7 @@
   }
 }
 
-.technology_content {
+.technologyContent {
   font-size: 1.6rem;
   color: $red;
   text-transform: capitalize;
@@ -179,16 +147,16 @@
   line-height:2rem;
 }
 
-.tags_section {
+.tagsSection {
   margin-top: 2rem;
 }
 
-.tags_parent {
+.tagsParent {
   display: inline-block;
   margin:.3rem;
 }
 
-.tags_child {
+.tagsChild {
   flex: 0 0 auto;
   height: 2.3em;
   border-radius: 1000px;
@@ -205,7 +173,7 @@
  * team styling
  */
 
- .team_heading {
+ .teamHeading {
    margin-top: 5rem;
    display: block;
  }
@@ -224,21 +192,17 @@
     padding: 1.5rem;
   }
 
-  .member_name {
+  .memberName {
     line-height: 3rem;
   }
 
-  .twitter_button {
+  .twitterButton {
     border: 2px inset $black;
     padding: .4rem;
   }
 
-  .twitter_icon {
-    margin-bottom: -.2rem;
-    width:1rem;
-  }
 
-  .team_avatar{
+  .teamAvatar{
       width: 4rem;
       height: 4rem;
       margin: 1em auto;
@@ -250,7 +214,7 @@
       border-radius: 99rem;
     }  
 
-  .member_details{
+  .memberDetails{
     float: right;
     margin-left: 1rem;
   }
@@ -258,7 +222,7 @@
   .screenshotsContainer{
     display:flex;
     flex-wrap: wrap;
-    max-width:82%;
+    max-width:75%;
   }
 
   .screenshots{
@@ -269,8 +233,8 @@
   }
 
   .screenshotImage{    
-    width: 14rem;
-    height: 30rem;
+    width: 12rem;
+    height: 25rem;
     border:1px solid;
     box-shadow: 5px 10px 8px #888888;
 }
