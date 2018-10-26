@@ -15,7 +15,7 @@ const DetailsPage = ({ pageContext: { project } }) => {
           <div className={s.content}>
             <h1>{project.name}</h1>
             <h3>{project.headline}</h3>
-            <ProjectDetailButtonChild text="View on" href={project.repo}/>
+            <ProjectDetailButtonChild text="View on" href={project.repo} />
           </div>
           <aside className={s.image}>
             {project.image ? <Image filename={project.image} alt={project.name} /> : null}
@@ -48,25 +48,27 @@ const DetailsPage = ({ pageContext: { project } }) => {
 
         <article className={s.otherContentContainer}>
           <h3 className={classnames(s.titleProps, s.teamHeading)}>{project.title}</h3>
-          <div className={classnames(s.screenshotsContainer)}>
-            { project.screenshots ? project.screenshots.map((shot) => {
-              return <div className={classnames(s.screenshots)}><img src={shot.screen} className={classnames(s.screenshotImage)} alt="MC" /></div> 
-            }
-            ): null}
+          <div className={s.screenshotsContainer}>
+            {project.screenshots.map((shot, index) => (
+              <div className={s.screenshots} key={`screen_${index}`}>
+                <img src={shot.screen} className={s.screenshotImage} alt="MC" />
+              </div>
+            )
+            )}
           </div>
         </article>
 
         <article className={s.otherContentContainer}>
           <h3 className={classnames(s.titleProps, s.teamHeading)}>Team</h3>
-          <div className={classnames(s.team)}>
+          <div className={s.team}>
             {project.team.map((t, index) => {
               return (
-                <div className={classnames(s.member)} key={`memberName${index}`}>
-                  <img className={s.teamAvatar} src={`https://avatars.io/twitter/` + t.twitter} alt="MC" />
+                <div className={s.member} key={`memberName${index}`}>
+                  <img className={s.teamAvatar} src={`https://avatars.io/twitter/` + t.twitter} alt={t.name} />
                   <div className={s.memberDetails}>
                     <span className={classnames(s.titleProps, s.memberName)}>{t.name}</span>
                     <br /><a href={`https://twitter.com/` + t.twitter}>
-                      <span className={classnames(s.twitterButton)}>
+                      <span className={s.twitterButton}>
                         @{t.twitter}      <TwitterButton text={t.twitter} />
                       </span>
                     </a>

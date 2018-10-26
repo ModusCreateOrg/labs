@@ -190,6 +190,7 @@
     margin: 3px;
     font-size: 1rem;
     padding: 1.5rem;
+    display:flex;
   }
 
   .memberName {
@@ -209,13 +210,10 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      -webkit-border-radius: 99rem;
-      -moz-border-radius: 99rem;
-      border-radius: 99rem;
+      border-radius: 50%;
     }  
 
   .memberDetails{
-    float: right;
     margin-left: 1rem;
   }
 
@@ -227,7 +225,7 @@
 
   .screenshots{
     flex: 0 0 auto;
-    margin: 3px;
+    margin: .2rem;
     font-size: 1rem;
     padding: 0.5rem;
   }
@@ -235,6 +233,6 @@
   .screenshotImage{    
     width: 12rem;
     height: 25rem;
-    border:1px solid;
-    box-shadow: 5px 10px 8px #888888;
+    border: 1px solid;
+    box-shadow: .3rem .5rem 1rem $grey-shadow;
 }
