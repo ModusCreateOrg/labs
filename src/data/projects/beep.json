@@ -16,11 +16,12 @@
   ],
   "title": "Check if you've been hacked",
   "screenshots": [
-    {"screen": "https://res.cloudinary.com/modus-labs/image/upload/v1538144594/beep/Beep-Screenshot-iPhoneX-01.png"},
-    {"screen": "https://res.cloudinary.com/modus-labs/image/upload/v1538144594/beep/Beep-Screenshot-iPhoneX-02.png"},
-    {"screen": "https://res.cloudinary.com/modus-labs/image/upload/v1538144594/beep/Beep-Screenshot-iPhoneX-03.png"},
-    {"screen": "https://res.cloudinary.com/modus-labs/image/upload/v1538144594/beep/Beep-Screenshot-iPhoneX-04.png"},
-    {"screen": "https://res.cloudinary.com/modus-labs/image/upload/v1538144594/beep/Beep-Screenshot-iPhoneX-05.png"},
-    {"screen": "https://res.cloudinary.com/modus-labs/image/upload/v1538144594/beep/Beep-Screenshot-iPhoneX-06.png"}
+    {"screen": "snapshots/beep01.png"},
+    {"screen": "snapshots/beep02.png"},
+    {"screen": "snapshots/beep03.png"},
+    {"screen": "snapshots/beep04.png"},
+    {"screen": "snapshots/beep05.png"},
+    {"screen": "snapshots/beep06.png"}
+
   ]
 }

@@ -5,12 +5,13 @@ import ProjectOverview from './project-overview';
 import Team from './team';
 import Snapshots from './snapshots';
 import ProjectSummaryInfo from './project-summary-info';
+import LogoBlack from '../components/Logo/logo-black';
 
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
     <Layout>
+      <LogoBlack/>
       <section>
-
         {/* Project Summary Information */}
         <ProjectSummaryInfo project={project} />
 

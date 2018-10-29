@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import classnames from 'classnames';
-import { StaticQuery, graphql } from 'gatsby';
 import OnIdle from '@modus/react-idle';
-
-import Header from '../Header';
 import Footer from '../Footer';
 
 import './normalize.scss';
@@ -38,17 +35,6 @@ export default class Layout extends React.Component {
     const { children } = this.props;
     const { webpSupported } = this.state;
     return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
-            }
-          }
-        `}
-        render={data => (
           <div
             className={classnames({
               webp: webpSupported === true,
@@ -85,7 +71,6 @@ export default class Layout extends React.Component {
 
               <meta name="twitter:site" content="@moduscreate" />
             </Helmet>
-            <Header siteTitle={data.site.siteMetadata.title} />
             <main className={s.main}>
               <div className={s.innerContent}>{children}</div>
             </main>
@@ -93,8 +78,7 @@ export default class Layout extends React.Component {
               <Footer />
             </OnIdle>
           </div>
-        )}
-      />
-    );
+        
+          )
   }
 }

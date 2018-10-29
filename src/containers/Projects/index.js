@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import ProjectFeatured from '../../components/project/Featured';
 import ProjectListing from '../../components/project/Listing';
 import s from './styles.module.scss';
+import Header from '../../components/Header';
 
 const Projects = ({ data }) => (
   <StaticQuery
@@ -33,6 +34,7 @@ const Projects = ({ data }) => (
     `}
     render={data => (
       <>
+      <Header />
         <section className={s.featured}>
           {data.featured.edges.map(({ node }) => (
             <ProjectFeatured key={node.name} project={node} />

@@ -1,6 +1,10 @@
 @import '../../theme/variables.scss';
 
-.logoContainer {
+/*
+ * White Image logo / for dark background
+ */
+
+ .logoContainer {
   text-align: center;
   @media only screen and (min-width: $desktop) {
     text-align: left;
@@ -20,3 +24,30 @@
     margin-bottom: 8rem;
   }
 }
+
+/*
+ * Black Image logo / for light background
+ */
+
+ .logoContainerBlack {
+  text-align: center;
+  padding-top:2rem;
+  @media only screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.logoBlack {
+  width: (250rem/20);
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $tablet) {
+    width: (250rem/18);
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: (250rem/16);
+    margin-bottom: 3rem;
+  }
+}
+

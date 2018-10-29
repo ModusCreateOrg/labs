@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import s from './styles.module.scss';
-
+import Image from '../components/LazyImage';
 
 const Snapshots = (props) => {
 
@@ -11,7 +11,9 @@ const Snapshots = (props) => {
             <div className={s.screenshotsContainer}>
                 {props.project['screenshots'] ? props.project.screenshots.map((shot, index) => (
                     <div className={s.screenshots} key={`screen_${index}`}>
-                        <img src={shot.screen} className={s.screenshotImage} alt="MC" />
+                        
+                        <Image filename={shot.screen} alt={props.project.name} className={s.screenshotImage} />
+                               
                     </div>
                 )
                 ) : null}
