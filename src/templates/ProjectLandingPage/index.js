@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Layout from '../components/layout/ProjectLandingPage';
-import ProjectOverview from '../components/project/Overview';
-import Team from '../components/project/Team';
-import Snapshots from '../components/project/Snapshots';
-import ProjectSummaryInfo from '../components/project/Summary';
+import Layout from '../../components/layout/ProjectLandingPage';
+import ProjectOverview from '../../components/project/Overview';
+import Team from '../../components/project/Team';
+import DescriptionBlocks from '../../components/project/DescriptionBlocks';
+import ProjectSummaryInfo from '../../components/project/Summary';
 
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
@@ -16,7 +16,7 @@ const DetailsPage = ({ pageContext: { project } }) => {
       <ProjectOverview project={project} />
 
       {/* Project screenshots */}
-      <Snapshots project={project} />
+      <DescriptionBlocks project={project} />
 
       {/* Project team */}
       <Team project={project} />

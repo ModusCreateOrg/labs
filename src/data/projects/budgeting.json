@@ -4,9 +4,7 @@
   "weight": 20,
   "repo": "https://github.com/moduscreateorg/budgeting",
   "headline": "Production-ready React reference app",
-  "description":
-    "This enterprise-grade React application is optimized for development and production environments. The Budgeting application showcases architecture for delivering incredibly fast production apps while maintaining a great development experience.",
-  "image": "evade-graphic.png",
+  "description": "This enterprise-grade React application is optimized for development and production environments. The Budgeting application showcases architecture for delivering incredibly fast production apps while maintaining a great development experience.",
   "stack": ["react", "webpack", "react router", "code splitting", "flow"],
   "tags": ["Front end performance"],
   "team": [
@@ -14,5 +12,6 @@
     { "name": "Tim Eagan", "twitter": "TimothyEagan" },
     { "name": "Jason Malfatto", "twitter": "jmalfatto" },
     { "name": "Brice Mason", "twitter": "bricemason" }
-  ]
+  ],
+  "route": "budgeting-react-performance-app"
 }

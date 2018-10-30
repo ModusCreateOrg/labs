@@ -4,10 +4,10 @@
   "weight": 50,
   "repo": "https://github.com/moduscreateorg/ionic-vue",
   "headline": "Ionic bindings for Vue applications",
-  "description":
-    "Use the beautiful Ionic UI library with Vue applications. This adapter bridges Ionic internals to Vue and Vue Router, allowing seamless integration of the two frameworks.",
+  "description": "Use the beautiful Ionic UI library with Vue applications. This adapter bridges Ionic internals to Vue and Vue Router, allowing seamless integration of the two frameworks.",
   "image": "logo-ionic-vue.svg",
   "stack": ["ionic", "vue"],
   "tags": ["Front End", "UI"],
-  "team": [{ "name": "Michael Tintuic", "twitter": "michaeltintiuc" }]
+  "team": [{ "name": "Michael Tintuic", "twitter": "michaeltintiuc" }],
+  "route": "ionic-vue-adapter"
 }

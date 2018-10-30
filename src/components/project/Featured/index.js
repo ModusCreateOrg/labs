@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import slug from 'slug';
 import { Link } from 'gatsby';
 import DetailsBtn from '../DetailButton';
 import Image from '../../LazyImage';
@@ -13,7 +12,7 @@ const ProjectFeatured = ({ project }) => (
     </aside>
     <div className={s.content}>
       <h2>
-        <Link to={`/details/${slug(project.name).toLowerCase()}`}>{project.name}</Link>
+        <Link to={`/${project.route}`}>{project.name}</Link>
       </h2>
       <h3>{project.headline}</h3>
       <p>{project.description}</p>

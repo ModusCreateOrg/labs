@@ -4,13 +4,12 @@
   "weight": 10,
   "repo": "https://github.com/moduscreateorg/lambda-redirector",
   "headline": "Redirect an entire website using AWS Lambda",
-  "description":
-    "Redirect an entire website using AWS Lambda and API Gateway, packaged with CloudFormation and deployed with Serverless Application Model (SAM)",
-  "image": "",
+  "description": "Redirect an entire website using AWS Lambda and API Gateway, packaged with CloudFormation and deployed with Serverless Application Model (SAM)",
   "stack": ["aws"],
   "tags": ["AWS", "Lambda"],
   "team": [
     { "name": "Housni Yakoob", "twitter": "housni" },
     { "name": "Richard Bullington-McGuire", "twitter": "obscurerichard" }
-  ]
+  ],
+  "route": "lambda-redirector"
 }

@@ -1,11 +1,4 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
 const path = require('path');
-const slug = require('slug');
 const slash = require('slash');
 
 exports.createPages = ({ graphql, actions }) => {
@@ -26,13 +19,16 @@ exports.createPages = ({ graphql, actions }) => {
                 image
                 featured
                 weight
+                route
                 team {
                   name
                   twitter
                 }
-                title
-                screenshots {
-                  screen
+                content {
+                  title
+                  screenshots {
+                    screen
+                  }
                 }
               }
             }
@@ -44,10 +40,10 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create pages for each project detail
-        const projectDetailsTemplate = path.resolve(`src/templates/ProjectDetails.js`);
+        const projectDetailsTemplate = path.resolve(`src/templates/ProjectLandingPage/index.js`);
         result.data.allProjectsJson.edges.forEach(({ node }) => {
           createPage({
-            path: `/details/${slug(node.name).toLowerCase()}`,
+            path: `/${node.route.toLowerCase()}`,
             component: slash(projectDetailsTemplate),
             context: {
               project: { ...node },

@@ -4,8 +4,7 @@
   "weight": 10,
   "repo": "https://github.com/moduscreateorg/capsule",
   "headline": "Automated CLI for Static web application hosting on AWS",
-  "description":
-    "This automated script simplifies setting up an AWS site. Add S3 buckets, register DNS, and create an SSL certificate in minutes with no DevOps knowledge.",
+  "description": "This automated script simplifies setting up an AWS site. Add S3 buckets, register DNS, and create an SSL certificate in minutes with no DevOps knowledge.",
   "image": "logo-capsule.svg",
   "stack": ["aws", "s3", "cloudfront", "cloudformation", "route 53", "cloudwatch", "cloudbuild"],
   "tags": ["Devops", "AWS", "CLI", "CDN"],
@@ -18,5 +17,6 @@
     { "name": "Drew Falkman", "twitter": "falkonprods" },
     { "name": "Mike LaFortune", "twitter": "" },
     { "name": "Grgur Grisogono", "twitter": "ggrgur" }
-  ]
+  ],
+  "route": "capsule-aws-static-web-app-service"
 }

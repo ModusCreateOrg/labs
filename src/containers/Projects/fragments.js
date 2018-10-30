@@ -11,6 +11,7 @@ export const projectFieldsFragment = graphql`
     image
     featured
     weight
+    route
     team {
       name
       twitter
