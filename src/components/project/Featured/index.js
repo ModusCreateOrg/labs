@@ -8,7 +8,11 @@ import s from './styles.module.scss';
 const ProjectFeatured = ({ project }) => (
   <article className={s.project}>
     <aside className={s.image}>
-      {project.image ? <Image filename={project.image} alt={project.name} /> : null}
+      {project.image ? (
+        <Link to={`/${project.route}`}>
+          <Image filename={project.image} alt={project.name} />
+        </Link>
+      ) : null}
     </aside>
     <div className={s.content}>
       <h2>
