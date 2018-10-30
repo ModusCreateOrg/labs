@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../components/LazyImage'
-import ProjectDetailButtonChild from '../components/project/DetailButtonChild';
+import ProjectDetailButtonChild from '../components/project/DetailButton/DetailButtonChild';
 import s from './styles.module.scss';
 
 const ProjectSummaryInfo = (props) => {

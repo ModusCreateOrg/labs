@@ -19,8 +19,4 @@ ProjectDetailButton.propTypes = {
   className: PropTypes.string,
 };
 
-ProjectDetailButton.defaultProps = {
-  className: undefined,
-};
-
 export default ProjectDetailButton;

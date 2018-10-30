@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
-import ProjectOverview from './project-overview';
-import Team from './team';
-import Snapshots from './snapshots';
-import ProjectSummaryInfo from './project-summary-info';
-import LogoBlack from '../components/Logo/logo-black';
+import ProjectOverview from './ProjectOverview';
+import Team from './Team';
+import Snapshots from './Snapshots';
+import ProjectSummaryInfo from './ProjectSummaryInfo';
+import LogoBlack from '../components/Logo/LogoBlack';
 
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
