@@ -15,11 +15,11 @@ const Team = (props) => {
                         <img className={s.teamAvatar} src={`https://avatars.io/twitter/` + teamMember.twitter} alt={teamMember.name} />
                         <div className={s.memberDetails}>
                             <span className={classnames(s.titleProps, s.memberName)}>{teamMember.name}</span>
-                            <br /><a href={`https://twitter.com/` + teamMember.twitter}>
+                            <br />{ teamMember.twitter ? (<a href={`https://twitter.com/` + teamMember.twitter}>
                                 <span className={s.twitterButton}>
                                     @{teamMember.twitter} <TwitterButton text={teamMember.twitter} />
                                 </span>
-                            </a>
+                            </a>) : <span>{props.project.name}</span>}
                         </div>
                     </div>
                 )
