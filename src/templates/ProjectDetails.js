@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout/ProjectLandingPage';
-import ProjectOverview from './ProjectOverview';
+import ProjectOverview from '../components/project/Overview';
 import Team from './Team';
 import Snapshots from './Snapshots';
-import ProjectSummaryInfo from './ProjectSummaryInfo';
+import ProjectSummaryInfo from '../components/project/Summary';
 
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
