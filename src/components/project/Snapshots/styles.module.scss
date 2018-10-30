@@ -1,0 +1,37 @@
+@import '../../../theme/variables.scss';
+
+/**
+ * container to contain both sections of project description, project description and tech/tags
+ */
+.otherContentContainer {
+  margin: 1.1rem;
+}
+
+/**
+ * Project details content titles bold/width
+ */
+.title {
+  font-weight: $title-weight;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.screenshotsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.screenshots {
+  flex: 0 0 auto;
+  margin: 0.2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.screenshotImage {
+  width: 27rem;
+  height: 27rem;
+  margin-left: -5rem;
+  margin-right: -9rem;
+}

@@ -1,0 +1,53 @@
+@import '../../../theme/variables.scss';
+
+/**
+ * container to contain both sections of project description, project description and tech/tags
+ */
+.otherContentContainer {
+  margin: 1.1rem;
+}
+
+.title {
+  margin-top: 5rem;
+  display: block;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 60%;
+  max-width: 75%;
+}
+.member {
+  flex: 0 0 auto;
+  min-width: 13rem;
+  margin: 3px;
+  font-size: 1rem;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.memberName {
+  line-height: 3rem;
+  font-weight: $title-weight;
+  margin-bottom: 1rem;
+}
+
+.twitterButton {
+  border: 2px inset $black;
+  padding: 0.4rem;
+}
+
+.teamAvatar {
+  width: 4rem;
+  height: 4rem;
+  margin: 1em auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.memberDetails {
+  margin-left: 1rem;
+}
