@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Modus Create Labs',
+    title: 'Modus Labs by Modus Create',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-no-sourcemaps',
+    // 'gatsby-plugin-no-sourcemaps',
     'gatsby-transformer-json',
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',

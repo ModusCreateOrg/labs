@@ -34,7 +34,6 @@ const Projects = ({ data }) => (
     `}
     render={data => (
       <>
-      <Header />
         <section className={s.featured}>
           {data.featured.edges.map(({ node }) => (
             <ProjectFeatured key={node.name} project={node} />

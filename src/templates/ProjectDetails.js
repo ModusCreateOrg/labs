@@ -1,30 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Layout from '../components/Layout';
+import Layout from '../components/layout/ProjectLandingPage';
 import ProjectOverview from './ProjectOverview';
 import Team from './Team';
 import Snapshots from './Snapshots';
 import ProjectSummaryInfo from './ProjectSummaryInfo';
-import LogoBlack from '../components/Logo/LogoBlack';
 
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
     <Layout>
-      <LogoBlack/>
-      <section>
-        {/* Project Summary Information */}
-        <ProjectSummaryInfo project={project} />
+      {/* Project Summary Information */}
+      <ProjectSummaryInfo project={project} />
 
-        {/* Project overview, tags and technology */}
-        <ProjectOverview project={project} />
+      {/* Project overview, tags and technology */}
+      <ProjectOverview project={project} />
 
-        {/* Project screenshots */}
-        <Snapshots project={project} />
+      {/* Project screenshots */}
+      <Snapshots project={project} />
 
-        {/* Project team */}
-        <Team project={project} />
-
-      </section>
+      {/* Project team */}
+      <Team project={project} />
     </Layout>
   );
 };

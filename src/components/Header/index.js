@@ -16,7 +16,7 @@ const WORDS = [
   'Integration',
 ];
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className={s.hero}>
     <div className={s.innerContainer}>
       <Logo />
