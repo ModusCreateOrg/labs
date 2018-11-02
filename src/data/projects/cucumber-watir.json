@@ -12,5 +12,6 @@
     { "name": "Bharath Khambadkone", "twitter": "bkhambadkone" },
     { "name": "Mallory Mooney", "twitter": "" },
     { "name": "Richard Bullington-McGuire", "twitter": "obscurerichard" }
-  ]
+  ],
+  "route": "cucumber-watir-automation-framework"
 }

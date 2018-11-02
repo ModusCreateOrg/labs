@@ -27,12 +27,12 @@ export const CloudinaryImage = ({
   vector,
   ...rest
 }) => (
-  <img
-    src={`${getSrc(filename, filters, path)}`}
-    srcSet={isSvg(filename) || vector ? '' : getSrcSet(filename, filters, path)}
-    alt="Modus Labs"
-    {...rest}
-  />
-);
+    <img
+      src={`${getSrc(filename, filters, path)}`}
+      srcSet={isSvg(filename) || vector ? '' : getSrcSet(filename, filters, path)}
+      alt="Modus Labs"
+      {...rest}
+    />
+  );
 
 export default CloudinaryImage;

@@ -1,0 +1,19 @@
+@import '../../../theme/globals.scss';
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.innerContent {
+  max-width: 90rem;
+  margin-bottom: 3rem;
+  width: 100%;
+
+  @media only screen and (min-width: $max-body-width) {
+    width: $max-body-width;
+  }
+}

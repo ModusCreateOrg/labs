@@ -1,6 +1,9 @@
 @import '../../../theme/variables.scss';
 
-.btn {
+/*
+ * Project Detail (github) button for home screen (big size)
+ */
+ .btn {
   position: relative;
   display: inline-flex;
   border: 1px solid $black;
@@ -29,3 +32,40 @@
   height: 1.25rem;
   margin: 0 0.6em;
 }
+
+/*
+ * Project Detail (github) button for internal screens (small in size)
+ */
+
+.btnChild {
+    position: relative;
+    display: inline-flex;
+    border: 1px solid $black;
+    padding: 1rem 2.925rem 1rem 1rem;
+    color: $black;
+    align-self: flex-start;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+  
+    &:hover,
+    &:visited {
+      color: inherit;
+    } 
+  }
+  
+  .arrowChild {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.725rem;
+    margin: auto;
+    width: 1.75rem;
+    height: 0.75rem;
+  }
+  
+  .githubChild {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: -0.3rem 0.6em;
+  }
+  

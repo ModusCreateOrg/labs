@@ -1,0 +1,59 @@
+@import '../../../theme/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0 1rem 5rem 1rem;
+  border-bottom: 2px $sectionSeparatorColor solid;
+  min-height: 25rem;
+  @media only screen and (min-width: $largeTablet) {
+    margin: 5rem 1rem;
+    flex-direction: row;
+  }
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    transition: width 0.3s ease-out;
+    width: 80vw;
+  }
+
+  @media only screen and (min-width: $largeTablet) {
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 30rem;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    img {
+      width: 16rem;
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-width: $smallDesktop) {
+    width: 30rem;
+    height: auto;
+    margin-right: 4rem;
+    margin-bottom: 0;
+
+    img {
+      width: 20rem;
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 16rem;
+  }
+}

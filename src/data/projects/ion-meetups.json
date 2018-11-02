@@ -6,7 +6,6 @@
   "headline": "How To Upgrade an Ionic 3 Application to Ionic 4",
   "description":
     "Upgrading from Ionic Framework 3 to 4? This step-by-step tutorial has all the tools for updating your hybrid mobile app.",
-  "image": "evade-graphic.png",
   "stack": ["ionic"],
   "tags": ["Ionic 3", "Ionic 4"],
   "team": [
@@ -15,5 +14,6 @@
     { "name": "Drew Griffith", "twitter": "drewmodus" },
     { "name": "Kunal Eapen", "twitter": "keapthepen" },
     { "name": "JD Jones", "twitter": "jaymes_jones" }
-  ]
+  ],
+  "route": "ion-meetups-upgrade-ionic-4"
 }

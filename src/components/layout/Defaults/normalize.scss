@@ -11,6 +11,11 @@
 html {
   line-height: 1.25; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
 }
 
 /* Sections

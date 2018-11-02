@@ -8,9 +8,14 @@ $fontAlt: Khula, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
 $black: #1b1b1b;
 $white: #ffffff;
 $red: #ff5c5d;
+$grey-shadow: #888888;
+$sectionSeparatorColor: #dadada;
+$title-weight: 600;
 
 // breakpoints
 $tablet: 30rem;
+$largeTablet: 36rem;
+$smallDesktop: 48rem;
 $desktop: 64rem;
 $wide: 86rem;
 $ultrawide: 120rem;

@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Modus Create Labs',
+    title: 'Modus Labs by Modus Create',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-no-sourcemaps',
+    // 'gatsby-plugin-no-sourcemaps',
     'gatsby-transformer-json',
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
@@ -41,7 +41,7 @@ module.exports = {
               `default-src 'self';`,
               `script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com www.googletagmanager.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com;`,
               `style-src 'self' 'unsafe-inline' fonts.googleapis.com;`,
-              `img-src 'self' data: res.cloudinary.com www.google-analytics.com;`,
+              `img-src 'self' data: res.cloudinary.com www.google-analytics.com avatars.io;`,
               `font-src fonts.gstatic.com;`,
               `connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com www.googletagmanager.com;`,
               `upgrade-insecure-requests`,

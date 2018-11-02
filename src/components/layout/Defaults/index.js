@@ -3,13 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import classnames from 'classnames';
 import { StaticQuery, graphql } from 'gatsby';
-import OnIdle from '@modus/react-idle';
-
-import Header from '../Header';
-import Footer from '../Footer';
 
 import './normalize.scss';
-import s from './styles.module.scss';
 
 function canUseWebP() {
   const elem = document.createElement('canvas');
@@ -21,7 +16,7 @@ function canUseWebP() {
   }
 }
 
-export default class Layout extends React.Component {
+export default class HomeLayout extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
   };
@@ -56,7 +51,7 @@ export default class Layout extends React.Component {
             })}
           >
             <Helmet>
-              <title>Modus Labs by Modus Create</title>
+              <title>{data.site.siteMetadata.title}</title>
               <meta
                 property="description"
                 content="Modus Create Labs. Code examples that make world's most exciting applications. Developed by Modus Create's certified industry experts."
@@ -65,7 +60,7 @@ export default class Layout extends React.Component {
                 property="keywords"
                 content="React, Vue, Ionic, Angular, NodeJS, Amazon Web Services, AWS, Cloudformation, Terraform, Serverless, Lambda, Mobile native, iOS, Android"
               />
-              <meta property="og:title" content="Modus Labs by Modus Create" />
+              <meta property="og:title" content={data.site.siteMetadata.title} />
               <meta
                 property="og:description"
                 content="Libraries, reference apps, and learning materials that showcase how world's most exciting, mission-critical web projects are made."
@@ -85,13 +80,7 @@ export default class Layout extends React.Component {
 
               <meta name="twitter:site" content="@moduscreate" />
             </Helmet>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <main className={s.main}>
-              <div className={s.innerContent}>{children}</div>
-            </main>
-            <OnIdle syncUpdate>
-              <Footer />
-            </OnIdle>
+            {children}
           </div>
         )}
       />

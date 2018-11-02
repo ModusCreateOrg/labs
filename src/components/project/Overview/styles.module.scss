@@ -1,0 +1,88 @@
+@import '../../../theme/variables.scss';
+
+/**
+ * container to contain both sections of project description, project description and tech/tags
+ */
+.contentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.1rem;
+}
+
+/* Main column */
+.main {
+  flex: 55%;
+  padding: 5px;
+  margin-right: 15%;
+}
+
+/**
+ * Project details content titles bold/width
+ */
+.titleProps {
+  font-weight: $title-weight;
+  margin-bottom: 1rem;
+}
+
+/**
+ * Project description content font size and line height
+ */
+.projectDescription {
+  line-height: 2.5rem;
+  font-size: 1.5em;
+}
+
+/* Side column */
+.side {
+  flex: 30%;
+  padding: 5px;
+}
+
+/**
+ * Project details content sub titles font size
+ */
+.subTitle {
+  font-weight: $title-weight;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.technologyContent {
+  font-size: 1.6rem;
+  color: $red;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 2rem;
+
+  &:after {
+    content: ', ';
+  }
+
+  &:last-child{
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.tagsSection {
+  margin-top: 2rem;
+}
+
+.tagsParent {
+  display: inline-block;
+  margin: 0.3rem;
+}
+
+.tagsChild {
+  flex: 0 0 auto;
+  height: 2.3em;
+  border-radius: 1000px;
+  background-color: $red;
+  min-width: 5rem;
+  padding: 0.7rem;
+  color: $white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
