@@ -1,13 +1,6 @@
 @import '../../../theme/variables.scss';
 
 /**
- * container to contain both sections of project description, project description and tech/tags
- */
-.otherContentContainer {
-  margin: 1.1rem;
-}
-
-/**
  * Project details content titles bold/width
  */
 .title {
@@ -34,4 +27,13 @@
   height: 27rem;
   margin-left: -5rem;
   margin-right: -9rem;
+}
+
+.description {
+  line-height: 2.5rem;
+  font-size: 1.5em;
+
+  a {
+    text-decoration: underline;
+  }
 }

@@ -6,9 +6,11 @@ const DescriptionBlocks = ({ project }) =>
   project.content ? (
     <>
       {Array.from(project.content).map((block, idx) => (
-        <article className={s.otherContentContainer}>
+        <article key={idx}>
           <h3 className={s.title}>{block.title}</h3>
-          {block.description ? <p>{block.description}</p> : null}
+          {block.description ? (
+            <p className={s.description} dangerouslySetInnerHTML={{ __html: block.description }} />
+          ) : null}
           <div className={s.screenshotsContainer}>
             {block.screenshots
               ? block.screenshots.map((shot, index) => (

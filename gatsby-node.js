@@ -26,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
                 }
                 content {
                   title
+                  description
                   screenshots {
                     screen
                   }

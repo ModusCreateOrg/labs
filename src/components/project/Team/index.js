@@ -3,7 +3,7 @@ import TwitterButton from '../TwitterButton';
 import s from './styles.module.scss';
 
 const Team = ({ project }) => (
-  <article className={s.otherContentContainer}>
+  <article>
     <h3 className={s.title}>Team</h3>
     <div className={s.team}>
       {project.team.map((teamMember, index) => (
