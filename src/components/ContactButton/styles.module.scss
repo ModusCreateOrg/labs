@@ -8,6 +8,14 @@
   padding: 1.5rem 2rem;
   text-align: center;
 
+  &:hover {
+    background-color: $redHover;
+  }
+
+  &:active {
+    background-color: $redActive;
+  }
+
   @media only screen and (min-width: $desktop) {
     padding: 1rem 2rem;
     text-align: left;
