@@ -11,7 +11,8 @@
   "team": [
     { "name": "Michael Tintuic", "twitter": "michaeltintiuc" },
     { "name": "Dmytro Kovalenko", "twitter": "tasteofdalife" },
-    { "name": "Drew Griffith", "twitter": "drewmodus" }
+    { "name": "Drew Griffith", "twitter": "drewmodus" },
+    { "name": "Yanko Belov", "twitter": "yankobelov" }
   ],
   "route": "beep-vue-ionic-hybrid-mobile-app",
   "content": [
