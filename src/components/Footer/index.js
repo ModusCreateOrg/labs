@@ -16,7 +16,7 @@ const Footer = () => (
         </Link>
         <div className={s.col}>
           &copy;{` ${YEAR} `}
-          <a className={s.link} href="https://moduscreate.com">
+          <a className={s.link} href="https://moduscreate.com/?utm_source=labs">
             Modus Create
           </a>. All rights reserved.
         </div>
