@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import ContactHero from '../ContactHero';
 import Logo from '../Logo';
 import s from './styles.module.scss';
@@ -10,9 +11,9 @@ const Footer = () => (
     <div className={s.innerContainer}>
       <ContactHero />
       <section className={s.footer}>
-        <div className={s.col}>
+        <Link className={s.col} to="/">
           <Logo className={s.logo} />
-        </div>
+        </Link>
         <div className={s.col}>
           &copy;{` ${YEAR} `}
           <a className={s.link} href="https://moduscreate.com">
