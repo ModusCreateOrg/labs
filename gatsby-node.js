@@ -31,6 +31,16 @@ exports.createPages = ({ graphql, actions }) => {
                     screen
                   }
                 }
+                pageTitle
+                meta {
+                  name
+                  content
+                }
+                structuredData {
+                  name
+                  operatingSystem
+                  applicationCategory
+                }
               }
             }
           }

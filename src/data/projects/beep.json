@@ -1,5 +1,5 @@
 {
-  "name": "Beep",
+  "name": "BEEP",
   "featured": true,
   "weight": 20,
   "repo": "https://github.com/moduscreateorg/beep",
@@ -27,5 +27,21 @@
         { "screen": "snapshots/beep06.png" }
       ]
     }
-  ]
+  ],
+  "pageTitle": "BEEP: Ionic + Vue app",
+  "meta": [
+    {
+      "name": "apple-itunes-app",
+      "content": "app-id=id1434675665"
+    },
+    {
+      "name": "keywords",
+      "content": "ionic vue js, ionic framework, what is ionic framework, ionic creator, ionic 4, open source software, pwa, ionic pwa, vuejs pwa, new open source projects"
+    }
+  ],
+  "structuredData": {
+    "name": "BEEP",
+    "operatingSystem": "Windows 7, OSX 10.6, Android 1.6, iOS 9",
+    "applicationCategory": "http://schema.org/MobileApplication"
+  }
 }

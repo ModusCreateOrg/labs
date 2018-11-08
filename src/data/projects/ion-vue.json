@@ -15,5 +15,17 @@
       "title": "Ionic-Vue is now part of Ionic.",
       "description": "Modus Create <a href=\"https://github.com/ionic-team/ionic/pull/15801\">contributed the Ionic Vue adapter library to the Ionic core</a>. Ionic-Vue has become <b>@ionic/vue</b>."
     }
-  ]
+  ],
+  "pageTitle": "Ionic Vue - Ionic 4 components in VueJS apps",
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "ionic vue js, ionic framework, vuejs, ionic in vue, ionic with vuejs"
+    }
+  ],
+  "structuredData": {
+    "name": "Ionic-Vue",
+    "operatingSystem": "Windows 7, OSX 10.6, Android 1.6, iOS 9",
+    "applicationCategory": "http://schema.org/WebApplication"
+  }
 }

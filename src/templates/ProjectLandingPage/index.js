@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import get from 'lodash.get';
 import Layout from '../../components/layout/ProjectLandingPage';
 import ProjectOverview from '../../components/project/Overview';
 import Team from '../../components/project/Team';
@@ -9,6 +11,25 @@ import ProjectSummaryInfo from '../../components/project/Summary';
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>{`${project.pageTitle || project.name} - Modus Labs`}</title>
+        {Array.isArray(project.meta) &&
+          project.meta.map((attrs, idx) => <meta key={idx} {...attrs} />)}
+        <script type="application/ld+json">{`
+          {
+            "@context": "http://schema.org"
+            "@type": "${get(project, 'structuredData.type', 'SoftwareApplication')}",
+            "name": "${get(project, 'structuredData.name', project.name)}",
+            "operatingSystem": "${get(project, 'structuredData.os', "Windows, Mac OS, Android, iOS")}",
+            "applicationCategory": "${get(project, 'structuredData.applicationCategory', "http://schema.org/WebApplication")}",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "USD"
+            }
+          }
+      `}</script>
+      </Helmet>
       {/* Project Summary Information */}
       <ProjectSummaryInfo project={project} />
 
