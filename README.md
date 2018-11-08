@@ -100,16 +100,16 @@ Take a look at current [Modus Labs projects](https://github.com/ModusCreateOrg/l
 
 # Deployment pipeline
 
-[![Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)](https://netlify.com)
+[![Capsule](https://res.cloudinary.com/modus-labs/image/upload/w_240,e_trim/v1535019553/labs/logo-ionic-vue.png)](https://labs.moduscreate.com/capsule-aws-static-web-app-service)
 
-The [Modus Labs](https://labs.moduscreate.com) web site is deployed on Netlify.
+The [Modus Labs](https://labs.moduscreate.com) web site is [deployed on AWS, powered by Capsule](https://labs.moduscreate.com/capsule-aws-static-web-app-service).
 
 Here's how it works:
 
 1.  Create a Pull Request using [GitHub Flow](https://guides.github.com/introduction/flow/)
-2.  Netlify will try to build a deploy preview from the PR branch
-3.  If build is successful, the pull request checks section will go green. You can access the generated Deploy Preview build by clicking on **Details** next to _deploy/netlify — Deploy preview ready!_. Deploy preview build are not crawlable by robots, but are open to anyone with the link.
-4.  Once the Pull Request is merged, Netlify will rebuild the `master` branch and deploy a new version of the web site
+2.  Capsule will use AWS CodeBuild service to build the site from your branch
+3.  If build is successful, the Pull Request checks section will go green.
+4.  Once the Pull Request is merged, Capsule will rebuild the `master` branch and deploy a new version of the web site to AWS CloudFront
 
 # Modus Create
 
