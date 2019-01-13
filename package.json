@@ -21,7 +21,7 @@
   "dependencies": {
     "@modus/react-idle": "1.0.1",
     "classnames": "2.2.6",
-    "gatsby": "2.0.34",
+    "gatsby": "^2.0.91",
     "lazysizes": "4.1.4",
     "lodash.get": "4.4.2",
     "react": "16.6.0",
