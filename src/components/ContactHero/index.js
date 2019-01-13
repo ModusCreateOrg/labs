@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactButton from '../ContactButton';
+import PrimaryButton from '../PrimaryButton';
 
 import s from './styles.module.scss';
 
@@ -15,8 +15,8 @@ const ContactHero = () => (
         project type. Just hit us up!
       </h3>
       <div className={s.ctaContainer}>
-        <ContactButton className={s.cta} href="mailto:info@moduscreate.com" text="Email us" />
-        <ContactButton className={s.cta} href="tel:1-855-663-8727" text="Call us now" />
+        <PrimaryButton className={s.cta} href="mailto:info@moduscreate.com" text="Email us" />
+        <PrimaryButton className={s.cta} href="tel:1-855-663-8727" text="Call us now" />
       </div>
     </article>
   </section>

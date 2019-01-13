@@ -4,20 +4,20 @@ import classnames from 'classnames';
 
 import s from './styles.module.scss';
 
-const ContactButton = ({ text, className, href, ...rest }) => (
+const PrimaryButton = ({ text, className, href, ...rest }) => (
   <a className={classnames(s.cta, className)} href={href} {...rest}>
     {text}
   </a>
 );
 
-ContactButton.propTypes = {
+PrimaryButton.propTypes = {
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 
-ContactButton.defaultProps = {
+PrimaryButton.defaultProps = {
   className: undefined,
 };
 
-export default ContactButton;
+export default PrimaryButton;
