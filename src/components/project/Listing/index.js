@@ -8,7 +8,7 @@ import s from './styles.module.scss';
 const ProjectListing = ({ project, className }) => (
   <article className={classnames(s.project, className)}>
     <h2>
-      <Link to={`/${project.route}`}>{project.name}</Link>
+      <Link className={s.projectTitle} to={`/${project.route}`}>{project.name}</Link>
     </h2>
     <h3>{project.headline}</h3>
     <p>{project.description}</p>
