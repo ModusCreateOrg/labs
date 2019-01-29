@@ -1,3 +1,5 @@
+@import '../../theme/variables.scss';
+
 .img {
   display: block;
 
@@ -8,5 +10,9 @@
 
   &:global(.lazyloaded) {
     filter: blur(0);
+  }
+
+  @media only screen and (max-width: $largeTablet) {
+    margin-top: 2rem;
   }
 }
