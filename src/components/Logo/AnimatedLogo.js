@@ -1,7 +1,8 @@
 import React from 'react';
+import s from './styles.module.scss';
 
 export const AnimatedLogo = props => {
-  const { s, classnames } = props;
+  const { classnames } = props;
   return (
     <div className={classnames(s.modusLogoSpin, s.logoSpin, s.logoBlack)}>
       <svg
