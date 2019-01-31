@@ -4,7 +4,66 @@
  * White Image logo / for dark background
  */
 
- .logoContainer {
+.modus-logo-spin {
+  display: inline-block;
+}
+
+.modus-logo-spin:not(:hover) .leftfill.path_bottom,
+.modus-logo-spin:not(:hover) .leftfill.path_top,
+.modus-logo-spin:not(:hover) .rightfill.path_bottom,
+.modus-logo-spin:not(:hover) .rightfill.path_top,
+.modus-logo-spin:not(:hover) .topfill.path_bottom,
+.modus-logo-spin:not(:hover) .topfill.path_top {
+  fill: black;
+  transition-duration: 1s;
+}
+
+.modus-logo-spin:hover .rightfill {
+  animation: rightSpin 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1;
+}
+
+.modus-logo-spin:hover .leftfill {
+  animation: leftSpin 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1 reverse;
+}
+
+.modus-logo-spin:hover .topfill {
+  animation: topSpin 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1 reverse;
+}
+
+@keyframes rightSpin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 50% 75%;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: 50% 75%;
+  }
+}
+
+@keyframes leftSpin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 0% 75%;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: 0% 75%;
+  }
+}
+
+@keyframes topSpin {
+  from {
+    transform: rotate(-360deg);
+    transform-origin: 25% 25%;
+  }
+  to {
+    transform: rotate(0deg);
+    transform-origin: 25% 25%;
+  }
+}
+
+.logoContainer {
   text-align: center;
   @media only screen and (min-width: $desktop) {
     text-align: left;
@@ -29,9 +88,10 @@
  * Black Image logo / for light background
  */
 
- .logoContainerBlack {
+.logoContainerBlack {
+  display: inline-block;
   text-align: center;
-  padding-top:2rem;
+  padding-top: 2rem;
   @media only screen and (min-width: $desktop) {
     text-align: left;
   }
@@ -40,6 +100,7 @@
 .logoBlack {
   width: (250rem/20);
   margin-bottom: 2rem;
+  display: flex;
 
   @media only screen and (max-width: $tablet) {
     width: (250rem/18);
