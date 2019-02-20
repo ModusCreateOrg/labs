@@ -19,9 +19,9 @@
     "url": "https://github.com/moduscreateorg/labs"
   },
   "dependencies": {
-    "@modus/react-idle": "1.0.1",
+    "@modus/react-idle": "^1.1.0",
     "classnames": "2.2.6",
-    "gatsby": "2.0.91",
+    "gatsby": "^2.1.10",
     "lazysizes": "4.1.4",
     "lodash.get": "4.4.2",
     "react": "16.6.0",
@@ -30,6 +30,7 @@
     "slash": "2.0.0"
   },
   "devDependencies": {
+    "babel-plugin-htm": "^2.0.0",
     "gatsby-plugin-google-analytics": "2.0.7",
     "gatsby-plugin-google-tagmanager": "2.0.6",
     "gatsby-plugin-manifest": "2.0.7",
