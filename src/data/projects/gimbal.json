@@ -1,0 +1,23 @@
+{
+  "name": "Gimbal",
+  "featured": false,
+  "weight": 20,
+  "repo": "https://github.com/moduscreateorg/gimbal",
+  "headline": "Web Application Performance Auditing",
+  "description": "Auditing web application performance in a simple and automated way. Gimbal can be used in your CLI or a CI system and comment results on a GitHub pull request.",
+  "stack": ["node", "ci", "typescript", "react"],
+  "tags": ["performance", "devops", "ci"],
+  "team": [
+    { "name": "Mitchell Simoens", "twitter": "likelymitch" },
+    { "name": "Seth Lemmons", "twitter": "LemmonsGrab" },
+    { "name": "Matthew Kelch" }
+  ],
+  "route": "gimbal-web-performance",
+  "pageTitle": "Gimbal: Web Performance Auditing",
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "open source software, new open source projects, pwa, performance, seo, ci"
+    }
+  ]
+}
