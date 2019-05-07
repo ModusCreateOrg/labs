@@ -10,7 +10,8 @@
   "team": [
     { "name": "Mitchell Simoens", "twitter": "likelymitch" },
     { "name": "Seth Lemmons", "twitter": "LemmonsGrab" },
-    { "name": "Matthew Kelch", "twitter": "kelchm" }
+    { "name": "Matthew Kelch", "twitter": "kelchm" },
+    { "name": "Muhammad Ahsan Ayaz", "twitter": "ahsan_ayz" }
   ],
   "route": "gimbal-web-performance-audit-budgeting",
   "pageTitle": "Gimbal: Web Performance Auditing",
