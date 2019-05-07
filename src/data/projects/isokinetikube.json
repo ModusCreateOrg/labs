@@ -1,0 +1,23 @@
+{
+  "name": "Isokinetikube",
+  "featured": true,
+  "weight": 21,
+  "repo": "https://github.com/moduscreateorg/isokinetikube",
+  "headline":
+    "A CI automation framework for Amazon EKS.",
+  "description":
+    "An Amazon AWS EKS framework to automate continuous integration for scalable containerized applications.",
+  "stack": ["AWS", "EKS", "Kubernetes", "Jenkins", "Docker"],
+  "tags": ["embedded"],
+  "team": [
+    {
+      "name": "Richard Bullington-McGuire ",
+      "twitter": "obscurerichard"
+    },
+    {
+      "name": "Donald R Anderson",
+      "twitter": "dranderson"
+    }
+  ],
+  "route": "isokinetikube"
+}
