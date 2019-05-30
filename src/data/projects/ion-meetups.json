@@ -3,9 +3,9 @@
   "featured": false,
   "weight": 10,
   "repo": "https://github.com/moduscreateorg/ion-meetups",
-  "headline": "How To Upgrade an Ionic 3 Application to Ionic 4",
+  "headline": "Let us show you how to upgrade your Ionic 3 app version 4",
   "description":
-    "Upgrading from Ionic Framework 3 to 4? This step-by-step tutorial has all the tools for updating your hybrid mobile app.",
+    "This step-by-step tutorial has all the steps and tools to guide you through upgrading your Ionic 3 hybrid mobile app to Ionic 4.",
   "stack": ["ionic"],
   "tags": ["Ionic 3", "Ionic 4"],
   "team": [
