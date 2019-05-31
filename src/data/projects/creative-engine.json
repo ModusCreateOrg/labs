@@ -6,7 +6,7 @@
   "headline":
     "Our retro-style cross platform game engine.",
   "description":
-    "We produced a game engine that is capable of running the ODROID GO (a portable game platform), desktop Linux and macOS for our 2018 Holiday game, Genus.  To provide the best audio experience, Creative Engine implements a custom music and effects engine that is based off of LibXMP. We furthered the boundaries this library's capabilities by adding an exprimental network-based RGB LED Matrix display driver, giving us the ability to create a custom game play experience",
+    "Creative Engine (CE) was born from the development of our 2018 holiday game, Genus. CE is a game engine that is programmed primarily in C++ and is capable of running the ODROID GO (a portable game platform based on the ESP-32 SOC), desktop Linux and macOS. To provide the best audio experience, CE implements a custom music and effects engine that is based off of a popular chip tunes music library called LibXMP. We furthered the boundaries this CE's capabilities by adding an exprimental network-based RGB LED Matrix display driver, giving us the ability to create a completely custom game play experience.",
   "stack": ["ESP32", "ESP-IDF", "SDL2", "CMake", "C++", "LibXMP"],
   "tags": ["embedded", "Linux", "ODROID GO", "macOS"],
   "team": [
