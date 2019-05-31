@@ -1,7 +1,7 @@
 {
   "name": "Budgeting",
   "featured": false,
-  "weight": 20,
+  "weight": 8,
   "repo": "https://github.com/moduscreateorg/budgeting",
   "headline": "Production-ready React reference app",
   "description": "This enterprise-grade React application is optimized for development and production environments. The Budgeting application showcases architecture for delivering incredibly fast production apps while maintaining a great development experience.",
