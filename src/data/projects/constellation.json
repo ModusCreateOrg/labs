@@ -1,0 +1,27 @@
+{
+  "name": "Constellation",
+  "featured": false,
+  "weight": 20,
+  "repo": "https://github.com/moduscreateorg/constellation",
+  "headline": "A Digital Transformation framework for scaling containerized microservices with Kubernetes and AWS EKS",
+  "description": "An Amazon AWS EKS framework to automate continuous integration for scalable containerized applications.",
+  "stack": ["EKS", "Kubernetes", "Jenkins", "Docker"],
+  "tags": ["EKS", "AWS", "Kubernetes", "Digital Transformation", "Containerization", "Scalability"],
+  "team": [
+    {
+      "name": "Richard Bullington-McGuire ",
+      "twitter": "obscurerichard"
+    },
+    {
+      "name": "Donald R Anderson",
+      "twitter": "dranderson"
+    }
+  ],
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "aws eks, kubernetes, digital transformation, scalable containerization, orchestration, elastic kubernetes, amazon web services, elastic containers service for kubernetes"
+    }
+  ],
+  "route": "constellation-eks-kubernetes-scalable-microservices"
+}
