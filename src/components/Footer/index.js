@@ -21,8 +21,8 @@ const Footer = () => (
           </a>. All rights reserved.
         </div>
         <div className={s.col}>
-          <a className={s.link} href="tel:1-855-663-8727">
-            1-855-663-8727
+          <a className={s.link} href="tel:1-855-721-7223">
+            +1-855-721-7223
           </a>
         </div>
       </section>
