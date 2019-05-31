@@ -10,7 +10,7 @@ const Team = ({ project }) => (
         <div className={s.member} key={`memberName${index}`}>
           <img
             className={s.teamAvatar}
-            src={`https://avatars.io/twitter/${teamMember.twitter}`}
+            src={`https://avatars.io/twitter/${teamMember.twitter ? teamMember.twitter : ''}`}
             alt={teamMember.name}
             role="presentation"
           />
