@@ -4,9 +4,9 @@
   "weight": 10,
   "repo": "https://github.com/moduscreateorg/creative-engine",
   "headline":
-    "A cross platform game engine designed to build retro-styled games.",
+    "Our retro-style cross platform game engine.",
   "description":
-    "To support development of Genus, we produced Creative Engine that runs on a few systems, including the ODROID GO (ESP32), Desktop Linux and macOS.  To provide the best audio experience, Creative Engine implements a custom music and effects engine that is based off of LibXMP. To further the boundaries this library's delivery, we've even added an exprimental network-based RGB Matrix panel driver affording us the ability to create our own custom display with RGB LED Matrices and Raspberry Pi Single Board Computers (coming soon).",
+    "To support development of Genus, we produced a game engine that is capable of running the ODROID GO (a portable game platform), desktop Linux and macOS.  To provide the best audio experience, Creative Engine implements a custom music and effects engine that is based off of LibXMP. We furthered the boundaries this library's capabilities, we've even added an exprimental network-based RGB LED Matrix display driver affording us the ability to create our a custom game play experience.",
   "stack": ["ESP32", "ESP-IDF", "SDL2", "CMake", "C++", "LibXMP"],
   "tags": ["embedded", "Linux", "ODROID GO", "macOS"],
   "team": [
