@@ -1,7 +1,7 @@
 {
   "name": "Slow",
   "featured": false,
-  "weight": 10,
+  "weight": 0,
   "repo": "https://github.com/ModusCreateOrg/slow",
   "headline": "Slow down Linux network interfaces to to simulate slower network connections",
   "description":

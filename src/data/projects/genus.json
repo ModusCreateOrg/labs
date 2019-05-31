@@ -1,0 +1,27 @@
+{
+  "name": "Genus",
+  "featured": false,
+  "weight": 10,
+  "repo": "https://github.com/moduscreateorg/genus",
+  "headline":
+    "A custom fun and relaxing puzzle cross-platform game developed for the 2018 holiday season.",
+  "description":
+    "Genus is a simple puzzle game where the objective is to match colors in 2x2 patterns. Once a 2x2 pattern is found, the blocks will be darken as they are marked for clearing and a bonus timer will appear. If you create additional create additional color matches while the bonus timer is counting down, your score will increase. Play until you run out of spaces to place new blocks.",
+  "stack": ["ESP32", "ESP-IDF", "CMake", "C++", "Creative Engine"],
+  "tags": ["embedded", "ESP32", "Xtensa"],
+  "team": [
+    {
+      "name": "Jay Garcia",
+      "twitter": "modusjesus"
+    },
+    {
+      "name": "Michael Tintuic",
+      "twitter": "michaeltintiuc"
+    },
+    {
+      "name": "Mike Schwartz",
+      "twitter": "ModusSchwartz"
+    }
+  ],
+  "route": "genus-esp32-game"
+}
