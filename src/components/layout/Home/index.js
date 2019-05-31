@@ -15,6 +15,11 @@ export default class HomeLayout extends React.Component {
         <main className={s.main}>
           <div className={s.innerContent}>{this.props.children}</div>
         </main>
+        <aside className={s.netlify}>
+          <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" />
+          </a>
+        </aside>
         <OnIdle syncUpdate>
           <Footer />
         </OnIdle>
