@@ -1,8 +1,9 @@
 {
   "name": "Gimbal",
-  "featured": false,
+  "featured": true,
   "weight": 20,
   "repo": "https://github.com/moduscreateorg/gimbal",
+  "image": "gimbal.png",
   "headline": "Web Application Performance Auditing",
   "description": "Auditing web application performance in a simple and automated way. Gimbal can help maintain performance budgets from your CLI or a CI system and comment results on a GitHub pull request.",
   "stack": ["node", "ci", "typescript", "react"],

@@ -45,6 +45,7 @@ module.exports = {
               `img-src 'self' data: res.cloudinary.com www.google-analytics.com avatars.io;`,
               `font-src fonts.gstatic.com;`,
               `connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com www.googletagmanager.com avatars.io;`,
+              `prefetch-src *;`,
               `upgrade-insecure-requests`,
             ].join(' '),
           ],
