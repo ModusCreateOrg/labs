@@ -7,6 +7,7 @@ import ProjectOverview from '../../components/project/Overview';
 import Team from '../../components/project/Team';
 import DescriptionBlocks from '../../components/project/DescriptionBlocks';
 import ProjectSummaryInfo from '../../components/project/Summary';
+import { getSrc } from '../../components/CloudinaryImage';
 
 const DetailsPage = ({ pageContext: { project } }) => {
   return (
@@ -20,8 +21,16 @@ const DetailsPage = ({ pageContext: { project } }) => {
             "@context": "http://schema.org"
             "@type": "${get(project, 'structuredData.type', 'SoftwareApplication')}",
             "name": "${get(project, 'structuredData.name', project.name)}",
-            "operatingSystem": "${get(project, 'structuredData.os', "Windows, Mac OS, Android, iOS")}",
-            "applicationCategory": "${get(project, 'structuredData.applicationCategory', "http://schema.org/WebApplication")}",
+            "operatingSystem": "${get(
+              project,
+              'structuredData.os',
+              'Windows, Mac OS, Android, iOS'
+            )}",
+            "applicationCategory": "${get(
+              project,
+              'structuredData.applicationCategory',
+              'http://schema.org/WebApplication'
+            )}",
             "offers": {
               "@type": "Offer",
               "price": "0.00",
@@ -29,6 +38,13 @@ const DetailsPage = ({ pageContext: { project } }) => {
             }
           }
       `}</script>
+        {project.image ? <meta property="og:image" content={getSrc(project.image)} /> : null}
+        {project.name ? (
+          <meta
+            property="og:site_name"
+            content={`${project.pageTitle || project.name} - Modus Labs`}
+          />
+        ) : null}
       </Helmet>
       {/* Project Summary Information */}
       <ProjectSummaryInfo project={project} />
