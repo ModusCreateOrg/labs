@@ -6,7 +6,7 @@
   "headline": "Proof of concept for auto-scaling applications via AWS EKS, driven by CI",
   "description": "This project uses AWS and Kubernetes via AWS EKS to demonstrate autoscaling, using infrastructure managed by Terraform and automated via Jenkins CI.",
   "stack": ["AWS", "EKS", "Kubernetes", "Jenkins", "Docker", "Helm", "Python", "JMeter"],
-  "tags": ["AWS", "EKS", "Kubernetes", "Containerization", "Scalability"],
+  "tags": ["AWS", "EKS", "Kubernetes", "DevOps", "Containerization", "Scalability"],
   "team": [
     {
       "name": "Richard Bullington-McGuire ",
