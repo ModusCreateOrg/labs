@@ -4,7 +4,7 @@
   "weight": 20,
   "repo": "https://github.com/ModusCreateOrg/constellation",
   "headline": "Proof of concept for auto-scaling applications via AWS EKS, driven by CI",
-  "description": "This project uses AWS and Kubernetes via AWS EKS to demonstrate autoscaling, with infrastructure An Amazon AWS EKS framework to automate continuous integration for scalable containerized applications.",
+  "description": "This project uses AWS and Kubernetes via AWS EKS to demonstrate autoscaling, using infrastructure managed by Terraform and automated via Jenkins CI.",
   "stack": ["EKS", "Kubernetes", "Jenkins", "Docker", "AWS"],
   "tags": ["EKS", "AWS", "Kubernetes", "Containerization", "Scalability"],
   "team": [
