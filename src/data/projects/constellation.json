@@ -2,11 +2,11 @@
   "name": "Constellation",
   "featured": false,
   "weight": 20,
-  "repo": "https://github.com/moduscreateorg/constellation",
-  "headline": "A Digital Transformation framework for scaling containerized microservices with Kubernetes and AWS EKS",
-  "description": "An Amazon AWS EKS framework to automate continuous integration for scalable containerized applications.",
-  "stack": ["EKS", "Kubernetes", "Jenkins", "Docker"],
-  "tags": ["EKS", "AWS", "Kubernetes", "Digital Transformation", "Containerization", "Scalability"],
+  "repo": "https://github.com/ModusCreateOrg/constellation",
+  "headline": "Proof of concept for auto-scaling applications via AWS EKS, driven by CI",
+  "description": "This project uses AWS and Kubernetes via AWS EKS to demonstrate autoscaling, with infrastructure An Amazon AWS EKS framework to automate continuous integration for scalable containerized applications.",
+  "stack": ["EKS", "Kubernetes", "Jenkins", "Docker", "AWS"],
+  "tags": ["EKS", "AWS", "Kubernetes", "Containerization", "Scalability"],
   "team": [
     {
       "name": "Richard Bullington-McGuire ",
@@ -20,7 +20,7 @@
   "meta": [
     {
       "name": "keywords",
-      "content": "aws eks, kubernetes, digital transformation, scalable containerization, orchestration, elastic kubernetes, amazon web services, elastic containers service for kubernetes"
+      "content": "aws, eks, aws eks, kubernetes, scalable containerization, orchestration, elastic kubernetes, amazon web services, elastic container service for kubernetes"
     }
   ],
   "route": "constellation-eks-kubernetes-scalable-microservices"
