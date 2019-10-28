@@ -1,0 +1,33 @@
+{
+  "name": "Robodomo",
+  "featured": true,
+  "weight": 20,
+  "repo": "https://github.com/moduscreateorg/gimbal",
+  "image": "gimbal.png",
+  "headline": "IoT automation framework for developers",
+  "description": "Robodomo creates a universal interface for communicating with the fragmented market of IoT vendors. Using the simplicity of MQTT messages, IoT devices can interact, follow automation patterns, feed data lakes, and learn from external data. Think of it as IoT devices tweeting each other messages to influence behavior.",
+  "stack": ["node",  "docker", "react", "ionic"],
+  "tags": ["iot", "mqtt", "automation"],
+  "team": [
+    { "name": "Michael Schwartz", "twitter": "modusschwartz" },
+    { "name": "Grgur Grisogono", "twitter": "ggrgur" },
+    { "name": "Sergiu Popescu", "twitter": "" },
+    { "name": "Andrei Tulvan", "twitter": "" },
+    { "name": "Aaron Goldman", "twitter": "" },
+    { "name": "Andrew Tran", "twitter": "" }
+  ],
+  "route": "robodomo-iot-framework",
+  "pageTitle": "Robodomo: IoT Framework",
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "iot, robodomo, home automation, iot automation, node, mqtt"
+    }
+  ],
+  "content": [
+    {
+      "title": "Keep Pull Requests Within Performance Budgets",
+      "screenshots": [{ "screen": "snapshots/gimbal01.png" }]
+    }
+  ]
+}
