@@ -39,6 +39,7 @@
       "description": "Developers no longer need to worry about vendor-specific language. This also allows for exciting features like populating big data services for Machine Learning and prediction-based instructions to industrial and home IoT environments."
     },
     {
+      "title": "Independent, Containerized, Secure",
       "description": "Robodomo can run in the cloud or completely offline withing a firewalled infrastructure. All microservices come with Docker and Docker-compose support for easy container orchestration. "
     },
     {
