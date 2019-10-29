@@ -5,7 +5,7 @@
   "repo": "https://github.com/moduscreateorg/gimbal",
   "image": "robodomo/logo.png",
   "headline": "IoT automation framework for developers",
-  "description": "Robodomo creates a universal interface for communicating with the fragmented market of IoT vendors. Using the simplicity of MQTT messages, IoT devices can interact, follow automation patterns, feed data lakes, and learn from external data. Think of it as IoT devices tweeting each other messages to influence behavior.",
+  "description": "Robodomo creates a universal interface for communicating with the fragmented market of IoT vendors. Using the simplicity of MQTT messages, IoT devices can interact, follow automation patterns, feed data lakes, and learn from external data. Think of it as IoT devices Tweeting each other messages to influence behavior.",
   "stack": ["node",  "docker", "react", "ionic"],
   "tags": ["iot", "mqtt", "automation"],
   "team": [
@@ -28,12 +28,21 @@
     {
       "title": "Rich IoT Dashboard Example",
       "screenshots": [{ "screen": "robodomo/Screenshot_2019-10-28_18.21.19.png" }],
-      "description": "Robodomo comes with a rich IoT dashboard that consumes MQTT manages to visalize the data from a responsive web application. Build with beautiful Ionic web components, this control panel subscribes to events in the IoT infrastructure and communicates information back using the same powerful MQTT protocol."
+      "description": "Robodomo comes with a rich IoT dashboard that consumes MQTT manages to visalize the data from a responsive web application. Built with beautiful Ionic web components, this control panel subscribes to events in the IoT infrastructure and communicates information back using the same powerful MQTT protocol."
     },
     {
       "title": "Ready for Machine Learning and AI",
+      "description": "Robodomo ships with a palette of containerized microservices that serve as translators between propriatery IoT vendor APIs and the universal MQTT protocol. For example, one of our specially designed microservices subscribes to MQTT messages and store them in a document database for the purposes of security auditing, tracking history, and analyzigng trends."
+    },
+    {
       "screenshots": [{ "screen": "robodomo/Screenshot_2019-10-28_18.25.45.png" }],
-      "description": "Robodomo ships with a palette of microservices that serve as translators between propriatery IoT vendor APIs and the universal MQTT protocol. Developers no longer need to worry about vendor-specific language. This also allows for exciting features like populating big data services for Machine Learning and prediction-based instructions to industrial and home IoT environments."
+      "description": "Developers no longer need to worry about vendor-specific language. This also allows for exciting features like populating big data services for Machine Learning and prediction-based instructions to industrial and home IoT environments."
+    },
+    {
+      "description": "Robodomo can run in the cloud or completely offline withing a firewalled infrastructure. All microservices come with Docker and Docker-compose support for easy container orchestration. "
+    },
+    {
+      "description": "Exploring IoT? Get in touch with Modus Create's IoT experts, today!"
     }
   ],
   "structuredData": {
