@@ -1,0 +1,27 @@
+{
+  "name": "Creative Engine",
+  "featured": false,
+  "weight": 10,
+  "repo": "https://github.com/moduscreateorg/creative-engine",
+  "headline":
+    "Our retro-style cross platform game engine.",
+  "description":
+    "Creative Engine (CE) is a game engine that was born from the development of Genus. While the primary development target is the ODROID GO (a portable gaming platform), we made CE portable. Being programmed primarily in C++, CE also runs on macOS and desktop Linux systems. We furthered the boundaries of CE's capabilities by adding an (exprimental) network-based RGB LED Matrix display driver, giving us the ability to create completely custom game play experiences.",
+  "stack": ["ESP32", "ESP-IDF", "SDL2", "CMake", "C++", "LibXMP"],
+  "tags": ["embedded", "Linux", "ODROID GO", "macOS"],
+  "team": [
+    {
+      "name": "Jay Garcia",
+      "twitter": "modusjesus"
+    },
+    {
+      "name": "Michael Tintuic",
+      "twitter": "michaeltintiuc"
+    },
+    {
+      "name": "Mike Schwartz",
+      "twitter": "ModusSchwartz"
+    }
+  ],
+  "route": "creative-engine"
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const url = 'https://res.cloudinary.com/modus-labs/image/upload/';
-export const version = 'v1535719796';
+export const version = 'v1535719797';
 export const folder = 'labs';
 
 const defaultFilters = ['q_auto', 'f_auto'];

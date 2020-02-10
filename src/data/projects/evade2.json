@@ -1,13 +1,13 @@
 {
   "name": "Evade 2",
   "featured": false,
-  "weight": 10,
+  "weight": 5,
   "repo": "https://github.com/moduscreateorg/evade2",
   "headline":
-    "Artificial intelligence, vector graphics, music and a “2.5D” engine — all in 32k of FLASH memory. ",
+    "A “2.5D” space flight simulator featuring a custom game engine and four channel synthesizer for music and sound effects — all in 32KB of flash memory!",
   "description":
-    "We built a custom Arduboy game to include all the best features of modern day first person shooters. With no fancy front-end frameworks and just an 8-bit processor, we went back to basics.",
-  "stack": ["arduboy", "c++", "Node JS", "ATMLib2"],
+    "We built a custom Arduboy game to include all the best features of modern space shooter simulators. To push this 16-bit processor to its limits, we went back to basics (Assembly, C and C++)!",
+  "stack": ["arduboy", "assembly", "c", "c++", "ATMLib2"],
   "tags": ["embedded"],
   "team": [
     {
@@ -23,5 +23,5 @@
       "twitter": "ModusSchwartz"
     }
   ],
-  "route": "evade2"
+  "route": "evade2-arudino-game"
 }

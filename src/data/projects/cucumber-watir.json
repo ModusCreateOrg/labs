@@ -6,12 +6,12 @@
   "headline": "Battle-tested functional automation framework melding Cucumber and Watir-Webdriver",
   "description":"This is a test harness for automated functional testing of web applications, using the Cucumber and Watir Webdriver test frameworks. It can be used to support Behavioral Driven Design (BDD) or just automated functional testing of arbitrary web applications.  By using this collection of frameworks, you can quickly start a suite of functional tests for an application using a basic vocabulary inspired by tests that have been used successfully on many production projects.",
   "image": "",
-  "stack": [],
-  "tags": ["qa","selenium","cucumber"],
+  "stack": ["cucumber", "watir", "ruby", "yaml"],
+  "tags": ["qa automation","selenium","cucumber"],
   "team": [
     { "name": "Bharath Khambadkone", "twitter": "bkhambadkone" },
     { "name": "Mallory Mooney", "twitter": "" },
     { "name": "Richard Bullington-McGuire", "twitter": "obscurerichard" }
   ],
-  "route": "cucumber-watir-automation-framework"
+  "route": "cucumber-watir-qa-automation-framework"
 }
