@@ -32,6 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                 }
                 pageTitle
+                pageDescription
                 meta {
                   name
                   content

@@ -3,9 +3,9 @@
   "featured": true,
   "weight": 20,
   "repo": "https://github.com/moduscreateorg/gimbal",
-  "image": "gimbal.png",
   "headline": "Web Application Performance Auditing",
   "description": "Auditing web application performance in a simple and automated way. Gimbal can help maintain performance budgets from your CLI or a CI system and comment results on a GitHub pull request.",
+  "image": "gimbal.png",
   "stack": ["node", "ci", "typescript", "react"],
   "tags": ["performance", "devops", "ci"],
   "team": [
@@ -15,17 +15,18 @@
     { "name": "Muhammad Ahsan Ayaz", "twitter": "ahsan_ayz" }
   ],
   "route": "gimbal-web-performance-audit-budgeting",
-  "pageTitle": "Gimbal: Web Performance Auditing",
-  "meta": [
-    {
-      "name": "keywords",
-      "content": "gimbal, web performance, web perf, pwa, performance, ci, performance budgeting, continuous integration, react, cra, create react app "
-    }
-  ],
   "content": [
     {
       "title": "Keep Pull Requests Within Performance Budgets",
       "screenshots": [{ "screen": "snapshots/gimbal01.png" }]
+    }
+  ],
+  "pageTitle": "Gimbal: Web Performance Auditing",
+  "pageDescription": "Gimbal maintains performance budgets from your CLI or a CI system and comments results on a GitHub pull request.",
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "gimbal, web performance, web perf, pwa, performance, ci, performance budgeting, continuous integration, react, cra, create react app "
     }
   ]
 }

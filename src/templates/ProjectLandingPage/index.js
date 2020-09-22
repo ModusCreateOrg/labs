@@ -14,6 +14,12 @@ const DetailsPage = ({ pageContext: { project } }) => {
     <Layout>
       <Helmet>
         <title>{`${project.pageTitle || project.name} - Modus Labs`}</title>
+        {project.pageDescription ? (
+          <meta
+            name="description"
+            content={project.pageDescription}
+          />
+        ) : null}
         {Array.isArray(project.meta) &&
           project.meta.map((attrs, idx) => <meta key={idx} {...attrs} />)}
         <script type="application/ld+json">{`
@@ -45,6 +51,24 @@ const DetailsPage = ({ pageContext: { project } }) => {
             content={`${project.pageTitle || project.name} - Modus Labs`}
           />
         ) : null}
+        {project.name ? (
+          <meta
+            property="og:title"
+            content={`${project.pageTitle || project.name} - Modus Labs`}
+          />
+        ) : null}
+        {project.pageDescription ? (
+          <meta
+            property="og:description"
+            content={project.pageDescription}
+          />
+        ) : null}
+        {project.route ? (
+          <meta
+            property="og:url"
+            content={`https://labs.moduscreate.com/${project.route}`}
+          />
+        ) : null}
       </Helmet>
       {/* Project Summary Information */}
       <ProjectSummaryInfo project={project} />
@@ -64,6 +88,7 @@ const DetailsPage = ({ pageContext: { project } }) => {
 DetailsPage.propTypes = {
   pageContext: PropTypes.shape({
     project: PropTypes.shape({
+      pageDescription: PropTypes.string,
       description: PropTypes.string,
       featured: PropTypes.bool,
       headline: PropTypes.string,

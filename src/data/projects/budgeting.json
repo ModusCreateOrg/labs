@@ -13,5 +13,6 @@
     { "name": "Jason Malfatto", "twitter": "jmalfatto" },
     { "name": "Brice Mason", "twitter": "bricemason" }
   ],
-  "route": "budgeting-react-performance-app"
+  "route": "budgeting-react-performance-app",
+  "pageDescription": "The Budgeting application showcases architecture for delivering incredibly fast production apps while maintaining a great development experience."
 }

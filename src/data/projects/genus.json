@@ -3,25 +3,15 @@
   "featured": false,
   "weight": 10,
   "repo": "https://github.com/moduscreateorg/genus",
-  "headline":
-    "A custom fun and relaxing puzzle cross-platform game developed for the 2018 holiday season.",
-  "description":
-    "Genus is a puzzle game where the objective is to increase your score by matching colors in 2x2 patterns.  We really hope you enjoy playing this game as much as we enjoyed making it!",
+  "headline": "A custom fun and relaxing puzzle cross-platform game developed for the 2018 holiday season.",
+  "description": "Genus is a puzzle game where the objective is to increase your score by matching colors in 2x2 patterns. We really hope you enjoy playing this game as much as we enjoyed making it!",
   "stack": ["ESP32", "ESP-IDF", "CMake", "C++", "Creative Engine"],
   "tags": ["embedded", "ESP32", "Xtensa"],
   "team": [
-    {
-      "name": "Jay Garcia",
-      "twitter": "modusjesus"
-    },
-    {
-      "name": "Michael Tintuic",
-      "twitter": "michaeltintiuc"
-    },
-    {
-      "name": "Mike Schwartz",
-      "twitter": "ModusSchwartz"
-    }
+    { "name": "Jay Garcia", "twitter": "modusjesus" },
+    { "name": "Michael Tintuic", "twitter": "michaeltintiuc" },
+    { "name": "Mike Schwartz", "twitter": "ModusSchwartz" }
   ],
-  "route": "genus-esp32-game"
+  "route": "genus-esp32-game",
+  "pageDescription": "Genus is a custom fun and relaxing puzzle cross-platform game developed for the 2018 holiday season."
 }
