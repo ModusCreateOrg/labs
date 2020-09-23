@@ -8,5 +8,6 @@
   "stack": ["react", "react-native"],
   "tags": ["Front end performance", "SSR"],
   "team": [{ "name": "Grgur Grisogono", "twitter": "ggrgur" }],
-  "route": "react-idle"
+  "route": "react-idle",
+  "pageDescription": "Render React Components When the Browser is Idle."
 }
