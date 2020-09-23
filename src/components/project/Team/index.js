@@ -8,12 +8,14 @@ const Team = ({ project }) => (
     <div className={s.team}>
       {project.team.map((teamMember, index) => (
         <div className={s.member} key={`memberName${index}`}>
+          {teamMember.twitter ? (
           <img
             className={s.teamAvatar}
-            src={`https://avatars.io/twitter/${teamMember.twitter ? teamMember.twitter : ''}`}
+            src={`https://unavatar.now.sh/twitter/${teamMember.twitter ? teamMember.twitter : 'moduscreate'}`}
             alt={teamMember.name}
             role="presentation"
           />
+          ) : ''}
           <div className={s.memberDetails}>
             <span className={s.memberName}>{teamMember.name}</span>
             <br />
