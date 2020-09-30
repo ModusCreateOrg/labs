@@ -11,5 +11,6 @@
     { "name": "Housni Yakoob", "twitter": "housni" },
     { "name": "Richard Bullington-McGuire", "twitter": "obscurerichard" }
   ],
-  "route": "lambda-redirector"
+  "route": "lambda-redirector",
+  "pageDescription": "Redirect an entire website using AWS Lambda and API Gateway, packaged with CloudFormation and deployed with Serverless Application Model (SAM)."
 }

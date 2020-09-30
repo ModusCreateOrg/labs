@@ -3,25 +3,15 @@
   "featured": false,
   "weight": 5,
   "repo": "https://github.com/moduscreateorg/evade2",
-  "headline":
-    "A “2.5D” space flight simulator featuring a custom game engine and four channel synthesizer for music and sound effects — all in 32KB of flash memory!",
-  "description":
-    "We built a custom Arduboy game to include all the best features of modern space shooter simulators. To push this 16-bit processor to its limits, we went back to basics (Assembly, C and C++)!",
+  "headline": "A \"2.5D\" space flight simulator featuring a custom game engine and four channel synthesizer for music and sound effects — all in 32KB of flash memory!",
+  "description": "We built a custom Arduboy game to include all the best features of modern space shooter simulators. To push this 16-bit processor to its limits, we went back to basics (Assembly, C and C++)!",
   "stack": ["arduboy", "assembly", "c", "c++", "ATMLib2"],
   "tags": ["embedded"],
   "team": [
-    {
-      "name": "Jay Garcia",
-      "twitter": "modusjesus"
-    },
-    {
-      "name": "Michael Tintuic",
-      "twitter": "michaeltintiuc"
-    },
-    {
-      "name": "Mike Schwartz",
-      "twitter": "ModusSchwartz"
-    }
+    { "name": "Jay Garcia", "twitter": "modusjesus" },
+    { "name": "Michael Tintuic", "twitter": "michaeltintiuc" },
+    { "name": "Mike Schwartz", "twitter": "ModusSchwartz" }
   ],
-  "route": "evade2-arudino-game"
+  "route": "evade2-arudino-game",
+  "pageDescription": "Evade 2 is a \"2.5D\" space flight simulator featuring a custom game engine and four channel synthesizer for music and sound effects."
 }

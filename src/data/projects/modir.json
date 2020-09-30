@@ -3,9 +3,9 @@
   "featured": true,
   "weight": 5,
   "repo": "https://github.com/moduscreateorg/modir",
-  "image": "modir.png",
   "headline": "A productivity PWA built with React, Ionic 4 and CloudFlare Workers",
   "description": "Bringing teams at Modus together with the help of data coming from Slack, Harvest, Google Suite, and other services. This internal Progressive Web App uses React with Ionic web components on the fronte end. Business logic aggregates data from 3rd party APIs via CloudFlare Workers cloud compute engine and Workers KV store. Some of the functionalities are protected with CloudFlare Access.",
+  "image": "modir.png",
   "stack": ["react", "ionic", "cloudflare workers", "cloudflare workers kv", "cloudflare access"],
   "tags": ["pwa", "full stack", "serverless"],
   "team": [
@@ -16,6 +16,7 @@
   ],
   "route": "modite-directory",
   "pageTitle": "Modite Directory - React + Ionic + CloudFlare Workers PWA",
+  "pageDescription": "Modite Directory is a productivity PWA built with React, Ionic 4 and CloudFlare Workers.",
   "meta": [
     {
       "name": "keywords",

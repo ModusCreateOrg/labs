@@ -29,6 +29,7 @@
     }
   ],
   "pageTitle": "BEEP: Ionic + Vue app",
+  "pageDescription": "Protect your online identity by making sure your accounts and passwords are secure with BEEP.",
   "meta": [
     {
       "name": "apple-itunes-app",

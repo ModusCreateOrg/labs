@@ -17,6 +17,7 @@
     }
   ],
   "pageTitle": "Ionic Vue - Ionic 4 components in VueJS apps",
+  "pageDescription": "Ionic-Vue bridges Ionic internals to Vue and Vue Router, allowing seamless integration of the two frameworks.",
   "meta": [
     {
       "name": "keywords",

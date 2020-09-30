@@ -3,9 +3,9 @@
   "featured": true,
   "weight": 20,
   "repo": "https://github.com/RoboDomo",
-  "image": "robodomo/logo.png",
   "headline": "IoT automation framework experimentation for developers",
   "description": "RoboDomo is an experiment that creates a universal interface for communicating with the fragmented market of IoT vendors. Using the simplicity of MQTT messages, IoT devices can interact, follow automation patterns, feed data lakes, and learn from external data. Think of it as IoT devices Tweeting each other messages to influence behavior.",
+  "image": "robodomo/logo.png",
   "stack": ["node",  "docker", "react", "ionic"],
   "tags": ["iot", "mqtt", "automation"],
   "team": [
@@ -17,13 +17,6 @@
     { "name": "Andrew Tran", "twitter": "" }
   ],
   "route": "robodomo-iot-framework",
-  "pageTitle": "RoboDomo: IoT Automation Experiment",
-  "meta": [
-    {
-      "name": "keywords",
-      "content": "iot, robodomo, home automation, iot automation, node, mqtt, docker"
-    }
-  ],
   "content": [
     {
       "title": "Rich IoT Dashboard Example",
@@ -44,6 +37,14 @@
     },
     {
       "description": "Exploring IoT? Get in touch with Modus Create's IoT experts, today!"
+    }
+  ],
+  "pageTitle": "RoboDomo: IoT Automation Experiment",
+  "pageDescription": "RoboDomo is an experiment that creates a universal interface for communicating with the fragmented market of IoT vendors.",
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "iot, robodomo, home automation, iot automation, node, mqtt, docker"
     }
   ],
   "structuredData": {

@@ -18,5 +18,6 @@
     { "name": "Mike LaFortune", "twitter": "" },
     { "name": "Grgur Grisogono", "twitter": "ggrgur" }
   ],
-  "route": "capsule-aws-static-web-app-service"
+  "route": "capsule-aws-static-web-app-service",
+  "pageDescription": "Capsule is an automated script that simplifies setting up an AWS site."
 }
