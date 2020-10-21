@@ -68,12 +68,12 @@ export default class HomeLayout extends React.Component {
               />
               <meta
                 property="og:image"
-                content="https://res.cloudinary.com/modus-labs/image/upload/v1531492623/labs/logo-black.png"
+                content="https://res.cloudinary.com/modus-labs/image/upload/v1603290559/labs/Modus_Labs_SEO_Image.png"
               />
               <meta property="og:url" content="https://labs.moduscreate.com" />
               <meta
                 property="twitter:card"
-                content="https://res.cloudinary.com/modus-labs/image/upload/v1531492623/labs/logo-black.png"
+                content="https://res.cloudinary.com/modus-labs/image/upload/v1603290559/labs/Modus_Labs_SEO_Image.png"
               />
 
               <meta property="og:site_name" content="Modus Labs" />
