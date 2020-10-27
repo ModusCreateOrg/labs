@@ -50,6 +50,6 @@
   "structuredData": {
     "name": "RoboDomo IoT Automation Experiment",
     "operatingSystem": "Windows 7, OSX 10.6, Linux",
-    "applicationCategory": "http://schema.org/Application"
+    "applicationCategory": "https://schema.org/Application"
   }
 }
