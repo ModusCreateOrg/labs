@@ -21,11 +21,11 @@ const Header = () => (
     <div className={s.innerContainer}>
       <Logo />
       <h3 className={s.introHeader}>Changing the world</h3>
-      <h1>One</h1>
-      <h1 className={s.animatedWords}>
+      <h1>One
+      <span className={s.animatedWords}>
         <AnimatedWords words={WORDS} />
-      </h1>
-      <h1>At A Time</h1>
+      </span>
+      At A Time</h1>
       <h3 className={s.outroHeader}>Open source community driven experiments</h3>
 
       <CloudinaryImage
