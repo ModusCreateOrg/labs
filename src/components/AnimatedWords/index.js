@@ -17,13 +17,13 @@ const animDelay = (idx, total) => {
 };
 
 const AnimatedWords = ({ words }) => (
-  <div className={s.animatedWords}>
+  <span className={s.animatedWords}>
     {words.map((word, idx, arr) => (
       <span key={idx} style={animDelay(idx, arr.length)}>
         {word}
       </span>
     ))}
-  </div>
+  </span>
 );
 
 export default AnimatedWords;
