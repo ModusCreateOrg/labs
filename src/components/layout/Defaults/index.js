@@ -16,7 +16,7 @@ function canUseWebP() {
   }
 }
 
-export default class HomeLayout extends React.Component {
+export default class DefaultLayout extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
   };
