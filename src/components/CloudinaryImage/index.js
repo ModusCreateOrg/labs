@@ -13,7 +13,7 @@ const getFilters = (filters = []) => {
   return strFilters ? `${strFilters}/` : '';
 };
 
-// concatinate one source
+// concatenate one source
 export const getSrc = (filename, filters, path = folder, dpr) =>
   `${url}${getFilters(filters)}${version}/${path}/${filename}${dpr ? ` ${dpr}x` : ''}`;
 
