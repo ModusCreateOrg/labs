@@ -61,25 +61,28 @@ export default class DefaultLayout extends React.Component {
                 name="keywords"
                 content="React, Vue, Ionic, Angular, NodeJS, Amazon Web Services, AWS, Cloudformation, Terraform, Serverless, Lambda, Mobile native, iOS, Android"
               />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:type" content="website" />
               <meta property="og:title" content={data.site.siteMetadata.title} />
               <meta
                 property="og:description"
                 content={data.site.siteMetadata.description}
               />
+              <meta property="og:url" content="https://labs.moduscreate.com/" />
+              <meta property="og:site_name" content="Modus Labs" />
+              <meta property="article:publisher" content="https://www.facebook.com/moduscreate/" />
               <meta
                 property="og:image"
                 content="https://res.cloudinary.com/modus-labs/image/upload/v1603290559/labs/Modus_Labs_SEO_Image.png"
               />
-              <meta property="og:url" content="https://labs.moduscreate.com" />
-              <meta
-                property="twitter:card"
-                content="https://res.cloudinary.com/modus-labs/image/upload/v1603290559/labs/Modus_Labs_SEO_Image.png"
-              />
+              <meta property="og:image:width" content="1920" />
+              <meta property="og:image:height" content="1080" />
 
-              <meta property="og:site_name" content="Modus Labs" />
-              <meta property="twitter:image:alt" content="Modus Labs" />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:creator" content="@moduscreate" />
+              <meta name="twitter:site" content="@moduscreate" />
 
-              <meta property="twitter:site" content="@moduscreate" />
+              <link rel="canonical" href="https://labs.moduscreate.com/" />
             </Helmet>
             {children}
           </div>

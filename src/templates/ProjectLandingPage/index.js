@@ -24,7 +24,7 @@ const DetailsPage = ({ pageContext: { project } }) => {
           project.meta.map((attrs, idx) => <meta key={idx} {...attrs} />)}
         <script type="application/ld+json">{`
           {
-            "@context": "http://schema.org"
+            "@context": "https://schema.org"
             "@type": "${get(project, 'structuredData.type', 'SoftwareApplication')}",
             "name": "${get(project, 'structuredData.name', project.name)}",
             "operatingSystem": "${get(
@@ -35,7 +35,7 @@ const DetailsPage = ({ pageContext: { project } }) => {
             "applicationCategory": "${get(
               project,
               'structuredData.applicationCategory',
-              'http://schema.org/WebApplication'
+              'https://schema.org/WebApplication'
             )}",
             "offers": {
               "@type": "Offer",
@@ -44,13 +44,6 @@ const DetailsPage = ({ pageContext: { project } }) => {
             }
           }
       `}</script>
-        {project.image ? <meta property="og:image" content={getSrc(project.image)} /> : null}
-        {project.name ? (
-          <meta
-            property="og:site_name"
-            content={`${project.pageTitle || project.name} - Modus Labs`}
-          />
-        ) : null}
         {project.name ? (
           <meta
             property="og:title"
@@ -66,8 +59,13 @@ const DetailsPage = ({ pageContext: { project } }) => {
         {project.route ? (
           <meta
             property="og:url"
-            content={`https://labs.moduscreate.com/${project.route}`}
+            content={`https://labs.moduscreate.com/${project.route}/`}
           />
+        ) : null}
+        {project.image ? <meta property="og:image" content={getSrc(project.image)} /> : null}
+
+        {project.route ? (
+          <link rel="canonical" href={`https://labs.moduscreate.com/${project.route}/`} />
         ) : null}
       </Helmet>
       {/* Project Summary Information */}
