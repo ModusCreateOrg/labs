@@ -1,5 +1,4 @@
 @import '../../theme/variables.scss';
-@import '../../theme/globals.scss';
 
 .container {
   position: relative;
@@ -46,17 +45,14 @@
   width: 100%;
 
   @media only screen and (min-width: $desktop) {
-    //width: 58%;
     padding-right: 42%;
   }
 
   @media only screen and (min-width: $wide) {
-    //width: 75%;
     padding-right: 25%;
   }
 
   @media only screen and (min-width: $ultrawide) {
-    //width: 80%;
     padding-right: 20%;
   }
 }
@@ -64,7 +60,7 @@
 .title {
   display: block;
   text-transform: uppercase;
-  @extend h1;
+  composes: h1 from '../../theme/globals.scss';
 }
 
 .highlight {
@@ -75,7 +71,8 @@
   display: block;
   padding: 2rem 0;
   font-size: 1.75em;
-  @extend h3;
+  composes: h3 from '../../theme/globals.scss';
+
 
   @media only screen and (min-width: $desktop) {
     padding: 1rem 0;
