@@ -60,7 +60,7 @@
 .title {
   display: block;
   text-transform: uppercase;
-  composes: h1 from '../../theme/globals.scss';
+  composes: h1 from global;
 }
 
 .highlight {
@@ -71,7 +71,7 @@
   display: block;
   padding: 2rem 0;
   font-size: 1.75em;
-  composes: h3 from '../../theme/globals.scss';
+  composes: h3 from global;
 
 
   @media only screen and (min-width: $desktop) {

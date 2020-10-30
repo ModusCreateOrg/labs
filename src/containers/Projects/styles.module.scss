@@ -6,7 +6,7 @@
 .heading__main {
   display: block;
   margin-bottom: 3rem;
-  composes: h1 from '../../theme/globals.scss';
+  composes: h1 from global;
 }
 
 .list {
