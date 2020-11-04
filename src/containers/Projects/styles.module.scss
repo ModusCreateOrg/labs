@@ -3,6 +3,12 @@
 .featured {
 }
 
+.heading__main {
+  display: block;
+  margin-bottom: 3rem;
+  composes: h1 from global;
+}
+
 .list {
   display: flex;
   flex-flow: row wrap;

@@ -38,7 +38,7 @@ const Projects = ({ data }) => (
             <ProjectFeatured key={node.name} project={node} />
           ))}
         </section>
-        <h1>More Labs</h1>
+        <strong className={s.heading__main}>More Labs</strong>
         <section className={s.list}>
           {data.listing &&
             data.listing.edges.map(({ node }) => (

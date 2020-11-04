@@ -41,24 +41,26 @@
   }
 }
 
-.contentContainer {
+.container {
   width: 100%;
 
   @media only screen and (min-width: $desktop) {
-    width: 58%;
+    padding-right: 42%;
   }
 
   @media only screen and (min-width: $wide) {
-    width: 75%;
+    padding-right: 25%;
   }
 
   @media only screen and (min-width: $ultrawide) {
-    width: 80%;
+    padding-right: 20%;
   }
 }
 
 .title {
+  display: block;
   text-transform: uppercase;
+  composes: h1 from global;
 }
 
 .highlight {
@@ -66,8 +68,11 @@
 }
 
 .content {
+  display: block;
   padding: 2rem 0;
   font-size: 1.75em;
+  composes: h3 from global;
+
 
   @media only screen and (min-width: $desktop) {
     padding: 1rem 0;

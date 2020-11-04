@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+h1, .h1 {
   font-family: $fontAlt;
   font-size: 4.25rem;
   font-weight: 800;
@@ -30,13 +30,13 @@ h1 {
   }
 }
 
-h2 {
+h2, .h2 {
   font-family: $fontAlt;
   font-size: 2.75rem;
   font-weight: 800;
 }
 
-h3 {
+h3, .h3 {
   font-family: $fontAlt;
   font-size: 2.275rem;
   font-weight: 300;
@@ -47,7 +47,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin: 0;
   line-height: 1.25em;
 }

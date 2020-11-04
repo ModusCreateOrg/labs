@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { StaticQuery, graphql } from 'gatsby';
 
 import './normalize.scss';
+import '../../../theme/globals.scss';
 
 function canUseWebP() {
   const elem = document.createElement('canvas');
