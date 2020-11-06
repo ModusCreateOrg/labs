@@ -21,6 +21,8 @@
 }
 
 .tags {
+  display: flex;
+  flex-flow: row wrap;
   color: lighten($black, 30%);
   text-transform: uppercase;
   font-size: 0.8em;
