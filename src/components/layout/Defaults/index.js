@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import './normalize.scss';
 import '../../../theme/globals.scss';
+import { getSrc } from '../../CloudinaryImage';
 
 function canUseWebP() {
   const elem = document.createElement('canvas');
@@ -40,7 +41,11 @@ export default class DefaultLayout extends React.Component {
             site {
               siteMetadata {
                 title,
-                description
+                url,
+                description,
+                keywords,
+                facebook,
+                twitter
               }
             }
           }
@@ -60,7 +65,7 @@ export default class DefaultLayout extends React.Component {
               />
               <meta
                 name="keywords"
-                content="React, Vue, Ionic, Angular, NodeJS, Amazon Web Services, AWS, Cloudformation, Terraform, Serverless, Lambda, Mobile native, iOS, Android"
+                content={data.site.siteMetadata.keywords}
               />
               <meta property="og:locale" content="en_US" />
               <meta property="og:type" content="website" />
@@ -69,21 +74,21 @@ export default class DefaultLayout extends React.Component {
                 property="og:description"
                 content={data.site.siteMetadata.description}
               />
-              <meta property="og:url" content="https://labs.moduscreate.com/" />
+              <meta property="og:url" content={data.site.siteMetadata.url} />
               <meta property="og:site_name" content="Modus Labs" />
-              <meta property="article:publisher" content="https://www.facebook.com/moduscreate/" />
+              <meta property="article:publisher" content={data.site.siteMetadata.facebook} />
               <meta
                 property="og:image"
-                content="https://res.cloudinary.com/modus-labs/image/upload/v1603290559/labs/Modus_Labs_SEO_Image.png"
+                content={getSrc('Modus_Labs_SEO_Image.png')}
               />
               <meta property="og:image:width" content="1920" />
               <meta property="og:image:height" content="1080" />
 
               <meta name="twitter:card" content="summary_large_image" />
-              <meta name="twitter:creator" content="@moduscreate" />
-              <meta name="twitter:site" content="@moduscreate" />
+              <meta name="twitter:creator" content={data.site.siteMetadata.twitter} />
+              <meta name="twitter:site" content={data.site.siteMetadata.twitter} />
 
-              <link rel="canonical" href="https://labs.moduscreate.com/" />
+              <link rel="canonical" href={data.site.siteMetadata.url} />
             </Helmet>
             {children}
           </div>

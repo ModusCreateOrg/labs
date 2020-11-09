@@ -7,6 +7,13 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(`
         {
+          site {
+            siteMetadata {
+              title,
+              url,
+              description
+            }
+          },
           allProjectsJson {
             edges {
               node {
@@ -59,6 +66,7 @@ exports.createPages = ({ graphql, actions }) => {
             component: slash(projectDetailsTemplate),
             context: {
               project: { ...node },
+              site: result.data.site
             },
           });
         });

@@ -9,7 +9,7 @@ import DescriptionBlocks from '../../components/project/DescriptionBlocks';
 import ProjectSummaryInfo from '../../components/project/Summary';
 import { getSrc } from '../../components/CloudinaryImage';
 
-const DetailsPage = ({ pageContext: { project } }) => {
+const DetailsPage = ({ pageContext: { project, site } }) => {
   return (
     <Layout>
       <Helmet>
@@ -59,13 +59,13 @@ const DetailsPage = ({ pageContext: { project } }) => {
         {project.route ? (
           <meta
             property="og:url"
-            content={`https://labs.moduscreate.com/${project.route}/`}
+            content={`${site.siteMetadata.url + project.route}/`}
           />
         ) : null}
         {project.image ? <meta property="og:image" content={getSrc(project.image)} /> : null}
 
         {project.route ? (
-          <link rel="canonical" href={`https://labs.moduscreate.com/${project.route}/`} />
+          <link rel="canonical" href={`${site.siteMetadata.url + project.route}/`} />
         ) : null}
       </Helmet>
       {/* Project Summary Information */}
@@ -85,6 +85,12 @@ const DetailsPage = ({ pageContext: { project } }) => {
 
 DetailsPage.propTypes = {
   pageContext: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string,
+        url: PropTypes.string,
+      }),
+    }),
     project: PropTypes.shape({
       pageDescription: PropTypes.string,
       description: PropTypes.string,
@@ -98,7 +104,7 @@ DetailsPage.propTypes = {
       team: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string,
-          twitter: PropTypes.twitter,
+          twitter: PropTypes.string,
         })
       ),
     }),

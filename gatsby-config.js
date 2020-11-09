@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Modus Labs by Modus Create',
-    siteUrl: 'https://labs.moduscreate.com',
-    description: 'Modus Labs is Modus Create\'s open source initiative, designing and building powerful web applications that solve real issues, help improve existing frameworks, and sustain the open source ecosystem.'
+    url: 'https://labs.moduscreate.com/',
+    description: 'Modus Labs is Modus Create\'s open source initiative, designing and building powerful web applications that solve real issues, help improve existing frameworks, and sustain the open source ecosystem.',
+    keywords: 'React, Vue, Ionic, Angular, NodeJS, Amazon Web Services, AWS, Cloudformation, Terraform, Serverless, Lambda, Mobile native, iOS, Android',
+    facebook: 'https://www.facebook.com/moduscreate/',
+    twitter: '@moduscreate'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
