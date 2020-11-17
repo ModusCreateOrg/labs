@@ -5,16 +5,18 @@ import s from './styles.module.scss';
 
 const ProjectSummaryInfo = ({ project }) => {
   return (
-    <article className={s.header}>
+    <header className={s.header}>
       <div className={s.content}>
         <h1>{project.name}</h1>
         <h3>{project.headline}</h3>
         <ProjectDetailButtonChild text="View on" href={project.repo} />
       </div>
-      <aside className={s.image}>
-        {project['image'] ? <Image filename={project.image} alt={project.name} /> : null}
-      </aside>
-    </article>
+      {project['image'] ?
+        <div className={s.image}>
+          <Image filename={project.image} alt={project.name} />
+        </div>
+      : null}
+    </header>
   );
 };
 

@@ -64,6 +64,7 @@
 }
 
 .logoContainer {
+  display: block;
   text-align: center;
   @media only screen and (min-width: $desktop) {
     text-align: left;

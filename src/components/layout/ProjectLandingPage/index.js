@@ -8,22 +8,24 @@ import Footer from '../../Footer';
 
 import s from './styles.module.scss';
 
-export default class ProjectLandingPage extends React.Component {
-  render() {
-    return (
-      <DefaultLayout>
-        <main className={s.main}>
-          <div className={s.innerContent}>
-            <Link to="/">
-              <LogoBlack />
-            </Link>
-            {this.props.children}
-          </div>
-        </main>
-        <OnIdle syncUpdate>
-          <Footer />
-        </OnIdle>
-      </DefaultLayout>
-    );
-  }
-}
+const ProjectLandingPage = ({children}) => (
+  <DefaultLayout>
+    <main className={s.main}>
+      <div className={s.innerContent}>
+        <header>
+          <Link to="/">
+            <LogoBlack />
+          </Link>
+        </header>
+        <article>
+          {children}
+        </article>
+      </div>
+    </main>
+    <OnIdle syncUpdate>
+      <Footer />
+    </OnIdle>
+  </DefaultLayout>
+);
+
+export default ProjectLandingPage

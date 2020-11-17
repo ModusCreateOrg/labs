@@ -206,3 +206,7 @@
 .outroHeader {
   margin-top: 1.25rem;
 }
+
+.heading__main {
+  composes: h1 from global;
+}

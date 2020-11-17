@@ -16,10 +16,9 @@ body {
   box-sizing: border-box;
 }
 
-h1, .h1 {
-  font-family: $fontAlt;
+h1,
+.h1 {
   font-size: 4.25rem;
-  font-weight: 800;
 
   @media only screen and (max-width: $desktop) {
     font-size: 3.25rem;
@@ -30,16 +29,31 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
-  font-family: $fontAlt;
+h2,
+.h2 {
   font-size: 2.75rem;
-  font-weight: 800;
 }
 
-h3, .h3 {
-  font-family: $fontAlt;
+h3,
+.h3 {
   font-size: 2.275rem;
   font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: $fontAlt;
+}
+
+h1,
+h2,
+.h1,
+.h2 {
+  font-weight: 800;
 }
 
 h1,
@@ -65,4 +79,9 @@ p {
 a {
   text-decoration: none;
   color: $black;
+}
+
+.title {
+  font-weight: $title-weight;
+  margin-bottom: 1rem;
 }
