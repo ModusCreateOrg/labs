@@ -19,11 +19,11 @@ const WORDS = [
 const Header = () => (
   <header className={s.hero}>
     <div className={s.innerContainer}>
-      <Logo />
+      <h1><Logo /></h1>
       <h3 className={s.introHeader}>Changing the world</h3>
-      <h1>One
+      <strong className={s.heading__main}>One
       <AnimatedWords words={WORDS} />
-      At A Time</h1>
+      At A Time</strong>
       <h3 className={s.outroHeader}>Open source community driven experiments</h3>
 
       <CloudinaryImage
