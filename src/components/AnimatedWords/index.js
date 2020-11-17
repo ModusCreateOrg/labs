@@ -7,13 +7,11 @@ const animDelay = (idx, total) => {
   const delay = `${DELAY_TIME * idx}s`;
   const animation = `${s.animateWord} ${total * DELAY_TIME}s ease-in-out ${delay} infinite`;
 
-  const anim = {
+  return {
     WebkitAnimation: animation,
     MsAnimation: animation,
     animation: animation,
   };
-
-  return anim;
 };
 
 const AnimatedWords = ({ words }) => (
