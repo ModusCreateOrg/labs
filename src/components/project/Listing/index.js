@@ -6,7 +6,7 @@ import DetailsBtn from '../DetailButton';
 import s from './styles.module.scss';
 
 const ProjectListing = ({ project, className }) => (
-  <article className={classnames(s.project, className)}>
+  <section className={classnames(s.project, className)}>
     <h2>
       <Link className={s.projectTitle} to={`/${project.route}`}>{project.name}</Link>
     </h2>
@@ -20,7 +20,7 @@ const ProjectListing = ({ project, className }) => (
       ))}
     </div>
     <DetailsBtn text="View on" href={project.repo} />
-  </article>
+  </section>
 );
 
 ProjectListing.propTypes = {

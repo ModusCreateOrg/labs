@@ -18,9 +18,8 @@
 /**
  * Project details content titles bold/width
  */
-.titleProps {
-  font-weight: $title-weight;
-  margin-bottom: 1rem;
+.title {
+  composes: title from global;
 }
 
 /**

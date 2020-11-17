@@ -7,8 +7,7 @@ a:hover {
  * Project details content titles bold/width
  */
 .title {
-  font-weight: $title-weight;
-  margin-bottom: 1rem;
+  composes: title from global;
   margin-top: 5rem;
 }
 
