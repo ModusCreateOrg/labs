@@ -9,3 +9,5 @@ yarn-error.log
 
 # gimbal artifacts
 /artifacts
+
+.history
