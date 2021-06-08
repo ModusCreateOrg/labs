@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import { getSrc, getSrcSet, isSvg } from '../CloudinaryImage';
+import PropTypes from 'prop-types';
 import s from './styles.module.scss';
 
 const canUseDOM = !!(
@@ -21,46 +22,45 @@ if (canUseDOM) {
   };
 }
 
-class LazyImage extends React.Component {
-  state = {
-    isVector: isSvg(this.props.filename),
-  };
+const LazyImage = ({ filename, className, ...rest }) => {
+  const [isVector] = React.useState(isSvg(filename));
+  const el = React.useRef(null);
 
-  componentDidMount = () => {
-    if (!lazySizes || !this.el) {
+  React.useEffect(() => {
+    if (!lazySizes || !el) {
       return;
     }
 
-    if (!lazySizes.hC(this.el, 'lazyloaded') && !lazySizes.hC(this.el, 'lazyload')) {
-      lazySizes.aC(this.el, 'lazyload');
+    if (!lazySizes.hC(el.current, 'lazyloaded') && !lazySizes.hC(el.current, 'lazyload')) {
+      lazySizes.aC(el.current, 'lazyload');
     }
-  };
+  }, []);
 
-  render() {
-    const { filename, className, ...rest } = this.props;
+  const src = isVector
+    ? {
+        src: getSrc(filename, []),
+        className: cx(s.img, className),
+      }
+    : {
+        src: getSrc(filename, ['q_1', 'e_blur:1000', 'f_auto']),
+        'data-srcset': getSrcSet(filename, ['q_auto', 'f_auto'], undefined),
+        className: cx(s.img, className, 'lazyload'),
+      };
 
-    const src = this.state.isVector
-      ? {
-          src: getSrc(filename, []),
-          className: cx(s.img, className),
-        }
-      : {
-          src: getSrc(filename, ['q_1', 'e_blur:1000', 'f_auto']),
-          'data-srcset': getSrcSet(filename, ['q_auto', 'f_auto'], undefined),
-          className: cx(s.img, className, 'lazyload'),
-        };
-
-    return (
-      <img
-        ref={el => {
-          this.el = el;
-        }}
-        alt="Modus Labs"
-        {...rest}
-        {...src}
-      />
-    );
-  }
+  return (
+    <img
+      ref={el}
+      alt="Modus Labs"
+      {...rest}
+      {...src}
+    />
+  );
 }
+
+LazyImage.propTypes = {
+  filename: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired
+};
+
 
 export default LazyImage;
