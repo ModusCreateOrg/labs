@@ -24,9 +24,6 @@ const DefaultLayout = ({ children }) => {
     setWebpSupported(canUseWebP());
   }, []);
 
-
-  console.log('DefaultLayout');
-
   return (
     <StaticQuery
       query={graphql`
