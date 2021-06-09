@@ -112,6 +112,23 @@ Here's how it works:
 3.  If build is successful, the Pull Request checks section will go green.
 4.  Once the Pull Request is merged, Capsule will rebuild the `master` branch and deploy a new version of the web site to AWS CloudFront
 
+# Troubleshooting
+
+Issues with nodejs versions on npm install
+
+Run:
+````
+# install NVM
+$ bash nvm-install.sh
+
+# Create a new terminal instance or refresh your profile/resource file
+$ nvm install 12.15.0
+$ nvm use
+$ npm i
+$ npm run build
+```
+
+
 # Modus Create
 
 [Modus Create](https://moduscreate.com) is a digital product consultancy. We use a distributed team of the best talent in the world to offer a full suite of digital product design-build services; ranging from consumer facing apps, to digital migration, to agile development training, and business transformation.
