@@ -117,11 +117,17 @@ Here's how it works:
 Issues with nodejs versions on npm install
 
 Run:
+````
+# install NVM
+$ bash nvm-install.sh
 
-$ ./nvm-install.sh
+# Create a new terminal instance or refresh your profile/resource file
 $ nvm install 12.15.0
 $ nvm use
 $ npm i
+$ npm run build
+```
+
 
 # Modus Create
 
