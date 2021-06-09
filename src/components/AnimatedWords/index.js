@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import s from './styles.module.scss';
 
 const DELAY_TIME = 3;
@@ -14,6 +15,11 @@ const animDelay = (idx, total) => {
   };
 };
 
+animDelay.propTypes = {
+  idx: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+};
+
 const AnimatedWords = ({ words }) => (
   <span className={s.animatedWords}>
     {words.map((word, idx, arr) => (
@@ -24,4 +30,7 @@ const AnimatedWords = ({ words }) => (
   </span>
 );
 
+AnimatedWords.propTypes = {
+  words: PropTypes.array.isRequired,
+};
 export default AnimatedWords;
