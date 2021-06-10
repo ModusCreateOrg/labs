@@ -87,8 +87,8 @@ DetailsPage.propTypes = {
   pageContext: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
-        title: PropTypes.string,
-        url: PropTypes.string,
+        title: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
       }),
     }),
     project: PropTypes.shape({
