@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const HTML = ({ htmlAttributes, headComponents, preBodyComponents, body, postBodyComponents, bodyAttributes }) => (
+const HTML = ({
+  htmlAttributes, headComponents, preBodyComponents, body, postBodyComponents, bodyAttributes,
+}) => (
   <html prefix="og: https://ogp.me/ns#" lang="en" {...htmlAttributes}>
     <head>
       <meta charSet="utf-8" />
@@ -36,19 +38,19 @@ const HTML = ({ htmlAttributes, headComponents, preBodyComponents, body, postBod
     </head>
     <body {...bodyAttributes}>
       {preBodyComponents}
-      <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
+      <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
       {postBodyComponents}
     </body>
   </html>
 );
 
 HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
+  htmlAttributes: PropTypes.shape({}),
+  headComponents: PropTypes.shape([]),
+  bodyAttributes: PropTypes.shape({}),
+  preBodyComponents: PropTypes.shape([]),
   body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
+  postBodyComponents: PropTypes.shape([]),
 };
 
 export default HTML;

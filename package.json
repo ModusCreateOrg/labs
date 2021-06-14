@@ -10,6 +10,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "lint": "eslint 'src/**/*.js'",
     "debug": "node --inspect-brk --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,13 +26,18 @@
     "gatsby": "^2.18.12",
     "lazysizes": "^5.3.2",
     "lodash.get": "4.4.2",
+    "prop-types": "^15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-helmet": "^5.2.1",
     "slash": "3.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "babel-plugin-htm": "^2.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-react": "^7.24.0",
     "gatsby-plugin-google-analytics": "2.1.31",
     "gatsby-plugin-google-tagmanager": "2.1.20",
     "gatsby-plugin-manifest": "2.2.33",
@@ -41,6 +48,7 @@
     "gatsby-plugin-sitemap": "2.2.24",
     "gatsby-source-filesystem": "2.1.42",
     "gatsby-transformer-json": "2.2.22",
+    "install-peerdeps": "^3.0.3",
     "node-sass": "^4.14.1",
     "prettier": "1.19.1"
   }
