@@ -14,7 +14,8 @@
     "lint": "eslint 'src/**/*.js'",
     "debug": "node --inspect-brk --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
     "gatsby-plugin-sitemap": "2.2.24",
     "gatsby-source-filesystem": "2.1.42",
     "gatsby-transformer-json": "2.2.22",
+    "husky": "^6.0.0",
     "install-peerdeps": "^3.0.3",
     "node-sass": "^4.14.1",
     "prettier": "1.19.1"
