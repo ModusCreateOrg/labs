@@ -21,8 +21,6 @@ const ProjectSummaryInfo = ({ project }) => (
   </header>
 );
 
-// testing
-
 ProjectSummaryInfo.propTypes = {
   project: PropTypes.shape({
     image: PropTypes.string,
