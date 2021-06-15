@@ -1,6 +1,6 @@
 [![Modus Labs](https://res.cloudinary.com/modus-labs/image/upload/v1531492623/labs/logo-black.svg)](https://labs.moduscreate.com)
 
-# Modus Labs Website
+# Modus Labs Website.
 
 🔗 [https://labs.moduscreate.com](https://labs.moduscreate.com)
 
@@ -117,6 +117,7 @@ Here's how it works:
 Issues with nodejs versions on npm install
 
 Run:
+
 ````
 # install NVM
 $ bash nvm-install.sh
@@ -138,3 +139,4 @@ $ npm run build
 # License
 
 MIT
+````
