@@ -5,7 +5,9 @@ import CloudinaryImage from '../../CloudinaryImage';
 
 import s from './styles.module.scss';
 
-const ProjectDetailButton = ({ text, className, href, ...rest }) => (
+const ProjectDetailButton = ({
+  text, className, href, ...rest
+}) => (
   <a className={classnames(s.btn, className)} href={href} {...rest}>
     {text}
     <CloudinaryImage filename="github.svg" filters={[]} className={s.github} alt="GitHub" />

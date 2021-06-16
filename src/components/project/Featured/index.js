@@ -26,7 +26,14 @@ const ProjectFeatured = ({ project }) => (
 );
 
 ProjectFeatured.propTypes = {
-  project: PropTypes.object,
+  project: PropTypes.shape({
+    image: PropTypes.string,
+    route: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
+    repo: PropTypes.string,
+    headline: PropTypes.string,
+  }).isRequired,
 };
 
 export default ProjectFeatured;
