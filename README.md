@@ -117,6 +117,7 @@ Here's how it works:
 Issues with nodejs versions on npm install
 
 Run:
+
 ````
 # install NVM
 $ bash nvm-install.sh
@@ -138,3 +139,4 @@ $ npm run build
 # License
 
 MIT
+````
