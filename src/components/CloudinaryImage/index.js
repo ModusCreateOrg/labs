@@ -1,9 +1,5 @@
 import React from 'react';
 
-export const url = 'https://res.cloudinary.com/modus-labs/image/upload/';
-export const version = 'v1535719797';
-export const folder = 'labs';
-
 const defaultFilters = ['q_auto', 'f_auto'];
 
 export const isSvg = name => name && !!name.match(/svg$/);
@@ -14,8 +10,8 @@ const getFilters = (filters = []) => {
 };
 
 // concatenate one source
-export const getSrc = (filename, filters, path = folder, dpr) =>
-  `${url}${getFilters(filters)}${version}/${path}/${filename}${dpr ? ` ${dpr}x` : ''}`;
+export const getSrc = (filename, filters, path, dpr) =>
+  `${process.env.CLOUDINARY_URL}${getFilters(filters)}${process.env.CLOUDINARY_VERSION}/${path || process.env.CLOUDINARY_FOLDER}/${filename}${dpr ? ` ${dpr}x` : ''}`;
 
 // generate srcset
 export const getSrcSet = (...args) => [1, 2].map(dpr => getSrc(...args, dpr)).join(',');
@@ -23,7 +19,7 @@ export const getSrcSet = (...args) => [1, 2].map(dpr => getSrc(...args, dpr)).jo
 export const CloudinaryImage = ({
   filename,
   filters = defaultFilters,
-  path = folder,
+  path = process.env.CLOUDINARY_FOLDER,
   vector,
   ...rest
 }) => (
