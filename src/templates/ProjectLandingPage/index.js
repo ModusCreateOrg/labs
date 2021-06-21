@@ -65,7 +65,7 @@ const DetailsPage = ({ pageContext: { project, site } }) => {
         {project.image ? <meta property="og:image" content={getSrc(project.image)} /> : null}
 
         {project.route ? (
-          <link rel="canonical" href={`${site.siteMetadata.url + project.route}/`} />
+          <link rel="canonical" href={`${site.siteMetadata.url}${project.route}/`} />
         ) : null}
       </Helmet>
       {/* Project Summary Information */}
