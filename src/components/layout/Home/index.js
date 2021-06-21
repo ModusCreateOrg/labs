@@ -8,7 +8,7 @@ import Footer from '../../Footer';
 
 import s from './styles.module.scss';
 
-const HomeLayout = ({children}) => (
+const HomeLayout = ({ children }) => (
   <DefaultLayout>
     <Header />
     <main className={s.main}>

@@ -11,7 +11,7 @@ const animDelay = (idx, total) => {
   return {
     WebkitAnimation: animation,
     MsAnimation: animation,
-    animation: animation,
+    animation,
   };
 };
 
@@ -31,6 +31,6 @@ const AnimatedWords = ({ words }) => (
 );
 
 AnimatedWords.propTypes = {
-  words: PropTypes.array.isRequired,
+  words: PropTypes.shape([]).isRequired,
 };
 export default AnimatedWords;
