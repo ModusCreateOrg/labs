@@ -59,7 +59,7 @@ const DetailsPage = ({ pageContext: { project, site } }) => {
         {project.route ? (
           <meta
             property="og:url"
-            content={`${site.siteMetadata.url + project.route}/`}
+            content={`${site.siteMetadata.url}${project.route}/`}
           />
         ) : null}
         {project.image ? <meta property="og:image" content={getSrc(project.image)} /> : null}
