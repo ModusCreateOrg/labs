@@ -31,6 +31,6 @@ const AnimatedWords = ({ words }) => (
 );
 
 AnimatedWords.propTypes = {
-  words: PropTypes.shape([]).isRequired,
+  words: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default AnimatedWords;

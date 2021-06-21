@@ -21,6 +21,7 @@ module.exports = {
     'react/jsx-props-no-spreading': [0],
     'react/no-array-index-key': [0],
     'react/no-danger': [0],
+    'react/forbid-prop-types': [0],
     "import/no-extraneous-dependencies": [0],
     'react/jsx-one-expression-per-line': [
       0,

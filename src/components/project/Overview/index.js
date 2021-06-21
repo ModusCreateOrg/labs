@@ -33,8 +33,8 @@ const ProjectOverview = ({ project }) => (
 ProjectOverview.propTypes = {
   project: PropTypes.shape({
     description: PropTypes.string,
-    tags: PropTypes.shape([]),
-    stack: PropTypes.shape([]),
+    tags: PropTypes.arrayOf(PropTypes.string),
+    stack: PropTypes.arrayOf(PropTypes.string),
   }),
 };
 

@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Image from '../../LazyImage';
-import ProjectDetailButtonChild from '../DetailButton';
-
+import DetailButton from '../DetailButton';
 import s from './styles.module.scss';
 
 const ProjectSummaryInfo = ({ project }) => (
@@ -10,7 +9,7 @@ const ProjectSummaryInfo = ({ project }) => (
     <div className={s.content}>
       <h1>{project.name}</h1>
       <h3>{project.headline}</h3>
-      <ProjectDetailButtonChild text="View on" href={project.repo} />
+      <DetailButton text="View on" href={project.repo} />
     </div>
     {project.image ? (
       <div className={s.image}>

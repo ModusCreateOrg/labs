@@ -46,11 +46,11 @@ const HTML = ({
 
 HTML.propTypes = {
   htmlAttributes: PropTypes.shape({}),
-  headComponents: PropTypes.shape([]),
+  headComponents: PropTypes.any,
   bodyAttributes: PropTypes.shape({}),
-  preBodyComponents: PropTypes.shape([]),
+  preBodyComponents: PropTypes.arrayOf(PropTypes.object),
   body: PropTypes.string,
-  postBodyComponents: PropTypes.shape([]),
+  postBodyComponents: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default HTML;

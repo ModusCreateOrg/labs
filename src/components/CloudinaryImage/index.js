@@ -37,7 +37,7 @@ const CloudinaryImage = ({
 
 CloudinaryImage.propTypes = {
   filename: PropTypes.string,
-  filters: PropTypes.shape([]),
+  filters: PropTypes.arrayOf(PropTypes.string),
   name: PropTypes.string,
   path: PropTypes.string,
   vector: PropTypes.string,

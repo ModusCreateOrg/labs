@@ -37,7 +37,7 @@ const Team = ({ project }) => (
 
 Team.propTypes = {
   project: PropTypes.shape({
-    team: PropTypes.shape([]),
+    team: PropTypes.arrayOf(PropTypes.object),
     name: PropTypes.string,
   }),
 };

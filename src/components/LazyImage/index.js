@@ -23,7 +23,7 @@ if (canUseDOM) {
   };
 }
 
-const LazyImage = ({ filename, className, ...rest }) => {
+const LazyImage = ({ filename, className = '', ...rest }) => {
   const [isVector] = React.useState(isSvg(filename));
   const el = React.useRef(null);
 
@@ -60,7 +60,7 @@ const LazyImage = ({ filename, className, ...rest }) => {
 
 LazyImage.propTypes = {
   filename: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 export default LazyImage;

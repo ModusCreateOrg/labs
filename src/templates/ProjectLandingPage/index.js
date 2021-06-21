@@ -94,14 +94,14 @@ DetailsPage.propTypes = {
       image: PropTypes.string,
       name: PropTypes.string,
       repo: PropTypes.string,
-      meta: PropTypes.string,
+      meta: PropTypes.arrayOf(PropTypes.object),
       pageTitle: PropTypes.string,
       stack: PropTypes.arrayOf(PropTypes.string),
       tags: PropTypes.arrayOf(PropTypes.string),
       team: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string,
-          twitter: PropTypes.twitter,
+          twitter: PropTypes.string,
         }),
       ),
     }),

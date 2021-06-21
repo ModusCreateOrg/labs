@@ -30,8 +30,8 @@ DescriptionBlocks.propTypes = {
   project: PropTypes.shape({
     description: PropTypes.string,
     name: PropTypes.string,
-    content: PropTypes.shape([]),
-    stack: PropTypes.shape([]),
+    content: PropTypes.arrayOf(PropTypes.object),
+    stack: PropTypes.arrayOf(PropTypes.string),
   }),
 };
 
