@@ -11,11 +11,10 @@ import { getSrc } from '../../CloudinaryImage';
 function canUseWebP() {
   const elem = document.createElement('canvas');
 
-  if (!!(elem.getContext && elem.getContext('2d'))) {
+  if (elem.getContext && elem.getContext('2d')) {
     return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
-  } else {
-    return false;
   }
+  return false;
 }
 
 const DefaultLayout = ({ children }) => {
@@ -37,7 +36,7 @@ const DefaultLayout = ({ children }) => {
           }
         }
       `}
-      render={data => (
+      render={(data) => (
         <div
           className={classnames({
             webp: webpSupported === true,
@@ -82,7 +81,7 @@ const DefaultLayout = ({ children }) => {
       )}
     />
   );
-}
+};
 
 DefaultLayout.propTypes = {
   children: PropTypes.node.isRequired,

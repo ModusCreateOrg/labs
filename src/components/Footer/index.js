@@ -15,10 +15,12 @@ const Footer = () => (
           <Logo className={s.logo} />
         </Link>
         <div className={s.col}>
-          &copy;{` ${YEAR} `}
+          &copy;
+          {` ${YEAR} `}
           <a className={s.link} href="https://moduscreate.com/?utm_source=labs">
             Modus Create
-          </a>. All rights reserved.
+          </a>
+          . All rights reserved.
         </div>
         <div className={s.col}>
           <a className={s.link} href="tel:1-855-721-7223">

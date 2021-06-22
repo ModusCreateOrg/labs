@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import TwitterButton from '../TwitterButton';
 import s from './styles.module.scss';
 
@@ -32,5 +34,12 @@ const Team = ({ project }) => (
     </div>
   </aside>
 );
+
+Team.propTypes = {
+  project: PropTypes.shape({
+    team: PropTypes.arrayOf(PropTypes.object),
+    name: PropTypes.string,
+  }),
+};
 
 export default Team;

@@ -4,7 +4,9 @@ import classnames from 'classnames';
 
 import s from './styles.module.scss';
 
-const PrimaryButton = ({ text, className, href, ...rest }) => (
+const PrimaryButton = ({
+  text, className, href, ...rest
+}) => (
   <a className={classnames(s.cta, className)} href={href} {...rest}>
     {text}
   </a>
