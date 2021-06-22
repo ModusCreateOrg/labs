@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import ProjectFeatured from '../../components/project/Featured';
 import ProjectListing from '../../components/project/Listing';
 import s from './styles.module.scss';
 
-const Projects = ({ data }) => (
+const Projects = () => (
   <StaticQuery
     query={graphql`
       query ProjectListingQuery {
@@ -31,7 +30,7 @@ const Projects = ({ data }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <section className={s.featured}>
           {data.featured.edges.map(({ node }) => (
@@ -40,8 +39,8 @@ const Projects = ({ data }) => (
         </section>
         <strong className={s.heading__main}>More Labs</strong>
         <section className={s.list}>
-          {data.listing &&
-            data.listing.edges.map(({ node }) => (
+          {data.listing
+            && data.listing.edges.map(({ node }) => (
               <ProjectListing key={node.name} project={node} className={s.listItem} />
             ))}
         </section>
@@ -49,9 +48,5 @@ const Projects = ({ data }) => (
     )}
   />
 );
-
-Projects.propTypes = {
-  data: PropTypes.object,
-};
 
 export default Projects;

@@ -13,7 +13,7 @@ const ProjectListing = ({ project, className }) => (
     <h3>{project.headline}</h3>
     <p>{project.description}</p>
     <div className={s.tags}>
-      {project.tags.map(tag => (
+      {project.tags.map((tag) => (
         <span className={s.tag} key={tag}>
           {tag}
         </span>
@@ -24,7 +24,14 @@ const ProjectListing = ({ project, className }) => (
 );
 
 ProjectListing.propTypes = {
-  project: PropTypes.object.isRequired,
+  project: PropTypes.shape({
+    route: PropTypes.string,
+    name: PropTypes.string,
+    headline: PropTypes.string,
+    description: PropTypes.string,
+    tags: PropTypes.arrayOf(PropTypes.string),
+    repo: PropTypes.string,
+  }).isRequired,
   className: PropTypes.string,
 };
 

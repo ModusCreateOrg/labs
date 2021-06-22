@@ -1,6 +1,7 @@
 import React from 'react';
 import OnIdle from '@modus/react-idle';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import DefaultLayout from '../Defaults';
 import LogoBlack from '../../Logo/LogoBlack';
@@ -8,7 +9,7 @@ import Footer from '../../Footer';
 
 import s from './styles.module.scss';
 
-const ProjectLandingPage = ({children}) => (
+const ProjectLandingPage = ({ children }) => (
   <DefaultLayout>
     <main className={s.main}>
       <div className={s.innerContent}>
@@ -28,4 +29,8 @@ const ProjectLandingPage = ({children}) => (
   </DefaultLayout>
 );
 
-export default ProjectLandingPage
+ProjectLandingPage.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default ProjectLandingPage;
