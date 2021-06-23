@@ -15,8 +15,7 @@ const ProjectSummaryInfo = ({ project }) => (
       <div className={s.image}>
         <Image filename={project.image} alt={project.name} />
       </div>
-    )
-      : null}
+    ) : null}
   </header>
 );
 

@@ -18,9 +18,7 @@ const ProjectLandingPage = ({ children }) => (
             <LogoBlack />
           </Link>
         </header>
-        <article>
-          {children}
-        </article>
+        <article>{children}</article>
       </div>
     </main>
     <OnIdle syncUpdate>
