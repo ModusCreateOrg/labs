@@ -49,7 +49,7 @@ module.exports = {
               'style-src \'self\' \'unsafe-inline\' fonts.googleapis.com tagmanager.google.com;',
               'img-src \'self\' data: res.cloudinary.com www.google-analytics.com ssl.gstatic.com www.gstatic.com unavatar.now.sh unavatar.vercel.app www.netlify.com stats.g.doubleclick.net;',
               'font-src fonts.gstatic.com;',
-              'connect-src \'self\' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com www.googletagmanager.com unavatar.now.sh www.netlify.com;',
+              'connect-src \'self\' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com www.googletagmanager.com unavatar.now.sh www.netlify.com stats.g.doubleclick.net;',
               'prefetch-src *;',
               'frame-src https://consentcdn.cookiebot.com/;',
               'upgrade-insecure-requests',
