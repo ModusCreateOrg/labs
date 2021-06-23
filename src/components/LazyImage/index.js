@@ -48,14 +48,7 @@ const LazyImage = ({ filename, className = '', ...rest }) => {
       className: cx(s.img, className, 'lazyload'),
     };
 
-  return (
-    <img
-      ref={el}
-      alt="Modus Labs"
-      {...rest}
-      {...src}
-    />
-  );
+  return <img ref={el} alt="Modus Labs" {...rest} {...src} />;
 };
 
 LazyImage.propTypes = {
