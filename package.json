@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "eslint src/**/*.js && gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "lint": "eslint 'src/**/*.js'",
