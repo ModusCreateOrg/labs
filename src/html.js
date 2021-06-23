@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const HTML = ({
-  htmlAttributes, headComponents, preBodyComponents, body, postBodyComponents, bodyAttributes,
+  htmlAttributes,
+  headComponents,
+  preBodyComponents,
+  body,
+  postBodyComponents,
+  bodyAttributes,
 }) => (
   <html prefix="og: https://ogp.me/ns#" lang="en" {...htmlAttributes}>
     <head>

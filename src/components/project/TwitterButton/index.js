@@ -7,7 +7,14 @@ import CloudinaryImage from '../../CloudinaryImage';
 import s from './styles.module.scss';
 
 const TwitterButton = ({ text, className, href }) => (
-  <CloudinaryImage id="twitter" filename="twitter.svg" href={href} filters={[]} className={classnames(s.twitterIcon, className)} alt={text} />
+  <CloudinaryImage
+    id="twitter"
+    filename="twitter.svg"
+    href={href}
+    filters={[]}
+    className={classnames(s.twitterIcon, className)}
+    alt={text}
+  />
 );
 
 TwitterButton.propTypes = {

@@ -16,7 +16,9 @@ const ProjectFeatured = ({ project }) => (
     </aside>
     <div className={s.content}>
       <h2>
-        <Link className={s.projectTitle} to={`/${project.route}`}>{project.name}</Link>
+        <Link className={s.projectTitle} to={`/${project.route}`}>
+          {project.name}
+        </Link>
       </h2>
       <h3>{project.headline}</h3>
       <p>{project.description}</p>
