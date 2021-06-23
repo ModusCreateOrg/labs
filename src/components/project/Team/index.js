@@ -12,7 +12,9 @@ const Team = ({ project }) => (
         <div className={s.member} key={`memberName${index}`}>
           <img
             className={s.teamAvatar}
-            src={`https://unavatar.now.sh/twitter/${teamMember.twitter ? teamMember.twitter : 'moduscreate'}`}
+            src={`https://unavatar.now.sh/twitter/${
+              teamMember.twitter ? teamMember.twitter : 'moduscreate'
+            }`}
             alt={teamMember.name}
             role="presentation"
           />

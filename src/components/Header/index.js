@@ -19,7 +19,9 @@ const WORDS = [
 const Header = () => (
   <header className={s.hero}>
     <div className={s.innerContainer}>
-      <h1><Logo /></h1>
+      <h1>
+        <Logo />
+      </h1>
       <h3 className={s.introHeader}>Changing the world</h3>
       <strong className={s.heading__main}>
         One

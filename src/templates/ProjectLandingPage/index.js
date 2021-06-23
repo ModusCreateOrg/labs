@@ -12,47 +12,51 @@ import { getSrc } from '../../components/CloudinaryImage';
 const DetailsPage = ({ pageContext: { project, site } }) => (
   <Layout>
     <Helmet>
-      <title>{`${project.pageTitle || project.name} - Modus Labs`}</title>
+      <title>{`${project.pageTitle || project.name} - ${site.siteMetadata.shortName}`}</title>
       {project.pageDescription ? (
         <meta name="description" content={project.pageDescription} />
       ) : null}
-      {Array.isArray(project.meta) &&
-        project.meta.map((attrs, idx) => <meta key={idx} {...attrs} />)}
+      {Array.isArray(project.meta)
+        && project.meta.map((attrs, idx) => <meta key={idx} {...attrs} />)}
       <script type="application/ld+json">{`
           {
             "@context": "https://schema.org"
             "@type": "${get(project, 'structuredData.type', 'SoftwareApplication')}",
             "name": "${get(project, 'structuredData.name', project.name)}",
             "operatingSystem": "${get(
-              project,
-              'structuredData.os',
-              'Windows, Mac OS, Android, iOS'
-            )}",
+        project,
+        'structuredData.os',
+        'Windows, Mac OS, Android, iOS',
+      )}",
             "applicationCategory": "${get(
-              project,
-              'structuredData.applicationCategory',
-              'https://schema.org/WebApplication'
-            )}",
+        project,
+        'structuredData.applicationCategory',
+        'https://schema.org/WebApplication',
+      )}",
             "offers": {
               "@type": "Offer",
               "price": "0.00",
               "priceCurrency": "USD"
             }
           }
-      `}</script>
+      `}
+      </script>
       {project.name ? (
-        <meta property="og:title" content={`${project.pageTitle || project.name} - Modus Labs`} />
+        <meta
+          property="og:title"
+          content={`${project.pageTitle || project.name} - ${site.siteMetadata.shortName}`}
+        />
       ) : null}
       {project.pageDescription ? (
         <meta property="og:description" content={project.pageDescription} />
       ) : null}
       {project.route ? (
-        <meta property="og:url" content={`${site.siteMetadata.url}${project.route}/`} />
+        <meta property="og:url" content={`${site.siteMetadata.siteUrl}${project.route}/`} />
       ) : null}
       {project.image ? <meta property="og:image" content={getSrc(project.image)} /> : null}
 
       {project.route ? (
-        <link rel="canonical" href={`${site.siteMetadata.url}${project.route}/`} />
+        <link rel="canonical" href={`${site.siteMetadata.siteUrl}${project.route}/`} />
       ) : null}
     </Helmet>
     {/* Project Summary Information */}
@@ -73,8 +77,8 @@ DetailsPage.propTypes = {
   pageContext: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        url: PropTypes.string.isRequired,
+        siteUrl: PropTypes.string.isRequired,
+        shortName: PropTypes.string.isRequired,
       }),
     }),
     project: PropTypes.shape({

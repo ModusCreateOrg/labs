@@ -9,9 +9,13 @@ exports.createPages = ({ graphql, actions }) => {
         {
           site {
             siteMetadata {
+              description,
+              facebook,
+              keywords,
+              shortName,
+              siteUrl,
               title,
-              url,
-              description
+              twitter
             }
           },
           allProjectsJson {
@@ -53,25 +57,24 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-      `).then(result => {
+      `).then((result) => {
         if (result.errors) {
           reject(result.errors);
         }
 
         // Create pages for each project detail
-        const projectDetailsTemplate = path.resolve(`src/templates/ProjectLandingPage/index.js`);
+        const projectDetailsTemplate = path.resolve('src/templates/ProjectLandingPage/index.js');
         result.data.allProjectsJson.edges.forEach(({ node }) => {
           createPage({
             path: `/${node.route.toLowerCase()}`,
             component: slash(projectDetailsTemplate),
             context: {
               project: { ...node },
-              site: result.data.site
+              site: result.data.site,
             },
           });
         });
-        return;
-      })
+      }),
     );
   });
 };

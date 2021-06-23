@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: 'Modus Labs by Modus Create',
-    url: 'https://labs.moduscreate.com/',
+    siteUrl: 'https://labs.moduscreate.com/',
+    shortName: 'Modus Labs',
     description: 'Modus Labs is Modus Create\'s open source initiative, designing and building powerful web applications that solve real issues, help improve existing frameworks, and sustain the open source ecosystem.',
     keywords: 'React, Vue, Ionic, Angular, NodeJS, Amazon Web Services, AWS, Cloudformation, Terraform, Serverless, Lambda, Mobile native, iOS, Android',
     facebook: 'https://www.facebook.com/moduscreate/',
-    twitter: '@moduscreate'
+    twitter: '@moduscreate',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -20,7 +21,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Modus Create Labs',
         short_name: 'Modus Labs',
@@ -32,34 +33,34 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-netlify`,
+      resolve: 'gatsby-plugin-netlify',
       options: {
         headers: {
           '/*': [
-            `X-XSS-Protection: 1; mode=block`,
-            `X-Content-Type-Options: nosniff`,
-            `X-Frame-Options: deny`,
-            `Strict-Transport-Security: max-age=31536000; includeSubdomains; preload`,
-            `Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin`,
+            'X-XSS-Protection: 1; mode=block',
+            'X-Content-Type-Options: nosniff',
+            'X-Frame-Options: deny',
+            'Strict-Transport-Security: max-age=31536000; includeSubdomains; preload',
+            'Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin',
             [
-              `Content-Security-Policy:`,
-              `default-src 'self';`,
-              `script-src 'self' data: 'unsafe-inline' cdnjs.cloudflare.com www.googletagmanager.com tagmanager.google.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com;`,
-              `style-src 'self' 'unsafe-inline' fonts.googleapis.com tagmanager.google.com;`,
-              `img-src 'self' data: res.cloudinary.com www.google-analytics.com ssl.gstatic.com www.gstatic.com unavatar.now.sh www.netlify.com stats.g.doubleclick.net;`,
-              `font-src fonts.gstatic.com;`,
-              `connect-src 'self' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com www.googletagmanager.com unavatar.now.sh www.netlify.com;`,
-              `prefetch-src *;`,
-              `frame-src https://consentcdn.cookiebot.com/;`,
-              `upgrade-insecure-requests`,
+              'Content-Security-Policy:',
+              'default-src \'self\';',
+              'script-src \'self\' data: \'unsafe-inline\' cdnjs.cloudflare.com www.googletagmanager.com tagmanager.google.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com;',
+              'style-src \'self\' \'unsafe-inline\' fonts.googleapis.com tagmanager.google.com;',
+              'img-src \'self\' data: res.cloudinary.com www.google-analytics.com ssl.gstatic.com www.gstatic.com unavatar.now.sh www.netlify.com stats.g.doubleclick.net;',
+              'font-src fonts.gstatic.com;',
+              'connect-src \'self\' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com consent.cookiebot.com www.google-analytics.com consentcdn.cookiebot.com www.googletagmanager.com unavatar.now.sh www.netlify.com;',
+              'prefetch-src *;',
+              'frame-src https://consentcdn.cookiebot.com/;',
+              'upgrade-insecure-requests',
             ].join(' '),
             [
-              `Feature-Policy:`,
-              `camera 'none';`,
-              `geolocation 'none';`,
-              `microphone 'none';`,
-              `document-write 'none';`,
-              `sync-xhr 'none';`,
+              'Feature-Policy:',
+              'camera \'none\';',
+              'geolocation \'none\';',
+              'microphone \'none\';',
+              'document-write \'none\';',
+              'sync-xhr \'none\';',
             ].join(' '),
           ],
           '/sw.js': ['Cache-Control: public, max-age=360, must-revalidate'],
@@ -72,7 +73,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-27963224-5',
         head: false,
@@ -81,7 +82,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         id: 'GTM-TSSFT9B',
         includeInDevelopment: false,
