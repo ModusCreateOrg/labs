@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run lint && gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
