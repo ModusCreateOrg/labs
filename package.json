@@ -10,6 +10,7 @@
   "scripts": {
     "build": "npm run lint && gatsby build",
     "develop": "gatsby develop",
+    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint 'src/**/*.js'",
     "debug": "node --inspect-brk --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
