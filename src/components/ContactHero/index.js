@@ -15,7 +15,7 @@ const ContactHero = () => (
     </p>
     <div className={s.ctaContainer}>
       <PrimaryButton className={s.cta} href="mailto:info@moduscreate.com" text="Email us" />
-      <PrimaryButton className={s.cta} href="tel:1-855-663-8727" text="Call us now" />
+      <PrimaryButton className={s.cta} href="tel:+1-855-721-7223" text="Call us now" />
     </div>
   </section>
 );
