@@ -1,10 +1,12 @@
 import React from 'react';
+import { FormattedMessage } from 'gatsby-plugin-intl';
+
 import Layout from '../components/layout/Home';
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1><FormattedMessage id="notFoundPage.title" /></h1>
+    <p><FormattedMessage id="notFoundPage.subTitle" /></p>
   </Layout>
 );
 

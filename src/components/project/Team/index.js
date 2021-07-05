@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 
 import TwitterButton from '../TwitterButton';
 import s from './styles.module.scss';
 
 const Team = ({ project }) => (
   <aside>
-    <h3 className={s.title}>Team</h3>
+    <h3 className={s.title}><FormattedMessage id="team.title" /></h3>
     <div className={s.team}>
       {project.team.map((teamMember, index) => (
         <div className={s.member} key={`memberName${index}`}>
