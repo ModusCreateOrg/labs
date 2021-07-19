@@ -26,6 +26,7 @@
     "@modus/react-idle": "^1.1.1",
     "classnames": "2.2.6",
     "gatsby": "2.32",
+    "gatsby-plugin-intl": "^0.3.3",
     "lazysizes": "^5.3.2",
     "lodash.get": "4.4.2",
     "prop-types": "^15.7.2",

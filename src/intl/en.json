@@ -1,0 +1,45 @@
+{
+  "contactHero": {
+    "title1": "Ready to ",
+    "title2": " collaborate ",
+    "title3": " with Modus?",
+    "subTitle": "Whether you have a new project, idea, or just want to see a sketch come to life we are here to help your dreams become reality. Multi-disciplinary teams are ready to assist you on any project type. Just hit us up!",
+    "emailUsButton": "Email Us",
+    "callUsButton": "Call us now"
+  },
+  "footer": {
+    "rightsReserved": ". All rights reserved."
+  },
+  "header": {
+    "introHeader": "Changing the world",
+    "heading1": "One",
+    "heading2": "At A Time",
+    "outroHeader": "Open source community driven experiments",
+    "animated": {
+      "line": "Line of Code",
+      "problem": "Problem",
+      "persona": "Persona",
+      "sketch": "Sketch",
+      "pixel": "Pixel",
+      "test": "Test",
+      "deployment": "Deployment",
+      "release": "Release",
+      "integration": "Integration"
+    }
+  },
+  "overview": {
+    "title": "Project Overview",
+    "subTitle1": "Technology",
+    "subTitle2": "Tags"
+  },
+  "team": {
+    "title": "Team"
+  },
+  "projects": {
+    "title": "More Labs"
+  },
+  "notFoundPage": {
+    "title": "NOT FOUND",
+    "subTitle": "You just hit a route that doesn&#39;t exist... the sadness."
+  }
+}

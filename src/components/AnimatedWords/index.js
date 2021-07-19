@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 import s from './styles.module.scss';
 
 const DELAY_TIME = 3;
@@ -24,7 +25,7 @@ const AnimatedWords = ({ words }) => (
   <span className={s.animatedWords}>
     {words.map((word, idx, arr) => (
       <span key={idx} style={animDelay(idx, arr.length)}>
-        {word}
+        <FormattedMessage id={word} />
       </span>
     ))}
   </span>

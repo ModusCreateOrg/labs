@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 import ContactHero from '../ContactHero';
 import Logo from '../Logo';
+
 import s from './styles.module.scss';
 
 const YEAR = new Date().getFullYear();
@@ -20,7 +22,7 @@ const Footer = () => (
           <a className={s.link} href="https://moduscreate.com/?utm_source=labs">
             Modus Create
           </a>
-          . All rights reserved.
+          <FormattedMessage id="footer.rightsReserved" />
         </div>
         <div className={s.col}>
           <a className={s.link} href="tel:1-855-721-7223">

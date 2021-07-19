@@ -1,5 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import { FormattedMessage } from 'gatsby-plugin-intl';
+
 import ProjectFeatured from '../../components/project/Featured';
 import ProjectListing from '../../components/project/Listing';
 import s from './styles.module.scss';
@@ -37,7 +39,7 @@ const Projects = () => (
             <ProjectFeatured key={node.name} project={node} />
           ))}
         </section>
-        <strong className={s.heading__main}>More Labs</strong>
+        <strong className={s.heading__main}><FormattedMessage id="projects.title" /></strong>
         <section className={s.list}>
           {data.listing
             && data.listing.edges.map(({ node }) => (

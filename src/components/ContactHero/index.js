@@ -1,23 +1,33 @@
 import React from 'react';
+
+import PropTypes from 'prop-types';
+import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import PrimaryButton from '../PrimaryButton';
 
 import s from './styles.module.scss';
 
-const ContactHero = () => (
+const ContactHero = ({ intl }) => (
   <section className={s.container}>
     <strong className={s.title}>
-      Ready to <span className={s.highlight}>collaborate</span> with Modus?
+      <FormattedMessage id="contactHero.title1" />
+      <span className={s.highlight}>
+        <FormattedMessage id="contactHero.title2" />
+      </span><FormattedMessage id="contactHero.title3" />
     </strong>
     <p className={s.content}>
-      Whether you have a new project, idea, or just want to see a sketch come to life we are here to
-      help your dreams become reality. Multi-disciplinary teams are ready to assist you on any
-      project type. Just hit us up!
+      <FormattedMessage id="contactHero.subTitle" />
     </p>
     <div className={s.ctaContainer}>
-      <PrimaryButton className={s.cta} href="mailto:info@moduscreate.com" text="Email us" />
-      <PrimaryButton className={s.cta} href="tel:+1-855-721-7223" text="Call us now" />
+      <PrimaryButton className={s.cta} href="mailto:info@moduscreate.com" text={intl.formatMessage({ id: 'contactHero.emailUsButton' })} />
+      <PrimaryButton className={s.cta} href="tel:+1-855-721-7223" text={intl.formatMessage({ id: 'contactHero.callUsButton' })} />
     </div>
   </section>
 );
 
-export default ContactHero;
+ContactHero.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func,
+  }),
+};
+
+export default injectIntl(ContactHero);
