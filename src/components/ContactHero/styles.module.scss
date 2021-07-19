@@ -1,4 +1,4 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
 .container {
   position: relative;
@@ -21,41 +21,6 @@
   }
 }
 
-:global(.webp) {
-  .container {
-    background-image: url('https://res.cloudinary.com/modus-labs/image/upload/b_rgb:1b1b1b,o_20,e_blur:300/v1531492504/labs/contact-graphic.webp');
-
-    @media only screen and (min-width: $desktop) {
-      background-image: url('https://res.cloudinary.com/modus-labs/image/upload/v1531492504/labs/contact-graphic.webp');
-    }
-  }
-}
-
-:global(.nowebp) {
-  .container {
-    background-image: url('https://res.cloudinary.com/modus-labs/image/upload/b_rgb:1b1b1b,o_20,e_blur:300/v1531492504/labs/contact-graphic.png');
-
-    @media only screen and (min-width: $desktop) {
-      background-image: url('https://res.cloudinary.com/modus-labs/image/upload/v1531492504/labs/contact-graphic.png');
-    }
-  }
-}
-
-.container {
-  width: 100%;
-
-  @media only screen and (min-width: $desktop) {
-    padding-right: 42%;
-  }
-
-  @media only screen and (min-width: $wide) {
-    padding-right: 25%;
-  }
-
-  @media only screen and (min-width: $ultrawide) {
-    padding-right: 20%;
-  }
-}
 
 .title {
   display: block;
