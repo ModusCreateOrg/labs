@@ -85,3 +85,27 @@ a {
   font-weight: $title-weight;
   margin-bottom: 1rem;
 }
+
+#ot-sdk-cookie-policy {
+  font-family: $fontAlt !important;
+  h3 {
+    font-size: 2.275rem !important;
+  }
+  #cookie-policy-description {
+    font-size: 1.275rem !important;
+  }
+  section {
+    h4 {
+      font-size: 1.575rem !important;
+    }
+    p {
+      color: $black !important;
+      font-size: 1.275rem !important;
+    }
+
+    table {
+      color: $black !important;
+      font-size: 1rem !important;
+    }
+  }
+}

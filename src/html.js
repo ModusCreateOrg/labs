@@ -40,6 +40,13 @@ const HTML = ({
         type="text/javascript"
         async
       />
+
+      {process.env.GATSBY_ENV === 'dev' && <script type="text/javascript" src={process.env.ONETRUST_CDN_TEST_URL} />}
+
+      <script src={process.env.ONETRUST_CDN_MAIN_URL} type="text/javascript" charSet="UTF-8" data-domain-script={process.env.ONETRUST_CODE} />
+      <script type="text/javascript">
+        function OptanonWrapper() { }
+      </script>
     </head>
     <body {...bodyAttributes}>
       {preBodyComponents}
