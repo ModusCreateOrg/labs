@@ -86,6 +86,8 @@ a {
   margin-bottom: 1rem;
 }
 
+/*** OneTrust styling ***/
+
 #ot-sdk-cookie-policy {
   font-family: $fontAlt !important;
   h3 {
@@ -106,6 +108,34 @@ a {
     table {
       color: $black !important;
       font-size: 1rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  #onetrust-banner-sdk {
+    #onetrust-policy {
+      margin: 0.5em 0 0 0.5em !important;
+    }
+
+    #onetrust-policy-text {
+      margin: 0 0 0.5em 0 !important;
+    }
+
+    .onetrust-close-btn-ui {
+      top: -10px !important;
+      right: -15px !important;
+    }
+
+    #onetrust-accept-btn-handler,
+    #onetrust-reject-all-handler,
+    #onetrust-pc-btn-handler {
+      padding: 8px 10px !important;
+    }
+
+    .onetrust-close-btn-ui {
+      top: -10px !important;
+      right: -15px !important;
     }
   }
 }
