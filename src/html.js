@@ -33,13 +33,6 @@ const HTML = ({
           `,
         }}
       />
-      <script
-        id="Cookiebot"
-        src="https://consent.cookiebot.com/uc.js"
-        data-cbid="5b0714a2-7648-4fb0-8228-da36986fea62"
-        type="text/javascript"
-        async
-      />
     </head>
     <body {...bodyAttributes}>
       {preBodyComponents}
