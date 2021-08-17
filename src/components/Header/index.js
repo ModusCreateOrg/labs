@@ -1,19 +1,21 @@
 import React from 'react';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 import CloudinaryImage from '../LazyImage';
 import AnimatedWords from '../AnimatedWords';
 import Logo from '../Logo';
+
 import s from './styles.module.scss';
 
 const WORDS = [
-  'Line of Code',
-  'Problem',
-  'Persona',
-  'Sketch',
-  'Pixel',
-  'Test',
-  'Deployment',
-  'Release',
-  'Integration',
+  'header.animated.line',
+  'header.animated.problem',
+  'header.animated.persona',
+  'header.animated.sketch',
+  'header.animated.pixel',
+  'header.animated.test',
+  'header.animated.deployment',
+  'header.animated.release',
+  'header.animated.integration',
 ];
 
 const Header = () => (
@@ -22,14 +24,13 @@ const Header = () => (
       <h1>
         <Logo />
       </h1>
-      <h3 className={s.introHeader}>Changing the world</h3>
+      <h3 className={s.introHeader}><FormattedMessage id="header.introHeader" /></h3>
       <strong className={s.heading__main}>
-        One
+        <FormattedMessage id="header.heading1" />
         <AnimatedWords words={WORDS} />
-        At A Time
+        <FormattedMessage id="header.heading2" />
       </strong>
-      <h3 className={s.outroHeader}>Open source community driven experiments</h3>
-
+      <h3 className={s.outroHeader}><FormattedMessage id="header.outroHeader" /></h3>
       <CloudinaryImage
         filename="desktop-side-artifacts.png"
         className={s.artifactsDesktop}
