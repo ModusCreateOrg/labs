@@ -47,7 +47,7 @@ module.exports = {
               'default-src \'self\';',
               'script-src \'self\' data: \'unsafe-inline\' cdnjs.cloudflare.com www.googletagmanager.com geolocation.onetrust.com tagmanager.google.com www.google-analytics.com cdn.cookielaw.org;',
               'style-src \'self\' \'unsafe-inline\' fonts.googleapis.com tagmanager.google.com;',
-              'img-src \'self\' data: res.cloudinary.com www.google-analytics.com ssl.gstatic.com www.gstatic.com unavatar.now.sh unavatar.vercel.app www.netlify.com stats.g.doubleclick.net;',
+              'img-src \'self\' data: cdn.cookielaw.org res.cloudinary.com www.google-analytics.com ssl.gstatic.com www.gstatic.com unavatar.now.sh unavatar.vercel.app www.netlify.com stats.g.doubleclick.net;',
               'font-src fonts.gstatic.com;',
               'connect-src \'self\' fonts.gstatic.com res.cloudinary.com fonts.googleapis.com cdnjs.cloudflare.com www.google-analytics.com cdn.cookielaw.org www.googletagmanager.com geolocation.onetrust.com unavatar.now.sh www.netlify.com stats.g.doubleclick.net;',
               'prefetch-src *;',
