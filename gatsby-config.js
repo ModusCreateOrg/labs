@@ -39,12 +39,13 @@ module.exports = {
           '/*': [
             'X-XSS-Protection: 1; mode=block',
             'X-Content-Type-Options: nosniff',
-            'X-Frame-Options: allow',
+            'X-Frame-Options: deny',
             'Strict-Transport-Security: max-age=31536000; includeSubdomains; preload',
             'Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin',
             [
               'Content-Security-Policy:',
               'default-src \'self\';',
+              'frame-ancestors \'self\' moduscreate.com;',
               'script-src \'self\' data: \'unsafe-inline\' cdnjs.cloudflare.com www.googletagmanager.com geolocation.onetrust.com tagmanager.google.com www.google-analytics.com cdn.cookielaw.org;',
               'style-src \'self\' \'unsafe-inline\' fonts.googleapis.com tagmanager.google.com;',
               'img-src \'self\' data: cdn.cookielaw.org res.cloudinary.com www.google-analytics.com ssl.gstatic.com www.gstatic.com unavatar.now.sh unavatar.vercel.app www.netlify.com stats.g.doubleclick.net;',
