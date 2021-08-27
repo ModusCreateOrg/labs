@@ -1,11 +1,14 @@
 import React from 'react';
 
-import ProjectLandingPage from '../components/layout/ProjectLandingPage';
+import s from '../components/layout/ProjectLandingPage/styles.module.scss';
 
 const PrivacyPage = () => (
-  <ProjectLandingPage>
-    <div id="ot-sdk-cookie-policy" />
-  </ProjectLandingPage>
+  <main className={s.main}>
+    <div className={s.innerContent}>
+      <h3>Cookie List from Modus Labs</h3>
+      <article><div id="ot-sdk-cookie-policy" /></article>
+    </div>
+  </main>
 );
 
 export default PrivacyPage;
