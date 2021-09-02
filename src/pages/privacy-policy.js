@@ -4,7 +4,9 @@ import s from '../components/layout/ProjectLandingPage/styles.module.scss';
 
 const PrivacyPage = () => {
   React.useEffect(() => {
-    window.Optanon.Close();
+    setTimeout(() => {
+      window.Optanon.Close();
+    }, 1000);
   }, []);
 
   return (
