@@ -6,7 +6,7 @@ const PrivacyPage = () => {
   React.useEffect(() => {
     setTimeout(() => {
       window.Optanon.Close();
-    }, 1000);
+    }, 5000);
   }, []);
 
   return (
