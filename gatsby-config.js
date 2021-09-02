@@ -39,7 +39,7 @@ module.exports = {
           '/*': [
             'X-XSS-Protection: 1; mode=block',
             'X-Content-Type-Options: nosniff',
-            'X-Frame-Options: allow',
+            'X-Frame-Options: deny',
             'Strict-Transport-Security: max-age=31536000; includeSubdomains; preload',
             'Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin',
             [
