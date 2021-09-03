@@ -4,10 +4,8 @@ import s from '../components/layout/ProjectLandingPage/styles.module.scss';
 
 const PrivacyPage = () => {
   React.useEffect(() => {
-    const timer = setTimeout(() => {
-      window.Optanon.Close();
-    }, 3000);
-    return clearTimeout(timer);
+    const timer = setTimeout(() => window.Optanon.Close(), 3000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
