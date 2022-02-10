@@ -53,7 +53,7 @@
     "gatsby-transformer-json": "2.2.22",
     "husky": "^6.0.0",
     "install-peerdeps": "^3.0.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prettier": "1.19.1"
   }
 }
